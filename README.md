@@ -1,11 +1,11 @@
 # 🎨 ChatGPT-Image Prompt Packs
-### 208 Production-Oriented AI Image Prompt Cards for Marketing, Design & Commerce
+### 226 Production-Oriented AI Image Prompt Cards for Marketing, Design & Commerce
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![Prompt cards: 208](https://img.shields.io/badge/Prompt%20cards-208-blue.svg) ![Phase 1 & 2](https://img.shields.io/badge/Phase-1%20%26%202-brightgreen.svg) ![Workflow: GPT Image](https://img.shields.io/badge/Workflow-GPT%20Image-blueviolet.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![Prompt cards: 226](https://img.shields.io/badge/Prompt%20cards-226-blue.svg) ![Phase 1 & 2](https://img.shields.io/badge/Phase-1%20%26%202-brightgreen.svg) ![Workflow: GPT Image](https://img.shields.io/badge/Workflow-GPT%20Image-blueviolet.svg)
 
 > **Stop Creating Random Images. Start Building Scalable Visual Systems.**
 
-This is a production-oriented prompt library for professionals, agencies, and creators who generate commercial-grade AI visuals at scale. **208 prompt cards** are available in the browser: 170 reusable legacy templates, 30 capability cards, and eight Visual Prompts Hub cards.
+This is a production-oriented prompt library for professionals, agencies, and creators who generate commercial-grade AI visuals at scale. **226 prompt cards** are available in the browser: 188 reusable legacy templates, 30 capability cards, and eight Visual Prompts Hub cards.
 
 The v1.3 capability packs add **30 prompt cards** for reference-led generation, precise editing, canvas extension, text-led layouts, transparent assets, visual explainers, campaign systems, and GPT Image 2.5 workflows. See [the capability-pack guide](docs/capability-packs.md) and the [GPT Image 2.5 production guide](docs/gpt-image-2.5-production-guide.md).
 
@@ -40,7 +40,7 @@ Perfect for creative ideation, prototyping, and design exploration.
 | 🔍 Product Visualization | 8 | Exploded views, callouts, assembly guides |
 | ✨ Advanced Creative Direction | 5 | Metaphors, surreal, cinematic, editorial |
 
-### **Phase 2: Production Systems** (95 Prompts)
+### **Phase 2: Production Systems** (113 Prompts)
 Built for agencies, e-commerce, and service-based businesses scaling output.
 
 | Category | Count | Revenue Stream |
@@ -55,6 +55,7 @@ Built for agencies, e-commerce, and service-based businesses scaling output.
 | 🎬 Entertainment & Storytelling | 10 | Cyberpunk, fantasy, book covers, YouTube thumbnails |
 | 🔐 Brand Consistency Kits | 10 | Visual direction boards, mood boards, style guides |
 | 📦 Service Packages | 5 | Monthly content packs, launch bundles |
+| ✨ ChatGPT Image Prompt Set | 18 | Production-ready prompts across requested visual categories |
 
 ---
 
