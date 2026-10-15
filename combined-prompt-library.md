@@ -1,6 +1,6 @@
 # Combined Prompt Library
 
-Total prompts: 170
+Total prompts: 188
 
 ### P1-001 - Premium Studio Product Mockup
 
@@ -1701,3 +1701,185 @@ Create a complete service-package preview for [client/business] with multiple co
 ```
 
 **Tags:** bonus-production-prompts-for-service-packages, corporate-illustration-bundle-preview, chatgpt-image-2, production-ready
+
++## ChatGPT Image Prompt Set
+
+### P2-096 - Exploded Product Anatomy
+
+**Best for:** product explainers, feature education, and presentation visuals
+
+```text
+Create an exploded view of [product], separating shell, components, and [feature] in a precise vertical assembly. Use realistic materials, soft studio shadows, exact callouts only for [label 1], [label 2], and [label 3], and clear headline space. Do not invent components or extra text.
+```
+
+**Tags:** see-inside-it, exploded-product-anatomy, chatgpt-image, production-ready
+
+### P2-097 - Event Poster With Hierarchy
+
+**Best for:** event posters, launch cards, and announcements
+
+```text
+Design a vertical poster for [event name] in [visual style]. Use only this exact copy: “[event name]”, “[date]”, “[location]”, and “[call to action]”. Establish clear type hierarchy, generous margins, a focal image of [subject], and [brand color palette]. No unrelated copy or logos.
+```
+
+**Tags:** posters-and-cards, event-poster-with-hierarchy, chatgpt-image, production-ready
+
+### P2-098 - Premium Product Hero Shot
+
+**Best for:** e-commerce heroes, launch pages, and paid media
+
+```text
+Photograph [product] as the clear hero on [surface] against [background]. Show [key material or feature] sharply with [lighting style], realistic contact shadows, refined reflections, and [prop] used sparingly. Use a commercial 85mm perspective with copy space on [left/right]. No distorted packaging, extra products, logos, or text.
+```
+
+**Tags:** product-photos, premium-product-hero-shot, chatgpt-image, production-ready
+
+### P2-099 - Collector Figure Concept
+
+**Best for:** original collectibles, toy concepts, and display packaging
+
+```text
+Create a premium collectible figure of [character concept], posed [pose] inside a clear display box. Include [three accessories] in molded compartments, a [color palette] insert, and the exact front-panel title “[figure name]”. Original character only. Avoid protected-character resemblance or brands.
+```
+
+**Tags:** toys-and-collectibles, collector-figure-concept, chatgpt-image, production-ready
+
+### P2-100 - Craft Process Storyboard
+
+**Best for:** maker campaigns, process storytelling, and artisanal product pages
+
+```text
+Create a four-panel editorial storyboard showing [maker] creating [handmade object] with [materials]: preparation, shaping, finishing, and completion. Retain the same workspace, hands, tools, material color, and daylight direction across panels. Tactile documentary craft photography, no text.
+```
+
+**Tags:** made-by-hand, craft-process-storyboard, chatgpt-image, production-ready
+
+### P2-101 - Natural-Light Editorial Portrait
+
+**Best for:** editorial profiles, brand stories, and people-focused campaigns
+
+```text
+Create an editorial environmental portrait of a fictional [profession] in [location], doing [authentic action]. Use window light from [direction], a [lens] lens, relaxed posture, true-to-life skin texture, and [color palette] wardrobe. Do not resemble a real person, celebrity, or public figure.
+```
+
+**Tags:** light-camera-and-people, natural-light-editorial-portrait, chatgpt-image, production-ready
+
+### P2-102 - Claim-Supported Campaign Scene
+
+**Best for:** evidence-led ads, landing pages, and campaign concepts
+
+```text
+Create a wide campaign scene for [product or service] showing one visible proof of [benefit] through [observable action or outcome]. Feature [subject] in [setting] with [brand color palette], realistic lighting, and copy space on [left/right]. Do not add statistics, badges, comparisons, or unsupported claims.
+```
+
+**Tags:** scene-proof-and-ad, claim-supported-campaign-scene, chatgpt-image, production-ready
+
+### P2-103 - Editorial Metaphor Illustration
+
+**Best for:** articles, thought leadership, and conceptual campaigns
+
+```text
+Create an original editorial illustration about [idea] using [metaphor]. Use [art medium], [color palette], controlled texture, one strong focal point, and open headline space. Communicate [desired emotion] at a glance. No text, signatures, or imitation of a living artist.
+```
+
+**Tags:** illustration-and-art, editorial-metaphor-illustration, chatgpt-image, production-ready
+
+### P2-104 - Sculptural 3D Letterform
+
+**Best for:** brand initials, title treatments, and motion frames
+
+```text
+Create a dimensional rendering of the letter “[letter]” made from [material], with [surface treatment] and [accent element]. Set it against [background] with [lighting style], plausible shadows, and centered composition. Keep the character readable. No brand marks or extra lettering.
+```
+
+**Tags:** letters-and-3d, sculptural-3d-letterform, chatgpt-image, production-ready
+
+### P2-105 - Recipe Hero With Process Cues
+
+**Best for:** recipe pages, food campaigns, and kitchen content
+
+```text
+Create an overhead editorial food photograph of [dish] on [surface], styled with [ingredients] and [utensil]. Make it freshly prepared and physically plausible with [lighting style] and restrained [color palette] accents. Leave copy space at [position]. No text, impossible ingredients, or duplicate utensils.
+```
+
+**Tags:** food-and-kitchen, recipe-hero-with-process-cues, chatgpt-image, production-ready
+
+### P2-106 - Observational Drawing Study
+
+**Best for:** learning resources, stationery, and art-direction references
+
+```text
+Create an original [medium] drawing study of [subject] from [viewpoint]. Show line variation, material texture, selective shading, and unfinished marks on [paper type]. Keep anatomy and perspective believable. No signature, watermark, or copied artist style.
+```
+
+**Tags:** painting-and-drawing, observational-drawing-study, chatgpt-image, production-ready
+
+### P2-107 - Lived-In Travel Interior
+
+**Best for:** hospitality stories, travel campaigns, and destination concepts
+
+```text
+Create an editorial travel image of [place] viewed from inside [accommodation type]. Feature [architectural detail], a sign of recent human presence, and a view toward [landscape or landmark]. Use [time of day] light, realistic scale, and [mood]. Do not show private addresses or real brand signs.
+```
+
+**Tags:** home-and-travel, lived-in-travel-interior, chatgpt-image, production-ready
+
+### P2-108 - Studio Portrait System
+
+**Best for:** team placeholders, speaker cards, and profile systems
+
+```text
+Create a consistent studio portrait of a fictional [role] for [brand or project]. Use [background color], [lighting setup], [lens] perspective, and [wardrobe direction]. Frame chest-up with accurate skin texture. Keep the face original. No real-person likeness, logos, or text.
+```
+
+**Tags:** camera-and-portrait, studio-portrait-system, chatgpt-image, production-ready
+
+### P2-109 - Alternate-World Self-Portrait
+
+**Best for:** consented identity transformations and imaginative personal portraits
+
+```text
+Using the supplied subject image only as a consented identity reference, place the same person in an original [world concept] as [role]. Preserve facial features, age, skin tone, and hairstyle. Use [wardrobe], [lighting style], [camera angle], and this action: [action]. Do not depict public figures or copyrighted fictional characters.
+```
+
+**Tags:** you-in-another-world, alternate-world-self-portrait, chatgpt-image, production-ready
+
+### P2-110 - LinkedIn Carousel Cover
+
+**Best for:** LinkedIn carousels, social covers, and B2B thought leadership
+
+```text
+Design a clean 4:5 carousel cover for [topic] for [brand]. Use the exact headline “[headline]” and supporting line “[supporting line]”. Pair typography with one simple visual metaphor, clear hierarchy, [brand color palette], and mobile-readable contrast. No extra copy, collage, or unlicensed logos.
+```
+
+**Tags:** business-and-social-media, linkedin-carousel-cover, chatgpt-image, production-ready
+
+### P2-111 - Die-Cut Packaging Reveal
+
+**Best for:** packaging concepts, retail presentations, and launch visuals
+
+```text
+Create a premium package reveal for [product] inside [package format] with [die-cut or opening mechanism]. Show package, reveal moment, and product in a coherent three-quarter view. Use [material], [color palette], realistic folds and shadows, and exact title “[product name]”. No invented certifications, barcodes, or marks.
+```
+
+**Tags:** effects-and-packaging, die-cut-packaging-reveal, chatgpt-image, production-ready
+
+### P2-112 - Original Game UI Reward Screen
+
+**Best for:** game UI concepts, reward screens, and presentation mockups
+
+```text
+Design a polished reward screen for original [game genre] titled “[game title]”. Show [item or achievement], a fictional character silhouette, and exact UI labels “[reward name]”, “[progress]”, and “[button label]”. Use [visual style], accessible contrast, and 16:9 layout. Do not reference existing game franchises.
+```
+
+**Tags:** game-graphics, original-game-ui-reward-screen, chatgpt-image, production-ready
+
+### P2-113 - Retro Learning Infographic
+
+**Best for:** learning graphics, classroom posters, and educational social content
+
+```text
+Create a 4:5 educational infographic explaining [topic] in an original [retro era] classroom-poster style. Use [number] steps with exact labels “[step 1]”, “[step 2]”, “[step 3]”, and “[step 4]”. Combine clear diagrams, limited [color palette], legible type, and spacing. No copied posters, logos, or claims.
+```
+
+**Tags:** retro-and-educational, retro-learning-infographic, chatgpt-image, production-ready
