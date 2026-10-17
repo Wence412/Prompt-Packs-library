@@ -35,6 +35,11 @@ body[data-theme='light']::before { opacity: .08; background-image: radial-gradie
 .site-header { padding: clamp(2rem, 4vw, 3.5rem) 0 2.75rem; border-bottom: 1px solid var(--line); }
 .eyebrow, .card-meta, label span { margin: 0; color: var(--gold-soft); font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
 .brand-lockup { display: flex; align-items: center; gap: .75rem; margin-bottom: 1.5rem; }
+.library-nav { display: flex; flex-wrap: wrap; gap: .4rem .9rem; margin: 0 0 2.25rem; }
+.library-nav a, .library-nav span { min-height: 2.5rem; display: inline-flex; align-items: center; padding: .35rem 0; color: var(--muted); font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+.library-nav a { color: var(--gold-soft); border-bottom: 1px solid transparent; }
+.library-nav a:hover, .library-nav a[aria-current='page'] { border-color: var(--gold); }
+.library-nav span { opacity: .65; }
 .brand-logo { display: block; width: 3rem; height: 3rem; border-radius: 50%; object-fit: cover; flex: 0 0 auto; }
 .site-header > .eyebrow { margin-bottom: 1.5rem; }
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(11.5rem, 12rem); gap: clamp(2rem, 3vw, 3rem); align-items: start; }
@@ -52,6 +57,15 @@ body[data-theme='light']::before { opacity: .08; background-image: radial-gradie
 .release-note strong { display: block; margin: .25rem 0; color: var(--gold-soft); font-family: var(--serif); font-size: 2.3rem; font-weight: 400; }
 .theme-toggle { width: 100%; min-height: 2.5rem; margin-top: 1rem; border-color: var(--gold); color: var(--gold-soft); font-size: .78rem; }
 main { padding: 2rem 0 5rem; }
+.library-directory { border-bottom: 1px solid var(--line); padding-bottom: 2.25rem; margin-bottom: 2.25rem; }
+.library-directory h2 { margin: .75rem 0 1.35rem; font-family: var(--serif); font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; }
+.domain-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.domain-card { min-height: 13rem; display: flex; flex-direction: column; gap: .6rem; padding: 1.25rem; background: var(--card); color: var(--paper); text-decoration: none; transition: background .2s ease, transform .2s ease; }
+.domain-card:hover { background: var(--surface); transform: translateY(-2px); }
+.domain-card span { color: var(--gold-soft); font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.domain-card strong { font-family: var(--serif); font-size: 1.6rem; font-weight: 400; line-height: 1; }
+.domain-card small { margin-top: auto; color: var(--muted); font-size: .85rem; line-height: 1.5; }
+.domain-card.is-planned { opacity: .72; }
 .controls { display: grid; grid-template-columns: minmax(14rem, 2fr) minmax(10rem, 1fr) minmax(8rem, 1fr) minmax(10rem, 1fr) auto; gap: .85rem; align-items: end; }
 label { display: grid; gap: .5rem; }
 input, select, button { min-height: 2.8rem; border: 1px solid var(--line); border-radius: 0; font: inherit; }
@@ -85,7 +99,7 @@ summary:focus-visible, a:focus-visible { outline: 2px solid var(--gold-soft); ou
 details pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: .75rem; }
 details button { display: block; margin: .5rem 0; }
 a { color: var(--gold-soft); }
-@media (max-width: 720px) { .site-header { padding-top: 2rem; } .hero, .controls { grid-template-columns: 1fr; } .hero { gap: 2rem; } .hero-title { max-width: 12ch; } .hero-link-item + .hero-link-item::before { display: none; } .release-note { max-width: none; border-left: 0; border-top: 1px solid var(--gold); padding: 1.25rem 0 0; } .library-head { display: grid; margin-top: 2.5rem; } .cards { grid-template-columns: 1fr; } }
+@media (max-width: 720px) { .site-header { padding-top: 2rem; } .hero, .controls, .domain-grid { grid-template-columns: 1fr; } .hero { gap: 2rem; } .hero-title { max-width: 12ch; } .hero-link-item + .hero-link-item::before { display: none; } .release-note { max-width: none; border-left: 0; border-top: 1px solid var(--gold); padding: 1.25rem 0 0; } .library-head { display: grid; margin-top: 2.5rem; } .cards { grid-template-columns: 1fr; } }
 
 .card-visual { margin: 0 0 1.25rem; }
 .card-visual img { display: block; width: 100%; height: 15rem; object-fit: contain; background: var(--surface); border: 1px solid var(--line); }
