@@ -3,56 +3,49 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A searchable library of production-oriented GPT Image prompt cards.">
+    <meta name="description" content="A searchable, review-led prompt library for image, video, writing, learning, and business work.">
     <meta property="og:title" content="Prompt Packs. WenceStudio by SmartDesign">
-    <meta property="og:description" content="A searchable library of production-oriented GPT Image prompt cards.">
+    <meta property="og:description" content="A searchable, review-led prompt library for image, video, writing, learning, and business work.">
     <meta property="og:image" content="https://wence412.github.io/chatgpt-image-prompt-packs/assets/images/wencestudio-logo.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://wence412.github.io/chatgpt-image-prompt-packs/">
     <title>Prompt Packs. WenceStudio</title>
     <link rel="icon" type="image/png" href="assets/images/wencestudio-logo.png">
     <link rel="apple-touch-icon" href="assets/images/wencestudio-logo.png">
-    <link rel="stylesheet" href="styles.css?v=20261017-library-refined">
+    <link rel="stylesheet" href="styles.css?v=20261017-landing">
   </head>
-  <body data-domain="all">
+  <body class="landing-page" data-domain="all">
     <a class="skip-link" href="#library">Skip to prompt library</a>
-    <header class="site-header">
-      <div class="brand-lockup">
-        <img class="brand-logo" src="assets/images/wencestudio-logo.png" width="640" height="640" alt="WenceStudio by SmartDesign logo">
-        <p class="eyebrow">WenceStudio by SmartDesign</p>
-      </div>
-      <nav class="library-nav" aria-label="Prompt library categories">
-        <a aria-current="page" href="./">All prompts</a>
-        <a href="image/">Image</a>
-        <a href="video/">Video</a>
-        <a href="writing/">Writing</a>
-        <a href="learning/">Learning</a>
-        <a href="business/">Business</a>
+    <header class="landing-header">
+      <nav class="landing-nav" aria-label="Primary navigation">
+        <a class="landing-brand" href="./"><img class="brand-logo" src="assets/images/wencestudio-logo.png" width="640" height="640" alt=""><span>WenceStudio by SmartDesign</span></a>
+        <div class="landing-nav-links"><a href="#library">Library</a><a href="#collections">Collections</a><a href="#free-pdfs">Guides</a></div>
+        <a class="landing-nav-cta" href="#library">Explore prompts</a>
       </nav>
-      <div class="hero">
-        <div class="hero-content">
-          <p class="hero-kicker">Curated prompt systems</p>
-          <h1 class="hero-title">Prompt library<br><em>for work that ships.</em></h1>
-          <nav class="hero-links" aria-label="Learning resources">
-            <span class="hero-link-item"><a href="https://github.com/Wence412/chatgpt-image-prompt-packs/blob/main/docs/prompt-techniques-playbook.md">Prompt Techniques Playbook</a></span>
-            <span class="hero-link-item"><a href="https://github.com/Wence412/chatgpt-image-prompt-packs/blob/main/docs/image-production-briefs.md">Image Production Briefs</a></span>
-            <span class="hero-link-item"><a href="assets/pdfs/visual-production-companion.pdf">Visual Production Companion PDF</a></span>
-            <span class="hero-link-item"><a href="#free-pdfs">Free PDF guides</a></span>
-            <span class="hero-link-item"><a href="https://wencestudio-prompt-topixel.beehiiv.com" target="_blank" rel="noopener">Subscribe to Prompt to Pixel</a></span>
-          </nav>
-          <p class="lede">Search reviewed prompts for image, video, writing, learning, and business work. Every card keeps the same structured, review-led system.</p>
+      <div class="landing-hero">
+        <div class="landing-hero-copy reveal">
+          <p class="hero-kicker">WenceStudio prompt library</p>
+          <h1>Prompts for<br><em>work that holds up.</em></h1>
+          <p class="lede">A structured library for image, video, writing, learning, and business work. Copy a starting point, adapt its variables, then review the result before it moves forward.</p>
+          <div class="landing-actions"><a class="landing-primary" href="#library">Explore the library</a><a class="landing-secondary" href="#collections">Browse collections</a></div>
+          <p class="landing-proof">Five published collections. Review-led prompt cards. Built for real work.</p>
         </div>
-        <aside class="release-note" aria-label="Library status">
-          <span>Library status</span>
-          <strong id="count">Loading</strong>
-          <small>Five published collections</small>
+        <aside class="release-note landing-status reveal" aria-label="Library status">
+          <span>Library status</span><strong id="count">Loading</strong><small>Five published collections</small>
           <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Use light theme</button>
         </aside>
+        <div class="landing-art" aria-hidden="true"><span class="art-label art-label-one">Intent</span><span class="art-label art-label-two">Review</span><span class="art-line"></span><span class="art-orb"></span><span class="art-card art-card-one"></span><span class="art-card art-card-two"></span></div>
       </div>
     </header>
 
     <main id="library">
-      <section class="library-directory" aria-labelledby="directory-heading">
+      <section class="landing-intro reveal" aria-labelledby="intro-heading">
+        <p class="eyebrow">A better starting point</p>
+        <h2 id="intro-heading">Make the first draft more useful.</h2>
+        <p>Each card gives you a clear task, editable variables, and review checks. The goal is not more generated output. It is work you can assess, refine, and use responsibly.</p>
+        <ul class="landing-principles"><li>Define the job</li><li>Protect what matters</li><li>Review before release</li></ul>
+      </section>
+      <section id="collections" class="library-directory reveal" aria-labelledby="directory-heading">
         <p class="eyebrow">Browse by category</p>
         <h2 id="directory-heading">Choose the work you need to make.</h2>
         <div class="domain-grid">
@@ -124,6 +117,7 @@
         <button type="button" id="empty-clear">Show all prompts</button>
       </section>
     </main>
+    <footer class="landing-footer"><div><p class="eyebrow">WenceStudio by SmartDesign</p><h2>Prompt library</h2></div><p>© 2026 WenceStudio by SmartDesign. Built for deliberate AI work.</p></footer>
 
     <template id="card-template">
       <article class="card">
@@ -138,5 +132,6 @@
     </template>
     <p class="toast" id="toast" role="status" aria-live="polite"></p>
     <script src="app.js?v=20261016-general-library"></script>
+    <script src="landing.js?v=20261017"></script>
   </body>
 </html>
