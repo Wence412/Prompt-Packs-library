@@ -113,6 +113,35 @@ def main() -> int:
     if capability_data.get("metadata", {}).get("total_cards") != len(capability_cards):
         error(errors, "Capability metadata total does not match the card list")
 
+    video_data = json.loads((ROOT / "site" / "data" / "video-prompts.json").read_text(encoding="utf-8"))
+    video_prompts = video_data.get("prompts", [])
+    video_ids: set[str] = set()
+    required_video_fields = {"id", "domain", "category", "title", "prompt", "best_for", "operation", "output", "acceptance_criteria", "rights_and_safety", "tags"}
+    for index, prompt in enumerate(video_prompts, start=1):
+        missing = required_video_fields - prompt.keys()
+        if missing:
+            error(errors, f"Video prompt #{index} is missing: {', '.join(sorted(missing))}")
+            continue
+        identifier = prompt["id"]
+        if not re.fullmatch(r"VID-\d{3}", identifier):
+            error(errors, f"Invalid video prompt ID: {identifier}")
+        if identifier in video_ids or identifier in ids or identifier in capability_ids:
+            error(errors, f"Duplicate video prompt ID: {identifier}")
+        video_ids.add(identifier)
+        if prompt["domain"] != "Video":
+            error(errors, f"{identifier} must use the Video domain")
+        if not isinstance(prompt["tags"], list) or len(prompt["tags"]) < 3:
+            error(errors, f"{identifier} must contain at least three tags")
+        if not isinstance(prompt["acceptance_criteria"], list) or not prompt["acceptance_criteria"]:
+            error(errors, f"{identifier} must include acceptance criteria")
+        if not isinstance(prompt["output"], dict) or not prompt["output"].get("format"):
+            error(errors, f"{identifier} must include an output format")
+    if video_data.get("metadata", {}).get("total_prompts") != len(video_prompts):
+        error(errors, "Video metadata total does not match the prompt list")
+    for path in (ROOT / "site" / "image" / "index.html", ROOT / "site" / "video" / "index.html"):
+        if not path.exists():
+            error(errors, f"Missing dedicated collection page: {path.relative_to(ROOT)}")
+
     combined = CATALOGS[0].read_text(encoding="utf-8")
     for identifier in ids:
         if identifier not in combined:
@@ -128,7 +157,7 @@ def main() -> int:
         print("Validation failed:", file=sys.stderr)
         print("\n".join(f"- {item}" for item in errors), file=sys.stderr)
         return 1
-    print(f"Validated {len(prompts)} prompts, {len(capability_cards)} capability cards, categories, catalogs, and local links.")
+    print(f"Validated {len(prompts)} image prompts, {len(capability_cards)} capability cards, {len(video_prompts)} video prompts, categories, catalogs, and local links.")
     return 0
 
 
