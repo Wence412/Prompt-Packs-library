@@ -1,23 +1,30 @@
 # ✦ WenceStudio Prompt Library
-### 310 Review-Led Image and Video Prompt Cards for Creative Production
+### 334 Review-Led Prompt Cards for Creative Production, Learning, and Business
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![Prompt cards: 310](https://img.shields.io/badge/Prompt%20cards-310-blue.svg) ![Collections: Image and Video](https://img.shields.io/badge/Collections-Image%20%26%20Video-blueviolet.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![Prompt cards: 334](https://img.shields.io/badge/Prompt%20cards-334-blue.svg) ![Collections: 5](https://img.shields.io/badge/Collections-5-blueviolet.svg)
 
 > **Move from one-off prompts to reusable production systems.**
 
-This is a production-oriented prompt library for professionals, agencies, and creators who produce commercial-grade work with AI. **310 prompt cards** are available in the browser: 188 image templates, 30 image capability cards, eight Visual Prompts Hub cards, and 84 video generation, editing, production, and workflow templates.
+This is a production-oriented prompt library for professionals, agencies, and creators who produce commercial-grade work with AI. **334 prompt cards** are available in the browser: 188 image templates, 30 image capability cards, eight Visual Prompts Hub cards, 84 video generation, editing, production, and workflow templates, plus 24 writing, learning, and business templates.
 
 ## Browse the library
 
 - [All prompt collections](https://wence412.github.io/chatgpt-image-prompt-packs/)
 - [Image prompts](https://wence412.github.io/chatgpt-image-prompt-packs/image/)
 - [Video prompts](https://wence412.github.io/chatgpt-image-prompt-packs/video/)
+- [Writing prompts](https://wence412.github.io/chatgpt-image-prompt-packs/writing/)
+- [Learning prompts](https://wence412.github.io/chatgpt-image-prompt-packs/learning/)
+- [Business prompts](https://wence412.github.io/chatgpt-image-prompt-packs/business/)
 
-Image and Video are the first published collections. Writing, Learning, Business, Research, and Code will receive dedicated pages when their reviewed starter sets are ready.
+Image, Video, Writing, Learning, and Business are published collections. Research and Code will receive dedicated pages when their reviewed starter sets are ready.
 
 ## Video prompts
 
 The Video collection is derived from the Professional Video Editing Prompts: AI Workflow Guide and AI Video Prompt Packs. It contains 84 review-led templates for editing, generation, reference-to-video, UGC, avatar, ads, social video, motion control, product, ASMR, and script workflows. Video prompt data is maintained in site/data/video-prompts.json.
+
+## Writing, Learning, and Business prompts
+
+The Writing, Learning, and Business collections are derived from Writing, Learning and Business Prompt Packs. Each collection contains eight review-led templates, with dedicated browsing pages and data maintained in site/data/general-prompts.json.
 
 The v1.3 capability packs add **30 prompt cards** for reference-led generation, precise editing, canvas extension, text-led layouts, transparent assets, visual explainers, campaign systems, and GPT Image 2.5 workflows. See [the capability-pack guide](docs/capability-packs.md) and the [GPT Image 2.5 production guide](docs/gpt-image-2.5-production-guide.md).
 
