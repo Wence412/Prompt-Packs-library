@@ -12,7 +12,7 @@
     <title>Prompt Packs. WenceStudio</title>
     <link rel="icon" type="image/png" href="assets/images/wencestudio-logo.png">
     <link rel="apple-touch-icon" href="assets/images/wencestudio-logo.png">
-    <link rel="stylesheet" href="styles.css?v=20261002-ui-refresh">
+    <link rel="stylesheet" href="styles.css?v=20261017-library-refined">
   </head>
   <body data-domain="all">
     <a class="skip-link" href="#library">Skip to prompt library</a>
@@ -31,6 +31,7 @@
       </nav>
       <div class="hero">
         <div class="hero-content">
+          <p class="hero-kicker">Curated prompt systems</p>
           <h1 class="hero-title">Prompt library<br><em>for work that ships.</em></h1>
           <nav class="hero-links" aria-label="Learning resources">
             <span class="hero-link-item"><a href="https://github.com/Wence412/chatgpt-image-prompt-packs/blob/main/docs/prompt-techniques-playbook.md">Prompt Techniques Playbook</a></span>
@@ -124,9 +125,11 @@
 
     <template id="card-template">
       <article class="card">
-        <div class="card-meta"><span class="card-id"></span><span class="card-operation"></span></div>
-        <h2 class="card-title"></h2>
-        <p class="card-collection"></p>
+        <header class="card-header">
+          <div class="card-meta"><span class="card-id"></span><span class="card-operation"></span></div>
+          <p class="card-collection"></p>
+          <h2 class="card-title"></h2>
+        </header>
         <p class="card-prompt"></p>
         <div class="card-footer"><span class="card-output"></span><button type="button" class="copy">Copy prompt</button></div>
       </article>
