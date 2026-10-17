@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Search 334 review-led prompts across image, video, writing, learning, and business work.">
+    <title>Prompt Library. WenceStudio</title><base href="../">
+    <link rel="icon" type="image/png" href="assets/images/wencestudio-logo.png"><link rel="stylesheet" href="styles.css?v=20261017-platform-pages">
+  </head>
+  <body data-domain="all">
+    <a class="skip-link" href="#library">Skip to prompt library</a>
+    <header class="site-header platform-page-header">
+      <div class="brand-lockup"><img class="brand-logo" src="assets/images/wencestudio-logo.png" width="640" height="640" alt="WenceStudio by SmartDesign logo"><p class="eyebrow">WenceStudio by SmartDesign</p></div>
+      <nav class="platform-nav" aria-label="Primary navigation"><a href="./">Overview</a><a aria-current="page" href="library/">Library</a><a href="collections/">Collections</a><a href="guides/">Guides</a></nav>
+      <div class="hero"><div class="hero-content"><p class="hero-kicker">Prompt library</p><h1 class="hero-title">Search prompts<br><em>for the work ahead.</em></h1><p class="lede">Find a structured starting point, adapt its variables, then use the review criteria to assess the output before it moves forward.</p></div><aside class="release-note" aria-label="Library status"><span>Library status</span><strong id="count">Loading</strong><small>Image, video, writing, learning, and business</small><button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Use light theme</button></aside></div>
+    </header>
+    <main id="library"><section class="controls" aria-label="Filter prompt library"><label><span>Search</span><input id="search" type="search" placeholder="Product, edit, campaign, transparent..." autocomplete="off"></label><label><span>Collection</span><select id="collection"><option value="">All collections</option></select></label><label><span>Operation</span><select id="operation"><option value="">All operations</option></select></label><label><span>Resources</span><select id="media"><option value="">All cards</option><option value="image">With image previews</option><option value="pdf">With PDF guides</option></select></label><button id="clear" type="button">Clear filters</button></section><section class="library-head" aria-live="polite"><p id="result-summary">Loading library...</p><p class="review-note">Copy a prompt, replace bracketed variables, then review its acceptance criteria. Images labeled related references do not certify a template or engine.</p></section><section id="cards" class="cards" aria-label="Prompt results"></section><div class="more-results"><button id="load-more" type="button" hidden>Show more prompts</button></div><section id="empty" class="empty" hidden><p>No prompts match those filters.</p><button type="button" id="empty-clear">Show all prompts</button></section></main>
+    <template id="card-template"><article class="card"><header class="card-header"><div class="card-meta"><span class="card-id"></span><span class="card-operation"></span></div><p class="card-collection"></p><h2 class="card-title"></h2></header><p class="card-prompt"></p><div class="card-footer"><span class="card-output"></span><button type="button" class="copy">Copy prompt</button></div></article></template><p class="toast" id="toast" role="status" aria-live="polite"></p><script src="app.js?v=20261017-platform-pages"></script>
+  </body>
+</html>
