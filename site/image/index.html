@@ -7,7 +7,7 @@
     <title>Image prompts Prompt Library. WenceStudio</title>
     <base href="../">
     <link rel="icon" type="image/png" href="assets/images/wencestudio-logo.png">
-    <link rel="stylesheet" href="styles.css?v=20261017-library">
+    <link rel="stylesheet" href="styles.css?v=20261017-library-refined">
   </head>
   <body data-domain="image">
     <a class="skip-link" href="#library">Skip to prompt library</a>
@@ -24,6 +24,7 @@
       </nav>
       <div class="hero">
         <div class="hero-content">
+          <p class="hero-kicker">Image prompt collection</p>
           <h1 class="hero-title">Image prompts<br><em>for visual work.</em></h1>
           <p class="lede">Production-oriented generation and editing prompts for commercial images, design systems, campaigns, and learning visuals.</p>
         </div>
@@ -49,7 +50,7 @@
       <div class="more-results"><button id="load-more" type="button" hidden>Show more prompts</button></div>
       <section id="empty" class="empty" hidden><p>No prompts match those filters.</p><button type="button" id="empty-clear">Show all prompts</button></section>
     </main>
-    <template id="card-template"><article class="card"><div class="card-meta"><span class="card-id"></span><span class="card-operation"></span></div><h2 class="card-title"></h2><p class="card-collection"></p><p class="card-prompt"></p><div class="card-footer"><span class="card-output"></span><button type="button" class="copy">Copy prompt</button></div></article></template>
+    <template id="card-template"><article class="card"><header class="card-header"><div class="card-meta"><span class="card-id"></span><span class="card-operation"></span></div><p class="card-collection"></p><h2 class="card-title"></h2></header><p class="card-prompt"></p><div class="card-footer"><span class="card-output"></span><button type="button" class="copy">Copy prompt</button></div></article></template>
     <p class="toast" id="toast" role="status" aria-live="polite"></p>
     <script src="app.js?v=20261017-library"></script>
   </body>
