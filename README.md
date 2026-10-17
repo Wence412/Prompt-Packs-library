@@ -1,11 +1,23 @@
-# 🎨 ChatGPT-Image Prompt Packs
-### 226 Production-Oriented AI Image Prompt Cards for Marketing, Design & Commerce
+# ✦ WenceStudio Prompt Library
+### 246 Review-Led Image and Video Prompt Cards for Creative Production
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![Prompt cards: 226](https://img.shields.io/badge/Prompt%20cards-226-blue.svg) ![Phase 1 & 2](https://img.shields.io/badge/Phase-1%20%26%202-brightgreen.svg) ![Workflow: GPT Image](https://img.shields.io/badge/Workflow-GPT%20Image-blueviolet.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![Prompt cards: 246](https://img.shields.io/badge/Prompt%20cards-246-blue.svg) ![Collections: Image and Video](https://img.shields.io/badge/Collections-Image%20%26%20Video-blueviolet.svg)
 
-> **Stop Creating Random Images. Start Building Scalable Visual Systems.**
+> **Move from one-off prompts to reusable production systems.**
 
-This is a production-oriented prompt library for professionals, agencies, and creators who generate commercial-grade AI visuals at scale. **226 prompt cards** are available in the browser: 188 reusable legacy templates, 30 capability cards, and eight Visual Prompts Hub cards.
+This is a production-oriented prompt library for professionals, agencies, and creators who produce commercial-grade work with AI. **246 prompt cards** are available in the browser: 188 image templates, 30 image capability cards, eight Visual Prompts Hub cards, and 20 video-editing templates.
+
+## Browse the library
+
+- [All prompt collections](https://wence412.github.io/chatgpt-image-prompt-packs/)
+- [Image prompts](https://wence412.github.io/chatgpt-image-prompt-packs/image/)
+- [Video prompts](https://wence412.github.io/chatgpt-image-prompt-packs/video/)
+
+Image and Video are the first published collections. Writing, Learning, Business, Research, and Code will receive dedicated pages when their reviewed starter sets are ready.
+
+## Video prompts
+
+The Video collection is derived from the Professional Video Editing Prompts: AI Workflow Guide and contains 20 review-led templates. It covers enhancement and correction, environment and subject changes, camera and pacing, motion graphics and composition, and stylization and effects. Video prompt data is maintained in site/data/video-prompts.json.
 
 The v1.3 capability packs add **30 prompt cards** for reference-led generation, precise editing, canvas extension, text-led layouts, transparent assets, visual explainers, campaign systems, and GPT Image 2.5 workflows. See [the capability-pack guide](docs/capability-packs.md) and the [GPT Image 2.5 production guide](docs/gpt-image-2.5-production-guide.md).
 
