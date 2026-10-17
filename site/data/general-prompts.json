@@ -1,10 +1,10 @@
 {
   "metadata": {
     "name": "Writing, Learning and Business Prompt Packs",
-    "version": "1.0.0",
-    "source": "Writing, Learning and Business Prompt Packs.md",
-    "total_prompts": 24,
-    "description": "Review-led writing, learning, and business prompt cards."
+    "version": "1.1.0",
+    "source": "Writing, Learning and Business Prompt Packs.md plus uploaded Business Workflow prompt files",
+    "total_prompts": 44,
+    "description": "Review-led writing, learning, and business prompt cards, including an ordered business workflow sequence."
   },
   "prompts": [
     {
@@ -821,6 +821,1164 @@
         "decision-memo",
         "review-led"
       ]
+    },
+    {
+      "id": "BUS-009",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 01: Intelligence & Outreach",
+      "title": "Cold Outreach Personalizer",
+      "prompt": "[ROLE]\nYou are my Cold Outreach Personalization Specialist. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nOutbound prospecting to a cold contact. The research in INPUTS is the only permitted source of personalization.\n\nINPUTS\nProspect Information:\n- Name: {{full_name}}\n- Title: {{current_role}}\n- Company: {{company_name}}\n- Industry: {{sector}}\n- Company size: {{employees_revenue}}\n\nResearch Gathered:\n- Recent company news: {{announcements_funding_hires_product}}\n- Prospect's content: {{linkedin_posts_podcast_appearances}}\n- Mutual connections: {{shared_relationships}}\n- Shared experiences: {{same_school_past_company_industry_events}}\n- Pain indicators: {{job_postings_reviews_tech_stack_recent}}\n- Trigger event: {{what_prompted_this_outreach_now}}\n\nYour Offer:\n- Product/Service: {{what_you_sell}}\n- Primary value: {{main_benefit}}\n- Differentiator: {{why_you_vs_alternatives}}\n- Proof point: {{relevant_case_study_result}}\n\nOutreach Context:\n- Channel: {{email_linkedin_twitter_dm}}\n- Previous attempts: {{none_list_previous_touches}}\n- Referral: {{yes_from_whom_no}}\n\nConstraints:\n- Tone: {{professional_casual_bold}}\n- Word limit: {{if_any}}\n- Must mention: {{required_elements}}\n- Cannot mention: {{off_limits}}\n\nDefinition of done:\n- Multiple versions to test\n- Personalization clear in first 2 sentences\n- Clear, single CTA\n\n[TASK]\nCreate highly personalized cold outreach that feels researched and relevant, not like a template everyone else is sending.\n\n[FORMAT]\n1) Personalization Analysis\n- Best personalization angle: {{what_makes_this_feel_researched}}\n- Relevance hook: {{why_this_matters_to_them_now}}\n- Pain hypothesis: {{what_challenge_they_likely_have}}\n- Permission angle: {{why_you_have_the_right_to_reach_out}}\n\n2) Email Version 1: {{approach_name_e_g_trigger_event_lead}}\n\n**Subject Line Options:**\n1. {{subject}}\n2. {{subject}}\n3. {{subject}}\n\n**Email:**\n```\n{{full_email_properly_formatted}}\n```\n\n**Character count**: {{count}}\n**Why this works**: {{explanation}}\n\n---\n\n### Email Version 2: {{approach_name_e_g_content_connection}}\n\n**Subject Line Options:**\n1. {{subject}}\n2. {{subject}}\n\n**Email:**\n```\n{{full_email}}\n```\n\n**Why this works**: {{explanation}}\n\n---\n\n### Email Version 3: {{approach_name_e_g_direct_value}}\n\n**Subject Line Options:**\n1. {{subject}}\n2. {{subject}}\n\n**Email:**\n```\n{{full_email}}\n```\n\n**Why this works**: {{explanation}}\n\n---\n\n3) LinkedIn Message Version\n\n```\n{{linkedin_message_connection_request_or}}\n```\n\n**Character count**: {{count}} (connection request limit: {{platform_limit_from_inputs}})\n\n---\n\n4) Short-Form Version (Twitter DM / SMS vibe)\n\n```\n{{ultra_short_version_2_3_sentences_max}}\n```\n\n---\n\n5) Personalization Elements Used\n| Element | How Used | Where in Message |\n|---------|----------|------------------|\n| {{research_point}} | {{how_incorporated}} | {{location}} |\n| {{research_point}} | {{how_incorporated}} | {{location}} |\n| {{research_point}} | {{how_incorporated}} | {{location}} |\n\n6) Subject Line Analysis\n| Subject | Type | Why It Works | Spam Risk |\n|---------|------|--------------|-----------|\n| {{subject}} | {{question_benefit_curiosity}} | {{reasoning}} | {{low_med_high}} |\n\n7) A/B Testing Plan\n| Variant A | Variant B | What We're Testing |\n|-----------|-----------|-------------------|\n| {{version}} | {{version}} | {{variable}} |\n| {{subject}} | {{subject}} | {{open_rate}} |\n\n8) Follow-Up if No Response\nSuggested follow-up angle after 3-5 days:\n```\n{{short_follow_up_message}}\n```\n\n9) Red Flags / What to Avoid\n- {{personalization_that_could_seem_creepy}}\n- {{assumptions_that_might_be_wrong}}\n- {{phrases_that_sound_templated}}\n\n[CONSTRAINTS]\n- Personalization must appear in the first 2 sentences\n- Subject lines under 50 characters\n- One clear CTA. Don't give options\n- No more than 125 words for email (ideally <100)\n- Avoid \"I hope this email finds you well\"\n- Never claim false mutual connections\n- If research is thin, say so and suggest alternatives\n- Don't pitch in DMs. Earn a conversation first\n- Assume the recipient receives many cold emails. Stand out with specific, verifiable personalization\n- Connection note: use the character limit stated in INPUTS. If none is stated, keep the note to two short sentences and print \"Platform limit not provided, verify before sending.\"\n- If the research is thin, say so before drafting and propose what to research next.\n- Use only facts present in INPUTS. Never invent mutual connections, shared history, metrics, quotes or sources.\n- Send-ready text carries no tags or commentary. List missing inputs separately, before the text.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Read the research and list each personalization angle with the evidence behind it.\n2. Discard any angle that is unverifiable, rests on an assumption, or could read as intrusive.\n3. Draft each version so the personalization lands in the first two sentences and the message carries one call to action.\n4. Check subject length, word count and the connection-note limit before output, then list the angles rejected and why.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the Cold Outreach Personalizer now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Create personalized cold emails and messages that stand out from generic outreach.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{full_name}}",
+        "{{current_role}}",
+        "{{company_name}}",
+        "{{sector}}",
+        "{{employees_revenue}}",
+        "{{announcements_funding_hires_product}}",
+        "{{linkedin_posts_podcast_appearances}}",
+        "{{shared_relationships}}",
+        "{{same_school_past_company_industry_events}}",
+        "{{job_postings_reviews_tech_stack_recent}}",
+        "{{what_prompted_this_outreach_now}}",
+        "{{what_you_sell}}",
+        "{{main_benefit}}",
+        "{{why_you_vs_alternatives}}",
+        "{{relevant_case_study_result}}",
+        "{{email_linkedin_twitter_dm}}",
+        "{{none_list_previous_touches}}",
+        "{{yes_from_whom_no}}",
+        "{{professional_casual_bold}}",
+        "{{if_any}}",
+        "{{required_elements}}",
+        "{{off_limits}}",
+        "{{what_makes_this_feel_researched}}",
+        "{{why_this_matters_to_them_now}}",
+        "{{what_challenge_they_likely_have}}",
+        "{{why_you_have_the_right_to_reach_out}}",
+        "{{approach_name_e_g_trigger_event_lead}}",
+        "{{subject}}",
+        "{{full_email_properly_formatted}}",
+        "{{count}}",
+        "{{explanation}}",
+        "{{approach_name_e_g_content_connection}}",
+        "{{full_email}}",
+        "{{approach_name_e_g_direct_value}}",
+        "{{linkedin_message_connection_request_or}}",
+        "{{platform_limit_from_inputs}}",
+        "{{ultra_short_version_2_3_sentences_max}}",
+        "{{research_point}}",
+        "{{how_incorporated}}",
+        "{{location}}",
+        "{{question_benefit_curiosity}}",
+        "{{reasoning}}",
+        "{{low_med_high}}",
+        "{{version}}",
+        "{{variable}}",
+        "{{open_rate}}",
+        "{{short_follow_up_message}}",
+        "{{personalization_that_could_seem_creepy}}",
+        "{{assumptions_that_might_be_wrong}}",
+        "{{phrases_that_sound_templated}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "01",
+        "cold-outreach-personalizer",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-010",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 01: Intelligence & Outreach",
+      "title": "Competitive Analyzer",
+      "prompt": "[ROLE]\nYou are my Competitive Intelligence Analyst. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nCompetitive positioning review for a decision-maker. Competitor facts come only from the material in INPUTS.\n\nINPUTS\nResearch Materials:\n{{paste_competitive_information_websites}}\n\nAnalysis Focus:\n- Your product/company: {{name}}\n- Key competitors: {{list_3_5}}\n- Market segment: {{focus_area}}\n\nAnalysis Needs:\n- [ ] Feature comparison\n- [ ] Positioning analysis\n- [ ] Pricing analysis\n- [ ] Strengths/Weaknesses\n- [ ] Strategic recommendations\n\n[TASK]\nAnalyze competitive landscape from provided materials and deliver actionable strategic insights.\n\n[FORMAT]\n1) Competitive Overview\n| Competitor | Positioning | Target Customer | Key Differentiator |\n|------------|-------------|-----------------|-------------------|\n| {{name}} | {{position}} | {{who}} | {{what}} |\n\n2) Feature Comparison Matrix\n| Feature | You | Comp 1 | Comp 2 | Comp 3 |\n|---------|-----|--------|--------|--------|\n| {{feature}} | ✅/🟡/❌ | ✅/🟡/❌ | ✅/🟡/❌ | ✅/🟡/❌ |\n\n3) Positioning Map\n{{text_based_2x2_visualization}}\n\n4) SWOT by Competitor\n| Competitor | Strengths | Weaknesses | Threat to Us | Our Advantage |\n|------------|-----------|------------|--------------|---------------|\n\n5) Strategic Recommendations\n| Opportunity | Action | Priority | Effort |\n|-------------|--------|----------|--------|\n| {{opp}} | {{what_to_do}} | H/M/L | H/M/L |\n\n6) Competitive Messaging\nHow to position against each:\n| Competitor | What They Claim | Our Counter |\n|------------|-----------------|-------------|\n\n[CONSTRAINTS]\n- Base analysis only on provided materials\n- Clearly note gaps in competitive intelligence\n- Prioritize actionable insights\n- Flag where you need more data\n- Do not describe a competitor from memory. If the supplied material is silent on a point, write \"Not in supplied material.\"\n- Use only information present in INPUTS. Do not invent facts, names, dates, figures, citations or sources.\n- Tag every analytical claim Certain (stated in INPUTS), Likely (reasoned from INPUTS) or Guessing (gap-filling). If most of the output rests on Guessing, say so in the first line.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Extract each competitor claim with the source passage it came from.\n2. Compare competitors against our position on the criteria in FORMAT.\n3. Identify gaps and threats that the evidence supports.\n4. Remove or tag any statement the material does not support.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the Competitive Analyzer now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Assess competitive position from provided materials.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{paste_competitive_information_websites}}",
+        "{{name}}",
+        "{{list_3_5}}",
+        "{{focus_area}}",
+        "{{position}}",
+        "{{who}}",
+        "{{what}}",
+        "{{feature}}",
+        "{{text_based_2x2_visualization}}",
+        "{{opp}}",
+        "{{what_to_do}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "01",
+        "competitive-analyzer",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-011",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 01: Intelligence & Outreach",
+      "title": "RFP Analyzer",
+      "prompt": "[ROLE]\nYou are my RFP Strategic Analyst. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nBid or no-bid analysis of a supplied RFP. The RFP text is the only source of requirements.\n\nINPUTS\nRFP Document:\n{{paste_rfp_content_or_key_sections}}\n\nOur Context:\n- Company: {{your_company}}\n- Solution: {{what_you_re_proposing}}\n- Strengths: {{top_3}}\n- Known gaps: {{where_we_re_weak}}\n\n[TASK]\nBreak down an RFP into actionable components for proposal development.\n\n[FORMAT]\n1) RFP OVERVIEW\n- Issuer: {{who}}\n- Due date: {{when}}\n- Contract value: {{if_stated}}\n- Contract term: {{duration}}\n\n2) COMPLIANCE MATRIX\n| Req ID | Requirement | Status | Evidence Needed | Risk |\n|--------|-------------|--------|-----------------|------|\n| {{id}} | {{requirement}} | ✅/🟡/❌ | {{what_to_provide}} | H/M/L |\n\n3) REQUIRED ARTIFACTS\n| Artifact | Req ID | Due | Owner |\n|----------|--------|-----|-------|\n| {{document}} | {{ref}} | {{when}} | {{who}} |\n\n4) RISK ASSESSMENT\n| Risk | Impact | Mitigation |\n|------|--------|------------|\n\n5) ASSUMPTIONS TO VALIDATE\n- {{assumption}}. Clarifying question: \"{{question}}\"\n\n6) QUESTIONS FOR BUYER\nRecommended questions to submit:\n1. {{question}}. Purpose: {{why_asking}}\n\n7) WIN STRATEGY SUMMARY\n**Win themes**: {{n_3_key_messages}}\n**Differentiators**: {{what_sets_us_apart}}\n**Competitive threats**: {{who_else_is_bidding}}\n**Our #1 advantage**: {{single_biggest_strength}}\n\n8) BID/NO-BID RECOMMENDATION\n- Recommendation: {{bid_no_bid_conditional}}\n- Rationale: {{why}}\n- Conditions: {{if_conditional}}\n\n[CONSTRAINTS]\n- Address every stated requirement\n- Flag ambiguous requirements\n- Be honest about gaps\n- Win strategy must be evidence-based\n- Quote or cite the RFP section for every requirement. Do not paraphrase a requirement into a different obligation.\n- Use only information present in INPUTS. Do not invent facts, names, dates, figures, citations or sources.\n- Tag every analytical claim Certain (stated in INPUTS), Likely (reasoned from INPUTS) or Guessing (gap-filling). If most of the output rests on Guessing, say so in the first line.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Extract every requirement, deadline and evaluation criterion as written.\n2. Separate mandatory items from optional items.\n3. List each ambiguity as an assumption with one clarifying question.\n4. Flag red flags and effort drivers, then state the bid or no-bid view with reasons.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the RFP Analyzer now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Analyze RFPs for compliance, risks, and win strategy.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{paste_rfp_content_or_key_sections}}",
+        "{{your_company}}",
+        "{{what_you_re_proposing}}",
+        "{{top_3}}",
+        "{{where_we_re_weak}}",
+        "{{who}}",
+        "{{when}}",
+        "{{if_stated}}",
+        "{{duration}}",
+        "{{id}}",
+        "{{requirement}}",
+        "{{what_to_provide}}",
+        "{{document}}",
+        "{{ref}}",
+        "{{assumption}}",
+        "{{question}}",
+        "{{why_asking}}",
+        "{{n_3_key_messages}}",
+        "{{what_sets_us_apart}}",
+        "{{who_else_is_bidding}}",
+        "{{single_biggest_strength}}",
+        "{{bid_no_bid_conditional}}",
+        "{{why}}",
+        "{{if_conditional}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "01",
+        "rfp-analyzer",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-012",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 01: Intelligence & Outreach",
+      "title": "Listing Copy Pack",
+      "prompt": "[ROLE]\nYou are my Real Estate Copywriting Specialist. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nReal estate listing copy for a marketing channel. Property facts come only from INPUTS. Copy must pass a Fair Housing review before publishing.\n\nINPUTS\nProperty Details:\n{{paste_property_info_address_beds_baths}}\n\nProperty Type:\n- [ ] Single family home\n- [ ] Condo/Townhouse\n- [ ] Luxury property\n- [ ] Investment property\n- [ ] Multi-family\n\nKey Features:\n- {{feature_1}}\n- {{feature_2}}\n- {{feature_3}}\n\nNeighborhood:\n{{location_highlights}}\n\nPrice:\n{{list_price}}\n\n[TASK]\nCreate compelling listing descriptions for multiple buyer personas from property details.\n\n[FORMAT]\n1) LUXURY-FOCUSED VERSION\n{{full_description_150_200_words}}\n---\nBest for: {{features_and_use_cases_not_buyer}}\nKeywords: {{n_5_luxury_keywords}}\n\n2) LIFESTYLE AND FEATURES VERSION\n{{full_description_150_200_words}}\n---\nBest for: {{features_and_use_cases_not_buyer}}\nKeywords: {{n_5_feature_keywords}}\n\n3) INVESTOR VERSION\n{{full_description_100_150_words}}\n---\nBest for: {{features_and_use_cases_not_buyer}}\nFocus: {{rent_potential_and_other_income_facts}}\n\n4) MLS-SAFE VERSION (25 words)\n{{brief_compliant_description}}\n\n5) SEO KEYWORDS (10)\n| Keyword | Search Intent |\n|---------|---------------|\n| {{keyword}} | {{what_buyers_are_searching}} |\n\n6) SOCIAL MEDIA CAPTION\n{{instagram_facebook_version_with_hooks}}\n\n[CONSTRAINTS]\n- No claims about value appreciation\n- Comply with Fair Housing language\n- Highlight features, not lifestyle assumptions\n- Keep luxury descriptions elegant, not excessive\n- Describe the property, never the people. Do not reference or imply race, color, religion, sex, disability, familial status, national origin or any other protected class. Protected classes vary by jurisdiction, so check local law.\n- Do not claim value appreciation, investment returns or school quality unless the figure and its source are supplied in INPUTS.\n- A qualified Fair Housing reviewer must approve the copy before it is published.\n- Use only facts present in INPUTS. Never invent mutual connections, shared history, metrics, quotes or sources.\n- Send-ready text carries no tags or commentary. List missing inputs separately, before the text.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Read the property facts and list the features that are verifiable.\n2. Choose a lead feature per version, using only supplied facts.\n3. Write each version for its channel and length limit.\n4. Scan every version for protected-class language, unsupported claims and value or appreciation claims, then remove them.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the Listing Copy Pack now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Create multi-persona property descriptions.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{paste_property_info_address_beds_baths}}",
+        "{{feature_1}}",
+        "{{feature_2}}",
+        "{{feature_3}}",
+        "{{location_highlights}}",
+        "{{list_price}}",
+        "{{full_description_150_200_words}}",
+        "{{features_and_use_cases_not_buyer}}",
+        "{{n_5_luxury_keywords}}",
+        "{{n_5_feature_keywords}}",
+        "{{full_description_100_150_words}}",
+        "{{rent_potential_and_other_income_facts}}",
+        "{{brief_compliant_description}}",
+        "{{keyword}}",
+        "{{what_buyers_are_searching}}",
+        "{{instagram_facebook_version_with_hooks}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "01",
+        "listing-copy-pack",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-013",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 01: Intelligence & Outreach",
+      "title": "RFP Response Generator",
+      "prompt": "[ROLE]\nYou are my RFP Response Architect. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nDrafting a proposal response to a supplied RFP. Capabilities and evidence come only from INPUTS.\n\nINPUTS\nRFP Document Summary:\n{{paste_rfp_requirements_or_key_sections}}\n\nCompany/Solution Context:\n- Organization name: {{your_company}}\n- Solution/Product: {{what_you_re_proposing}}\n- Key differentiators: {{n_3_5_unique_strengths}}\n- Past performance: {{relevant_experience_case_studies}}\n\nAudience:\n- Evaluator type: {{technical_business_mixed}}\n- Industry: {{sector}}\n- Decision criteria priorities: {{cost_quality_speed_innovation}}\n\nConstraints:\n- Page/word limit: {{specify}}\n- Required sections: {{list_mandated_sections}}\n- Compliance requirements: {{certifications_standards}}\n- Submission deadline: {{date}}\n\nAvailable resources:\n- {{existing_proposals_case_studies}}\n\nDefinition of done:\n- All requirements addressed with compliance matrix\n- Executive summary that sells\n- Clear pricing/approach sections (if applicable)\n\n[TASK]\nTransform RFP requirements into a complete, persuasive proposal response that addresses every requirement with clear, persuasive content.\n\n[FORMAT]\n1) Compliance Matrix\n- Requirement ID | Requirement Summary | Response Location | Compliance Status (Full/Partial/Exception)\n\n2) Executive Summary (150-300 words)\n- Problem acknowledgment\n- Solution overview\n- Why us (3 differentiators)\n- Call to confidence\n\n3) Technical/Solution Response\n- For each major requirement section:\n  - Requirement restatement\n  - Our approach\n  - Evidence/proof points\n  - Benefits to evaluator\n\n4) Risk Mitigation Section\n- Top 3 anticipated concerns\n- Responses that anticipate evaluator questions\n\n5) Win Themes\n- 3 recurring messages to weave throughout\n\n6) Red Flags & Gaps\n- Requirements we cannot fully address\n- Recommended mitigation language\n\n[CONSTRAINTS]\n- Address EVERY stated requirement explicitly\n- Use their language, mirror their terminology\n- Lead with benefits, follow with features\n- Do not invent capabilities or past performance\n- Flag ambiguous requirements for clarification\n- If information is missing to complete a section, state \"REQUIRES INPUT\" followed by the specific need\n- Do not claim a capability, certification, customer or result that INPUTS does not state.\n- Use only information present in INPUTS. Do not invent facts, names, dates, figures, citations or sources.\n- Where a required detail is missing from INPUTS, write \"Not provided.\" Never fill it with an invented value.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Map each RFP requirement to a response section.\n2. Draft each response from supplied evidence only.\n3. Where evidence is missing, write REQUIRES INPUT with the specific need.\n4. Check that every requirement is addressed exactly once.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the RFP Response Generator now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Generate structured, compelling RFP responses that address requirements systematically.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{paste_rfp_requirements_or_key_sections}}",
+        "{{your_company}}",
+        "{{what_you_re_proposing}}",
+        "{{n_3_5_unique_strengths}}",
+        "{{relevant_experience_case_studies}}",
+        "{{technical_business_mixed}}",
+        "{{sector}}",
+        "{{cost_quality_speed_innovation}}",
+        "{{specify}}",
+        "{{list_mandated_sections}}",
+        "{{certifications_standards}}",
+        "{{date}}",
+        "{{existing_proposals_case_studies}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "01",
+        "rfp-response-generator",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-014",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 01: Intelligence & Outreach",
+      "title": "Thread Summarizer",
+      "prompt": "[ROLE]\nYou are my Communication Thread Analyst. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nSummarizing a supplied message thread for a reader who did not follow it.\n\nINPUTS\nThread Content:\n{{paste_the_email_chain_or_slack_thread}}\n\nContext:\n- Thread topic: {{what_s_this_about}}\n- Participants: {{who_s_involved}}\n- My role: {{what_do_i_need_to_do_with_this}}\n\nOutput Needs:\n- Length: {{brief_detailed}}\n- Focus: {{decisions_actions_context_all}}\n\n[TASK]\nSummarize a multi-message thread into the essential points, decisions, and required actions.\n\n[FORMAT]\n1) TL;DR (2-3 sentences)\n{{the_bottom_line}}\n\n2) Key Points\n- {{point_1}}\n- {{point_2}}\n- {{point_3}}\n\n3) Decisions Made\n| Decision | By Whom | Date |\n|----------|---------|------|\n\n4) Actions Required\n| Action | Owner | Deadline | From Message |\n|--------|-------|----------|--------------|\n\n5) Unresolved Issues\n- {{issue}} - Waiting on: {{who}}\n\n6) My Action Required\n{{what_i_specifically_need_to_do_based_on}}\n\n[CONSTRAINTS]\n- Chronological order for complex threads\n- Identify who made each decision\n- Flag contradictions or changed positions\n- If someone didn't respond who should have, note it\n- Do not attribute a statement to a person unless the thread shows it.\n- Use only information present in INPUTS. Do not invent facts, names, dates, figures, citations or sources.\n- Where a required detail is missing from INPUTS, write \"Not provided.\" Never fill it with an invented value.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Identify participants, topics and the order of events.\n2. Extract decisions, open questions and action items with owners and dates as stated.\n3. Write the summary from those extractions only.\n4. Mark any owner or date the thread does not state as Not stated.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the Thread Summarizer now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Distill email or Slack threads into key points and actions.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{paste_the_email_chain_or_slack_thread}}",
+        "{{what_s_this_about}}",
+        "{{who_s_involved}}",
+        "{{what_do_i_need_to_do_with_this}}",
+        "{{brief_detailed}}",
+        "{{decisions_actions_context_all}}",
+        "{{the_bottom_line}}",
+        "{{point_1}}",
+        "{{point_2}}",
+        "{{point_3}}",
+        "{{issue}}",
+        "{{who}}",
+        "{{what_i_specifically_need_to_do_based_on}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "01",
+        "thread-summarizer",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-015",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 02: Strategy & Scanning",
+      "title": "Market Scanner",
+      "prompt": "[ROLE]\nYou are my Market Intelligence Specialist. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nMarket intelligence scan for a decision-maker. Trends come only from the materials in INPUTS.\n\nINPUTS\nMaterials to Analyze:\n{{paste_market_research_industry_reports}}\n\nFocus Areas:\n- Industry: {{sector}}\n- Geography: {{market}}\n- Timeframe: {{period}}\n\nOur Position (required for the Impact on Us and How We Could Fill columns):\n- What we sell and to whom: {{offer_and_customer}}\n- Known strengths and gaps: {{list}}\n\n[TASK]\nScan provided materials for market trends, opportunities, and threats.\n\n[FORMAT]\n1) Market Overview\n{{current_state_summary}}\n\n2) Key Trends\n| Trend | Evidence | Impact on Us | Timeframe |\n|-------|----------|--------------|-----------|\n| {{trend}} | {{data}} | {{impact}} | {{when}} |\n\n3) Opportunities\n| Opportunity | Size/Impact | Effort | Priority |\n|-------------|-------------|--------|----------|\n\n4) Threats\n| Threat | Likelihood | Impact | Response |\n|--------|------------|--------|----------|\n\n5) Market Gaps\n| Gap | Evidence | How We Could Fill |\n|-----|----------|-------------------|\n\n6) Signals to Watch\n| Signal | Why It Matters | How to Monitor |\n|--------|----------------|----------------|\n\n[CONSTRAINTS]\n- Base analysis only on provided materials\n- Separate fact from interpretation\n- Prioritize actionable insights\n- Note confidence level for each finding\n- Cite the source passage for every trend. If a trend has no support in the materials, omit it.\n- If Our Position is not supplied, ask for it in Missing inputs instead of assuming one.\n- Use only information present in INPUTS. Do not invent facts, names, dates, figures, citations or sources.\n- Tag every analytical claim Certain (stated in INPUTS), Likely (reasoned from INPUTS) or Guessing (gap-filling). If most of the output rests on Guessing, say so in the first line.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Read the supplied materials and extract candidate trends, opportunities and threats with the source passage for each.\n2. Drop any candidate the materials do not support.\n3. Relate each retained item to Our Position in INPUTS.\n4. Rank by evidence strength and state the timeframe.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the Market Scanner now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Identify trends and opportunities from market materials.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{paste_market_research_industry_reports}}",
+        "{{sector}}",
+        "{{market}}",
+        "{{period}}",
+        "{{offer_and_customer}}",
+        "{{list}}",
+        "{{current_state_summary}}",
+        "{{trend}}",
+        "{{data}}",
+        "{{impact}}",
+        "{{when}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "02",
+        "market-scanner",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-016",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 02: Strategy & Scanning",
+      "title": "Follow-Up Sequence Builder",
+      "prompt": "[ROLE]\nYou are my Follow-Up Sequence Specialist. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nMulti-touch follow-up sequence for a prospect who has gone quiet. Prospect facts come only from INPUTS.\n\nINPUTS\nProspect Context:\n- Prospect name/title: {{who}}\n- Company: {{company}}\n- Initial outreach: {{what_was_the_first_message}}\n- Response status: {{no_response_opened_clicked_soft_no}}\n\nSequence Purpose:\n- Goal: {{book_a_meeting_get_a_reply_restart}}\n- Relationship level: {{cold_warm_past_customer}}\n- Urgency: {{high_medium_low}}\n\nAvailable Channels:\n- [ ] Email\n- [ ] LinkedIn message\n- [ ] LinkedIn comment/engagement\n- [ ] Phone\n- [ ] Video message\n- [ ] Direct mail/Gift\n\nValue Assets Available:\n- Case studies: {{list}}\n- Content pieces: {{articles_videos_tools}}\n- Social proof: {{testimonials_logos}}\n- Personalization hooks: {{news_connections_content}}\n\nTiming Constraints:\n- Sequence duration: {{n_2_weeks_1_month_other}}\n- Touch frequency: {{every_2_3_days_weekly_other}}\n- Avoid dates: {{holidays_known_busy_periods}}\n\nTone:\n- Voice: {{professional_casual_persistent_friendly}}\n- Personality: {{humor_ok_all_business}}\n\nDefinition of done:\n- Complete sequence ready to load\n- Each touch adds unique value\n- Breakup/final touch included\n\n[TASK]\nCreate a multi-touch follow-up sequence that adds value with each touchpoint without being annoying.\n\n[FORMAT]\n1) Sequence Strategy\n- Psychological arc: {{how_sequence_builds}}\n- Value escalation: {{what_increases_with_each_touch}}\n- Pain/Gain balance: {{how_we_address_both}}\n- Breakup strategy: {{how_we_end_if_no_response}}\n\n2) Sequence Overview\n| Touch | Day | Channel | Angle | Asset |\n|-------|-----|---------|-------|-------|\n| 1 | 0 | {{channel}} | {{approach}} | {{asset_if_any}} |\n| 2 | 3 | {{channel}} | {{approach}} | {{asset_if_any}} |\n| 3 | 6 | {{channel}} | {{approach}} | {{asset_if_any}} |\n| {{continue}} | | | | |\n\n3) Complete Sequence\n\n---\n\n### Touch 1: Initial Outreach (Day 0)\n**Channel**: {{email_linkedin}}\n**Objective**: {{what_we_re_trying_to_achieve}}\n\n**Subject Line** (if email):\n```\n{{subject}}\n```\n\n**Message**:\n```\n{{full_message}}\n```\n\n**CTA**: {{specific_ask}}\n**Sent Timing**: {{best_day_time}}\n\n---\n\n### Touch 2: Value Add (Day 3)\n**Channel**: {{email_linkedin}}\n**Objective**: {{provide_value_not_just_follow_up}}\n\n**Subject Line**:\n```\n{{subject_reference_or_new_thread}}\n```\n\n**Message**:\n```\n{{full_message_don_t_just_bump_add}}\n```\n\n**Value Added**: {{what_new_thing_we_re_sharing}}\n**CTA**: {{softer_or_same_ask}}\n\n---\n\n### Touch 3: Different Angle (Day 6-7)\n**Channel**: {{change_channel_if_possible}}\n**Objective**: {{try_a_different_approach}}\n\n**Message**:\n```\n{{full_message_different_hook_angle}}\n```\n\n**Why different**: {{what_makes_this_stand_out_from_touch_2}}\n\n---\n\n### Touch 4: Social Proof (Day 10-12)\n**Channel**: {{email}}\n**Objective**: {{build_credibility}}\n\n**Subject Line**:\n```\n{{subject}}\n```\n\n**Message**:\n```\n{{full_message_includes_case_study}}\n```\n\n**Proof element**: {{what_social_proof_is_included}}\n\n---\n\n### Touch 5: Pattern Interrupt (Day 15-17)\n**Channel**: {{video_linkedin_comment_different_format}}\n**Objective**: {{break_through_the_noise}}\n\n**Message**:\n```\n{{full_message_notably_different_in_format}}\n```\n\n**Why this works**: {{pattern_interrupts_get_noticed}}\n\n---\n\n### Touch 6: Direct Ask (Day 20-22)\n**Channel**: {{email}}\n**Objective**: {{most_direct_ask_yet}}\n\n**Subject Line**:\n```\n{{subject}}\n```\n\n**Message**:\n```\n{{full_message_straightforward_confident}}\n```\n\n---\n\n### Touch 7: Breakup Email (Day 28-30)\n**Channel**: {{email}}\n**Objective**: {{final_attempt_create_urgency}}\n\n**Subject Line**:\n```\n{{subject_e_g_closing_the_loop_one_last}}\n```\n\n**Message**:\n```\n{{full_message_polite_closure_with_door_open}}\n```\n\n**Psychology**: {{why_this_closing_message_fits_this}}\n\n---\n\n4) Channel-Specific Tips\n| Channel | Best For | Timing | Character Limits |\n|---------|----------|--------|------------------|\n| Email | {{use_case}} | {{when}} | {{suggested_length}} |\n| LinkedIn | {{use_case}} | {{when}} | {{limits}} |\n| Phone | {{use_case}} | {{when}} | {{voicemail_script_included}} |\n| Video | {{use_case}} | {{when}} | {{length_recommendation}} |\n\n5) Response Handling\n| Response Type | How to Reply | Next Step |\n|---------------|--------------|-----------|\n| No response | {{continue_sequence}} | {{touch_n}} |\n| \"Not interested\" | {{response_script}} | {{remove_or_long_term_nurture}} |\n| \"Not right now\" | {{response_script}} | {{when_to_follow_up}} |\n| \"Send more info\" | {{response_info}} | {{immediate_action}} |\n| Positive response | {{schedule_meeting}} | {{calendar_link_or_propose_times}} |\n\n6) Voicemail Scripts (if phone channel)\n\n**Voicemail 1** (Touch 3):\n```\n\"{{full_voicemail_script_30_sec_max}}\"\n```\n\n**Voicemail 2** (Touch 5):\n```\n\"{{full_voicemail_script_different_angle}}\"\n```\n\n7) Sequence Metrics to Track\n| Metric | Target | When to Evaluate |\n|--------|--------|------------------|\n| Open rate | {{percent}} | {{after_sequence}} |\n| Reply rate | {{percent}} | {{after_sequence}} |\n| Meeting book rate | {{percent}} | {{after_sequence}} |\n| Touches to reply | {{average}} | {{after_sequence}} |\n\n[CONSTRAINTS]\n- Never just \"check in\" or \"follow up\" without new value\n- Change something each touch: angle, medium, or asset\n- Assume they saw but didn't respond. Don't re-pitch identically\n- End the sequence with a breakup touch\n- If no response after 7+ touches, move to nurture\n- Always leave the door open. Never burn bridges\n- Phone + email combo increases response rates\n- Space touches appropriately. Too fast = annoying\n- Never invent prior conversations, mutual connections or results.\n- Use only facts present in INPUTS. Never invent mutual connections, shared history, metrics, quotes or sources.\n- Send-ready text carries no tags or commentary. List missing inputs separately, before the text.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Read the prospect context and the last interaction.\n2. Plan the touches so each adds new value and none repeats the previous pitch.\n3. Write each touch with its timing, channel and objective.\n4. Check that the final touch closes the loop and leaves the door open.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the Follow-Up Sequence Builder now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Create multi-touch follow-up cadences that persist without annoying.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{who}}",
+        "{{company}}",
+        "{{what_was_the_first_message}}",
+        "{{no_response_opened_clicked_soft_no}}",
+        "{{book_a_meeting_get_a_reply_restart}}",
+        "{{cold_warm_past_customer}}",
+        "{{high_medium_low}}",
+        "{{list}}",
+        "{{articles_videos_tools}}",
+        "{{testimonials_logos}}",
+        "{{news_connections_content}}",
+        "{{n_2_weeks_1_month_other}}",
+        "{{every_2_3_days_weekly_other}}",
+        "{{holidays_known_busy_periods}}",
+        "{{professional_casual_persistent_friendly}}",
+        "{{humor_ok_all_business}}",
+        "{{how_sequence_builds}}",
+        "{{what_increases_with_each_touch}}",
+        "{{how_we_address_both}}",
+        "{{how_we_end_if_no_response}}",
+        "{{channel}}",
+        "{{approach}}",
+        "{{asset_if_any}}",
+        "{{continue}}",
+        "{{email_linkedin}}",
+        "{{what_we_re_trying_to_achieve}}",
+        "{{subject}}",
+        "{{full_message}}",
+        "{{specific_ask}}",
+        "{{best_day_time}}",
+        "{{provide_value_not_just_follow_up}}",
+        "{{subject_reference_or_new_thread}}",
+        "{{full_message_don_t_just_bump_add}}",
+        "{{what_new_thing_we_re_sharing}}",
+        "{{softer_or_same_ask}}",
+        "{{change_channel_if_possible}}",
+        "{{try_a_different_approach}}",
+        "{{full_message_different_hook_angle}}",
+        "{{what_makes_this_stand_out_from_touch_2}}",
+        "{{email}}",
+        "{{build_credibility}}",
+        "{{full_message_includes_case_study}}",
+        "{{what_social_proof_is_included}}",
+        "{{video_linkedin_comment_different_format}}",
+        "{{break_through_the_noise}}",
+        "{{full_message_notably_different_in_format}}",
+        "{{pattern_interrupts_get_noticed}}",
+        "{{most_direct_ask_yet}}",
+        "{{full_message_straightforward_confident}}",
+        "{{final_attempt_create_urgency}}",
+        "{{subject_e_g_closing_the_loop_one_last}}",
+        "{{full_message_polite_closure_with_door_open}}",
+        "{{why_this_closing_message_fits_this}}",
+        "{{use_case}}",
+        "{{when}}",
+        "{{suggested_length}}",
+        "{{limits}}",
+        "{{voicemail_script_included}}",
+        "{{length_recommendation}}",
+        "{{continue_sequence}}",
+        "{{touch_n}}",
+        "{{response_script}}",
+        "{{remove_or_long_term_nurture}}",
+        "{{when_to_follow_up}}",
+        "{{response_info}}",
+        "{{immediate_action}}",
+        "{{schedule_meeting}}",
+        "{{calendar_link_or_propose_times}}",
+        "{{full_voicemail_script_30_sec_max}}",
+        "{{full_voicemail_script_different_angle}}",
+        "{{percent}}",
+        "{{after_sequence}}",
+        "{{average}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "02",
+        "follow-up-sequence-builder",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-017",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 02: Strategy & Scanning",
+      "title": "Policy Drafter",
+      "prompt": "[ROLE]\nYou are my Policy Documentation Specialist. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nPolicy drafting for an organization. Regulatory references come only from the text supplied in INPUTS.\n\nINPUTS\nPolicy Topic:\n{{what_policy_are_you_creating_e_g_remote}}\n\nOrganization Context:\n- Company name: {{organization}}\n- Industry: {{sector}}\n- Company size: {{employee_count_scale}}\n- Existing policy framework: {{reference_any_parent_policies}}\n\nRegulatory Requirements:\n- Applicable regulations: {{gdpr_hipaa_soc2_iso_27001_etc}}\n- Industry standards: {{specific_standards_to_reference}}\n- Internal mandates: {{board_requirements_executive_directives}}\n\nAudience:\n- Primary users: {{who_must_follow_this_policy}}\n- Approvers: {{who_signs_off}}\n- Enforcers: {{who_monitors_compliance}}\n\nConstraints:\n- Effective date: {{when_does_this_take_effect}}\n- Review cycle: {{annual_quarterly_etc}}\n- Maximum length: {{page_limit_if_any}}\n- Tone: {{formal_regulatory_accessible_corporate}}\n\nReference materials:\n{{paste_existing_policies_regulatory_text}}\n\nDefinition of done:\n- Ready for legal/compliance review\n- All required sections present\n- Enforcement mechanism defined\n\n[TASK]\nDraft a complete, enforceable policy document that meets compliance requirements and is clear enough for all stakeholders to understand and follow.\n\n[FORMAT]\n1) Policy Header\n- Policy title\n- Version number\n- Effective date\n- Last review date\n- Policy owner\n- Approval authority\n\n2) Purpose Statement (2-3 sentences)\n- Why this policy exists\n- What risk/need it addresses\n\n3) Scope\n- Who this applies to\n- What systems/processes are covered\n- Geographic/organizational boundaries\n- Exclusions (if any)\n\n4) Definitions\n- Key terms used in this policy\n- Acronyms\n\n5) Policy Statements\n- Organized by topic area\n- Clear \"shall/must\" language for requirements\n- \"Should\" for recommendations\n- Numbered for reference\n\n6) Roles and Responsibilities\n- Role | Responsibility | Accountability\n- Table format preferred\n\n7) Compliance and Enforcement\n- Monitoring mechanisms\n- Violation consequences\n- Exception request process\n- Escalation path\n\n8) Related Documents\n- Parent policies\n- Supporting procedures\n- Forms and templates\n\n9) Revision History\n- Version | Date | Author | Changes\n\n10) Appendices (if needed)\n- Detailed procedures\n- Reference tables\n- Sample forms\n\n[CONSTRAINTS]\n- Use precise, enforceable language (shall, must, will)\n- Avoid ambiguous terms without definitions\n- Every requirement must have an owner\n- Include version control metadata\n- Do not create requirements that cannot be monitored\n- Flag any areas needing legal review with \"LEGAL REVIEW REQUIRED\"\n- Cite a regulation, clause or control number only if its text is supplied in INPUTS. Otherwise name the regulation as given in INPUTS without clause numbers and flag LEGAL REVIEW REQUIRED.\n- This output is a draft. It is not legal advice.\n- Use only information present in INPUTS. Do not invent facts, names, dates, figures, citations or sources.\n- Where a required detail is missing from INPUTS, write \"Not provided.\" Never fill it with an invented value.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Extract the requirements from the supplied regulatory text and existing policies.\n2. Map each requirement to a policy section.\n3. Draft enforceable language for each section in the tone set in INPUTS.\n4. Flag every point that needs legal review.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the Policy Drafter now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Create compliance-ready policy documents with proper structure, accountability, and enforcement language.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{what_policy_are_you_creating_e_g_remote}}",
+        "{{organization}}",
+        "{{sector}}",
+        "{{employee_count_scale}}",
+        "{{reference_any_parent_policies}}",
+        "{{gdpr_hipaa_soc2_iso_27001_etc}}",
+        "{{specific_standards_to_reference}}",
+        "{{board_requirements_executive_directives}}",
+        "{{who_must_follow_this_policy}}",
+        "{{who_signs_off}}",
+        "{{who_monitors_compliance}}",
+        "{{when_does_this_take_effect}}",
+        "{{annual_quarterly_etc}}",
+        "{{page_limit_if_any}}",
+        "{{formal_regulatory_accessible_corporate}}",
+        "{{paste_existing_policies_regulatory_text}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "02",
+        "policy-drafter",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-018",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 02: Strategy & Scanning",
+      "title": "Meeting Notes Processor",
+      "prompt": "[ROLE]\nYou are my Meeting Intelligence Specialist. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nConverting raw meeting notes into a structured record for attendees and absentees.\n\nINPUTS\nRaw Notes:\n{{paste_meeting_notes_can_be_messy}}\n\nMeeting Context:\n- Meeting type: {{status_decision_brainstorm_planning}}\n- Attendees: {{list}}\n- Date: {{date}}\n- Purpose: {{what_was_this_meeting_for}}\n\nExtraction Priorities:\n- [ ] Decisions made\n- [ ] Action items with owners\n- [ ] Deadlines\n- [ ] Risks and concerns\n- [ ] Open questions\n- [ ] Agreements reached\n\nOutput Needs:\n- Primary audience: {{who_will_read_this}}\n- Follow-up email needed: {{yes_no}}\n\n[TASK]\nTransform raw meeting notes into a structured summary with clear decisions, action items, risks, and follow-up requirements.\n\n[FORMAT]\n1) Meeting Summary (50-100 words)\n{{what_happened_in_this_meeting}}\n\n2) Key Decisions\n| Decision | Made By | Rationale |\n|----------|---------|-----------|\n| {{decision}} | {{who}} | {{why}} |\n\n3) Action Items\n| # | Action | Owner | Deadline | Status |\n|---|--------|-------|----------|--------|\n| 1 | {{action}} | {{name}} | {{date}} | Assigned |\n\n4) Open Questions\n- [ ] {{question}} - Owner: {{who_will_answer}}\n\n5) Risks & Concerns Raised\n| Risk | Raised By | Severity | Mitigation |\n|------|-----------|----------|------------|\n| {{risk}} | {{who}} | H/M/L | {{action}} |\n\n6) Parking Lot (Deferred Items)\n- {{item}} - To discuss: {{when}}\n\n7) Next Meeting\n- Date: {{if_scheduled}}\n- Purpose: {{agenda_items}}\n\n8) Follow-Up Email Draft\n```\n{{ready_to_send_email_summarizing_the}}\n```\n\n[CONSTRAINTS]\n- Every action item must have an owner\n- Distinguish decisions from discussions\n- If something was deferred, capture it\n- Risks without mitigation plans need to be flagged\n- Use the attendees' actual names for owners\n- Do not infer an owner or deadline. Write \"Not stated\" instead.\n- Use only information present in INPUTS. Do not invent facts, names, dates, figures, citations or sources.\n- Where a required detail is missing from INPUTS, write \"Not provided.\" Never fill it with an invented value.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Separate decisions, action items, open questions and discussion in the raw notes.\n2. Assign owners and dates only where the notes state them.\n3. Write the structured record in the order defined in FORMAT.\n4. List anything ambiguous under open questions.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the Meeting Notes Processor now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Convert raw meeting notes into structured action plans with decisions, owners, and risks.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{paste_meeting_notes_can_be_messy}}",
+        "{{status_decision_brainstorm_planning}}",
+        "{{list}}",
+        "{{date}}",
+        "{{what_was_this_meeting_for}}",
+        "{{who_will_read_this}}",
+        "{{yes_no}}",
+        "{{what_happened_in_this_meeting}}",
+        "{{decision}}",
+        "{{who}}",
+        "{{why}}",
+        "{{action}}",
+        "{{name}}",
+        "{{question}}",
+        "{{who_will_answer}}",
+        "{{risk}}",
+        "{{item}}",
+        "{{when}}",
+        "{{if_scheduled}}",
+        "{{agenda_items}}",
+        "{{ready_to_send_email_summarizing_the}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "02",
+        "meeting-notes-processor",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-019",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 03: Documentation & SOPs",
+      "title": "SOP Builder",
+      "prompt": "[ROLE]\nYou are my SOP Development Specialist. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nStandard Operating Procedure for a process in INPUTS. The audience is a qualified person doing the task without supervision.\n\nINPUTS\nProcess Name:\n{{what_process_are_you_documenting}}\n\nProcess Context:\n- Department/Team: {{owner}}\n- Frequency: {{how_often_is_this_performed}}\n- Criticality: {{high_medium_low_impact_if_done_wrong}}\n- Current state: {{documented_undocumented_outdated}}\n\nProcess Details:\n- Trigger: {{what_initiates_this_process}}\n- End state: {{what_does_complete_look_like}}\n- Key steps (rough): {{list_major_steps_if_known}}\n- Common variations: {{different_scenarios}}\n- Known pain points: {{where_does_it_break_down}}\n\nResources:\n- Required tools/systems: {{list}}\n- Required access/permissions: {{list}}\n- Required skills/certifications: {{list}}\n\nConstraints:\n- Compliance requirements: {{regulatory_needs}}\n- Time constraints: {{sla_deadlines}}\n- Quality standards: {{metrics_tolerances}}\n\nDefinition of done:\n- New employee could follow this independently\n- Quality checks at critical points\n- Training assessment included\n\n[TASK]\nCreate a complete, actionable Standard Operating Procedure that any qualified person can follow to produce consistent, quality results.\n\n[FORMAT]\n1) SOP Header\n- Document ID\n- Title\n- Version\n- Effective date\n- Process owner\n- Last review date\n\n2) Purpose\n- Why this SOP exists (2-3 sentences)\n- Business impact of this process\n\n3) Scope\n- What this SOP covers\n- What it does NOT cover\n- When to use this vs. other procedures\n\n4) Prerequisites\n- Required access/permissions\n- Required training/certifications\n- Required materials/tools\n- Required information to gather first\n\n5) Definitions and Acronyms\n- Key terms specific to this process\n\n6) Roles and Responsibilities\n| Role | Responsibilities | Authority Level |\n\n7) Procedure Steps\nFor each major phase:\n### Phase Name\n**Objective**: What this phase accomplishes\n\n| Step | Action | System/Tool | Expected Result | Time Est. |\n|------|--------|-------------|-----------------|-----------|\n\n⚠️ CAUTION: {{warnings_for_this_phase}}\n💡 TIP: {{best_practices}}\n🔍 QUALITY CHECK: {{verification_point}}\n\n8) Decision Points\n- Flowchart or decision tree for branching scenarios\n- IF {{condition}} THEN {{action}} ELSE {{action}}\n\n9) Exception Handling\n| Exception | Symptoms | Resolution | Escalation |\n\n10) Quality Checks\n| Checkpoint | What to Verify | Acceptance Criteria | If Failed |\n\n11) Metrics and KPIs\n- Process performance indicators\n- How to measure success\n\n12) Training Component\nLearning Objectives:\n1. {{what_learner_will_be_able_to_do}}\n2. {{what_learner_will_be_able_to_do}}\n\nKnowledge Check (10 Questions):\n1. {{question}} - Answer: {{answer}}\n...\n\nPractical Assessment:\n- Observation checklist for supervised practice\n\n13) Revision History\n| Version | Date | Author | Changes |\n\n14) Appendices\n- Screenshots\n- Templates\n- Reference tables\n\n[CONSTRAINTS]\n- Every step must have a clear action verb\n- Include expected results for verification\n- Add warnings BEFORE dangerous steps, not after\n- Number all steps for easy reference\n- Estimate time for planning purposes\n- Flag steps requiring supervisor approval\n- Do not assume knowledge. Be explicit\n- If a step requires judgment, provide decision criteria\n- Time estimates are planning estimates. Mark them as such unless INPUTS supplies measured times.\n- Use only information present in INPUTS. Do not invent facts, names, dates, figures, citations or sources.\n- Where a required detail is missing from INPUTS, write \"Not provided.\" Never fill it with an invented value.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Read the process details and list the phases, triggers and end state.\n2. Draft each phase as numbered steps with action, tool, expected result and time estimate.\n3. Place warnings before the risky step, and decision criteria wherever judgment is required.\n4. Add quality checks, exceptions, training items and revision history as defined in FORMAT.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the SOP Builder now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Create complete Standard Operating Procedures with step-by-step instructions, quality checks, and training components.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{what_process_are_you_documenting}}",
+        "{{owner}}",
+        "{{how_often_is_this_performed}}",
+        "{{high_medium_low_impact_if_done_wrong}}",
+        "{{documented_undocumented_outdated}}",
+        "{{what_initiates_this_process}}",
+        "{{what_does_complete_look_like}}",
+        "{{list_major_steps_if_known}}",
+        "{{different_scenarios}}",
+        "{{where_does_it_break_down}}",
+        "{{list}}",
+        "{{regulatory_needs}}",
+        "{{sla_deadlines}}",
+        "{{metrics_tolerances}}",
+        "{{warnings_for_this_phase}}",
+        "{{best_practices}}",
+        "{{verification_point}}",
+        "{{condition}}",
+        "{{action}}",
+        "{{what_learner_will_be_able_to_do}}",
+        "{{question}}",
+        "{{answer}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "03",
+        "sop-builder",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-020",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 03: Documentation & SOPs",
+      "title": "Executive Brief",
+      "prompt": "[ROLE]\nYou are my Executive Communication Specialist. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nDecision brief for an executive reader with limited time.\n\nINPUTS\nInitiative Details:\n{{paste_all_context_and_details}}\n\nContext:\n- Initiative name: {{name}}\n- Department: {{owner}}\n- Urgency: {{high_medium_low}}\n- Decision deadline: {{when}}\n\nAudience:\n- Executive(s): {{who_will_read}}\n- Their priorities: {{what_they_care_about}}\n\n[TASK]\nSummarize an initiative for executive review with clear decision request.\n\n[FORMAT]\n## {{initiative_name}}\n**Decision Needed By**: {{date}}\n\n### Summary (up to 50 words)\n{{brief_overview}}\n\n### Decision Requested\n{{specific_decision_in_one_sentence}}\n\n### Options\n| Option | Description | Pros | Cons |\n|--------|-------------|------|------|\n| A | {{desc}} | {{pro}} | {{con}} |\n| B | {{desc}} | {{pro}} | {{con}} |\n\n### Risks\n- {{risk_1}}\n- {{risk_2}}\n\n### Recommendation\n{{your_recommendation_with_brief_rationale}}\n\n---\n**Word count**: {{count}} (target: 150)\n**Prepared by**: {{name}} | **Date**: {{date}}\n\n[CONSTRAINTS]\n- 150 words maximum for the Summary, Decision Requested and Recommendation combined. The Options table and Risks list are not counted. Keep each cell and bullet to one line\n- Lead with the decision, not the background\n- One clear recommendation\n- Options must be genuinely different\n- If you need more than 150 words, the brief isn't ready\n- Lead with the decision, not the background.\n- Use only information present in INPUTS. Do not invent facts, names, dates, figures, citations or sources.\n- Where a required detail is missing from INPUTS, write \"Not provided.\" Never fill it with an invented value.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Identify the single decision being requested and the deadline.\n2. Reduce the background to what the decision needs.\n3. Compare the options on benefit and cost, then state one recommendation with a short rationale.\n4. Count words against the limit and trim before output.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the Executive Brief now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Create 150-word decision briefs for executives.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{paste_all_context_and_details}}",
+        "{{name}}",
+        "{{owner}}",
+        "{{high_medium_low}}",
+        "{{when}}",
+        "{{who_will_read}}",
+        "{{what_they_care_about}}",
+        "{{initiative_name}}",
+        "{{date}}",
+        "{{brief_overview}}",
+        "{{specific_decision_in_one_sentence}}",
+        "{{desc}}",
+        "{{pro}}",
+        "{{con}}",
+        "{{risk_1}}",
+        "{{risk_2}}",
+        "{{your_recommendation_with_brief_rationale}}",
+        "{{count}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "03",
+        "executive-brief",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-021",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 03: Documentation & SOPs",
+      "title": "CMA Simplifier",
+      "prompt": "[ROLE]\nYou are my Real Estate Communication Specialist. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nSeller-facing explanation of a Comparative Market Analysis. Comps, prices and adjustments come only from INPUTS.\n\nINPUTS\nCMA Data:\n{{paste_cma_details_comps_prices_adjustments}}\n\nProperty:\n- Address: {{address}}\n- Asking price recommendation: {{price}}\n- Key features: {{list}}\n\nSeller Context:\n- Seller motivation: {{why_selling}}\n- Timeline: {{when_they_need_to_sell}}\n- Emotional attachment: {{high_medium_low}}\n\n[TASK]\nTranslate a Comparative Market Analysis into language any seller can understand.\n\n[FORMAT]\n1) PRICING SUMMARY (Plain Language)\n\"Based on {{x}} comparable homes that sold recently, your home's fair market value is between ${{low}} and ${{high}}. I recommend listing at ${{price}} because {{reason}}.\"\n\n2) HOW I GOT THERE\n| Comparable | Sale Price | How It Compares | Adjustment |\n|------------|------------|-----------------|------------|\n| {{address}} | ${{price}} | {{features}} | {{value}} |\n\n3) ANTICIPATED QUESTIONS\n| Question | Answer |\n|----------|--------|\n| \"Why isn't it worth more?\" | {{response}} |\n| \"My neighbor sold for more\" | {{response}} |\n| \"What if we start higher?\" | {{response}} |\n\n4) PRESENTATION SCRIPT\nHow I would present this in person:\n\"{{conversational_script_2_minutes}}\"\n\n5) VISUAL SUMMARY\n{{text_based_chart_or_comparison}}\n\n6) NEXT STEPS\n- If they agree: {{action}}\n- If they want higher: {{response}}\n- If they need time: {{follow_up_plan}}\n\n[CONSTRAINTS]\n- No jargon without explanation\n- Acknowledge emotional value vs. market value\n- Be honest about market conditions\n- Prepare for the \"start higher\" conversation\n- Use only comparable sales, prices and adjustments supplied in CMA Data. Never invent or estimate a comp, a price or an adjustment.\n- If fewer comps are supplied than FORMAT needs, leave the extra rows blank and say so.\n- This is an explanation of supplied data. It is not an appraisal.\n- Use only facts present in INPUTS. Never invent mutual connections, shared history, metrics, quotes or sources.\n- Send-ready text carries no tags or commentary. List missing inputs separately, before the text.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Read the CMA data and list each comparable with its sale price and adjustments as supplied.\n2. State the value range using only those comparables.\n3. Explain each adjustment in plain language.\n4. Prepare responses to common seller objections that rely on the supplied data only.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the CMA Simplifier now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Explain market analysis in client-friendly language.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{paste_cma_details_comps_prices_adjustments}}",
+        "{{address}}",
+        "{{price}}",
+        "{{list}}",
+        "{{why_selling}}",
+        "{{when_they_need_to_sell}}",
+        "{{high_medium_low}}",
+        "{{x}}",
+        "{{low}}",
+        "{{high}}",
+        "{{reason}}",
+        "{{features}}",
+        "{{value}}",
+        "{{response}}",
+        "{{conversational_script_2_minutes}}",
+        "{{text_based_chart_or_comparison}}",
+        "{{action}}",
+        "{{follow_up_plan}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "03",
+        "cma-simplifier",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-022",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 03: Documentation & SOPs",
+      "title": "Objection Handler",
+      "prompt": "[ROLE]\nYou are my Sales Objection Specialist. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nSales conversations where a prospect raises an objection. Product and prospect facts come only from INPUTS.\n\nINPUTS\nContext:\n- What you sell: {{product_service}}\n- Typical price point: {{cost}}\n- Sales cycle: {{length}}\n- Decision makers: {{who_s_involved}}\n- Primary competitors: {{who_else_they_consider}}\n\nObjection(s) to Handle:\n1. {{objection_1_exact_words_the_prospect_uses}}\n2. {{objection_2_if_applicable}}\n3. {{objection_3_if_applicable}}\n\nOr choose from common categories:\n- [ ] Price objections\n- [ ] Timing objections\n- [ ] Need/fit objections\n- [ ] Authority objections\n- [ ] Competitor objections\n- [ ] Trust objections\n- [ ] Status quo objections\n\nConversation Stage:\n- Where in the process: {{cold_discovery_demo_proposal_negotiation}}\n- Relationship: {{new_established}}\n\nTone:\n- Style: {{consultative_assertive_empathetic}}\n- Avoid: {{aggressive_pushy_desperate}}\n\nDefinition of done:\n- Multiple response approaches per objection\n- Underlying concern identified\n- Follow-up questions to uncover truth\n\n[TASK]\nCreate compelling, authentic responses to sales objections that address the real concern and move the conversation forward.\n\n[FORMAT]\n1) Objection Analysis\n\n### Objection: \"{{exact_objection}}\"\n\n**Surface meaning**: {{what_they_said}}\n**Underlying concern**: {{what_they_really_mean}}\n**Is this real or reflexive?**: {{genuine_knee_jerk_stall}}\n**Typical response that fails**: {{what_not_to_do}}\n\n---\n\n2) Response Framework: {{objection_1}}\n\n### Approach 1: Acknowledge & Explore\nUse when: {{the_objection_needs_more_information}}\n\n**Response script**:\n```\n\"{{full_response_natural_conversational}}\"\n```\n\n**Follow-up question to ask**:\n```\n\"{{question_that_uncovers_the_real_issue}}\"\n```\n\n**Why this works**: {{explanation}}\n\n---\n\n### Approach 2: Reframe\nUse when: {{the_objection_is_based_on_a_misconception}}\n\n**Response script**:\n```\n\"{{full_response}}\"\n```\n\n**Transition to next step**:\n```\n\"{{how_to_move_forward}}\"\n```\n\n**Why this works**: {{explanation}}\n\n---\n\n### Approach 3: Social Proof\nUse when: {{they_need_validation_from_others}}\n\n**Response script**:\n```\n\"{{full_response_includes_case_study_or}}\"\n```\n\n**Why this works**: {{explanation}}\n\n---\n\n### Approach 4: Isolate\nUse when: {{you_suspect_this_isn_t_the_real_objection}}\n\n**Response script**:\n```\n\"{{full_response_designed_to_determine_if}}\"\n```\n\n**What to listen for**: {{signs_the_real_objection_is_different}}\n\n---\n\n3) Common Objection Library\n\n### Price Objections\n\n**\"It's too expensive\"**\n| Approach | Response |\n|----------|----------|\n| Value reframe | \"{{response}}\" |\n| ROI focus | \"{{response}}\" |\n| Cost of inaction | \"{{response}}\" |\n| Payment options | \"{{response}}\" |\n\n**\"We don't have budget\"**\n| Approach | Response |\n|----------|----------|\n| Future timing | \"{{response}}\" |\n| Budget creation | \"{{response}}\" |\n| Smaller start | \"{{response}}\" |\n\n---\n\n### Timing Objections\n\n**\"Not right now\"**\n| Approach | Response |\n|----------|----------|\n| Curiosity | \"{{response_understand_what_right_time_looks}}\" |\n| Cost of waiting | \"{{response}}\" |\n| Low commitment next step | \"{{response}}\" |\n\n**\"We're too busy\"**\n| Approach | Response |\n|----------|----------|\n| Empathy + efficiency | \"{{response}}\" |\n| Time savings | \"{{response}}\" |\n\n---\n\n### Competitor Objections\n\n**\"We're already using {{competitor}}\"**\n| Approach | Response |\n|----------|----------|\n| Complement not replace | \"{{response}}\" |\n| Competitive insight | \"{{response}}\" |\n| Switching experience | \"{{response}}\" |\n\n**\"We're talking to others\"**\n| Approach | Response |\n|----------|----------|\n| Encourage it | \"{{response}}\" |\n| Differentiation | \"{{response}}\" |\n\n---\n\n### Authority Objections\n\n**\"I need to talk to my {{boss_team_partner}}\"**\n| Approach | Response |\n|----------|----------|\n| Help them sell | \"{{response}}\" |\n| Joint meeting | \"{{response}}\" |\n| Materials to share | \"{{response}}\" |\n\n---\n\n### Status Quo Objections\n\n**\"We're fine with how we do it now\"**\n| Approach | Response |\n|----------|----------|\n| Curiosity about their process | \"{{response}}\" |\n| Cost of status quo | \"{{response}}\" |\n| What's changed | \"{{response}}\" |\n\n---\n\n4) Questions to Uncover Truth\n| Objection Type | Diagnostic Question |\n|----------------|---------------------|\n| Price | \"When you say expensive, compared to what?\" |\n| Timing | \"What would need to be true for this to be the right time?\" |\n| Need | \"What would this need to do for it to be worth exploring?\" |\n| Authority | \"What concerns do you think {{decision_maker}} might have?\" |\n| Competitor | \"What's working/not working about your current solution?\" |\n\n5) Prevention Strategies\nHow to prevent objections before they arise:\n\n| Objection | Prevention Strategy |\n|-----------|---------------------|\n| Price | {{pre_qualification_value_building}} |\n| Timing | {{create_urgency_earlier}} |\n| Authority | {{multi_thread_earlier}} |\n| Need | {{deeper_discovery}} |\n\n6) When to Walk Away\nSigns this isn't a real opportunity:\n- {{sign_1}}\n- {{sign_2}}\n- {{sign_3}}\n\nGraceful exit script:\n```\n\"{{how_to_close_the_conversation_while}}\"\n```\n\n[CONSTRAINTS]\n- Never argue with objections. Explore them\n- Acknowledge before responding\n- Ask permission before reframing: \"Can I share how other clients thought about this?\"\n- The first objection is rarely the real one\n- Silence after they object = pressure on them to elaborate\n- If it's a bad fit, say so. Don't force it\n- Real objections require real solutions, not just talk tracks\n- Practice until responses feel natural, not scripted\n- Do not make claims about the product, pricing or competitors that INPUTS does not state.\n- Use only facts present in INPUTS. Never invent mutual connections, shared history, metrics, quotes or sources.\n- Send-ready text carries no tags or commentary. List missing inputs separately, before the text.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Classify the objection by type and the concern behind it.\n2. Draft a response that acknowledges, explores, then answers.\n3. Add a follow-up question that tests whether the concern is resolved.\n4. Include a path for the case where the prospect is not a fit.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the Objection Handler now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Build response frameworks for common sales objections.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{product_service}}",
+        "{{cost}}",
+        "{{length}}",
+        "{{who_s_involved}}",
+        "{{who_else_they_consider}}",
+        "{{objection_1_exact_words_the_prospect_uses}}",
+        "{{objection_2_if_applicable}}",
+        "{{objection_3_if_applicable}}",
+        "{{cold_discovery_demo_proposal_negotiation}}",
+        "{{new_established}}",
+        "{{consultative_assertive_empathetic}}",
+        "{{aggressive_pushy_desperate}}",
+        "{{exact_objection}}",
+        "{{what_they_said}}",
+        "{{what_they_really_mean}}",
+        "{{genuine_knee_jerk_stall}}",
+        "{{what_not_to_do}}",
+        "{{objection_1}}",
+        "{{the_objection_needs_more_information}}",
+        "{{full_response_natural_conversational}}",
+        "{{question_that_uncovers_the_real_issue}}",
+        "{{explanation}}",
+        "{{the_objection_is_based_on_a_misconception}}",
+        "{{full_response}}",
+        "{{how_to_move_forward}}",
+        "{{they_need_validation_from_others}}",
+        "{{full_response_includes_case_study_or}}",
+        "{{you_suspect_this_isn_t_the_real_objection}}",
+        "{{full_response_designed_to_determine_if}}",
+        "{{signs_the_real_objection_is_different}}",
+        "{{response}}",
+        "{{response_understand_what_right_time_looks}}",
+        "{{competitor}}",
+        "{{boss_team_partner}}",
+        "{{decision_maker}}",
+        "{{pre_qualification_value_building}}",
+        "{{create_urgency_earlier}}",
+        "{{multi_thread_earlier}}",
+        "{{deeper_discovery}}",
+        "{{sign_1}}",
+        "{{sign_2}}",
+        "{{sign_3}}",
+        "{{how_to_close_the_conversation_while}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "03",
+        "objection-handler",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-023",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 03: Documentation & SOPs",
+      "title": "Document Summarizer",
+      "prompt": "[ROLE]\nYou are my Document Summarization Specialist. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nSummarizing a supplied document for a reader who will not read the original.\n\nINPUTS\nDocument:\n{{paste_the_document_or_key_sections}}\n\nDocument Context:\n- Type: {{report_proposal_research_policy_contract}}\n- Length: {{page_word_count}}\n- Purpose: {{why_this_document_exists}}\n\nSummary Requirements:\n- Target length: {{word_count_or_of_original}}\n- Audience: {{who_will_read_the_summary}}\n- Focus: {{key_topics_to_emphasize}}\n- Format: {{bullets_paragraphs_structured}}\n\nMust Preserve:\n- [ ] Key findings/conclusions\n- [ ] Recommendations\n- [ ] Data/metrics\n- [ ] Risks/concerns\n- [ ] Action items\n\n[TASK]\nTransform a long document into a concise summary that captures all essential information.\n\n[FORMAT]\n1) Document Overview\n- Title: {{document_name}}\n- Type: {{category}}\n- Author/Source: {{who_wrote_it}}\n- Date: {{when}}\n- Original length: {{metrics}}\n\n2) Executive Summary (100-200 words)\n{{complete_summary_paragraph}}\n\n3) Key Points\n| Topic | Summary |\n|-------|---------|\n| {{topic_1}} | {{summary}} |\n| {{topic_2}} | {{summary}} |\n\n4) Critical Data/Metrics\n| Metric | Value | Significance |\n|--------|-------|--------------|\n\n5) Recommendations\n1. {{recommendation_1}}\n2. {{recommendation_2}}\n\n6) Risks/Concerns Identified\n- {{risk_1}}\n- {{risk_2}}\n\n7) Questions/Gaps\n- {{what_s_missing_or_unclear}}\n\n8) One-Liner Version\n\"{{document}} in one sentence: {{summary}}\"\n\n[CONSTRAINTS]\n- Summary should stand alone without reading original\n- Preserve critical numbers and facts\n- Note conflicting information if present\n- Flag where original was unclear\n- Include page references for key claims if helpful\n- Report figures exactly as written in the source. Do not round or recompute unless asked.\n- Use only information present in INPUTS. Do not invent facts, names, dates, figures, citations or sources.\n- Where a required detail is missing from INPUTS, write \"Not provided.\" Never fill it with an invented value.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Identify the document type, purpose and structure.\n2. Extract the key points, figures and conclusions as written.\n3. Write the summary at the length and structure defined in FORMAT.\n4. Check each figure in the summary against the source text.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the Document Summarizer now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Condense long documents into structured executive summaries.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{paste_the_document_or_key_sections}}",
+        "{{report_proposal_research_policy_contract}}",
+        "{{page_word_count}}",
+        "{{why_this_document_exists}}",
+        "{{word_count_or_of_original}}",
+        "{{who_will_read_the_summary}}",
+        "{{key_topics_to_emphasize}}",
+        "{{bullets_paragraphs_structured}}",
+        "{{document_name}}",
+        "{{category}}",
+        "{{who_wrote_it}}",
+        "{{when}}",
+        "{{metrics}}",
+        "{{complete_summary_paragraph}}",
+        "{{topic_1}}",
+        "{{summary}}",
+        "{{topic_2}}",
+        "{{recommendation_1}}",
+        "{{recommendation_2}}",
+        "{{risk_1}}",
+        "{{risk_2}}",
+        "{{what_s_missing_or_unclear}}",
+        "{{document}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "03",
+        "document-summarizer",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-024",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 03: Documentation & SOPs",
+      "title": "Option Evaluator",
+      "prompt": "[ROLE]\nYou are my Strategic Decision Analyst. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nStructured comparison of decision options against weighted criteria. Option facts come only from INPUTS.\n\nINPUTS\nDecision Context:\n- Decision needed: {{what_you_re_deciding}}\n- Timeline: {{when_you_need_to_decide}}\n- Decision maker(s): {{who_decides}}\n\nOptions to Evaluate:\n1. {{option_1}}\n2. {{option_2}}\n3. {{option_3}}\n4. {{option_4_if_applicable}}\n\nEvaluation Criteria:\n- {{criterion_1}}: {{description}} - Weight (1 to 10): {{weight}}\n- {{criterion_2}}: {{description}} - Weight (1 to 10): {{weight}}\n- {{criterion_3}}: {{description}} - Weight (1 to 10): {{weight}}\n\nConstraints:\n- Budget: {{if_applicable}}\n- Timeline: {{if_applicable}}\n- Other: {{list}}\n\n[TASK]\nStructure a decision by evaluating options against weighted criteria with clear trade-offs.\n\n[FORMAT]\n1) Decision Summary\n- Decision: {{what_we_re_deciding}}\n- Stakes: {{why_this_matters}}\n- Reversibility: {{can_we_undo_this}}\n\n2) Weighted Evaluation Matrix\n| Criterion | Weight | Option 1 | Option 2 | Option 3 |\n|-----------|--------|----------|----------|----------|\n| {{criterion}} | {{w}} | {{n_1_10}} | {{n_1_10}} | {{n_1_10}} |\n| **WEIGHTED TOTAL** | | {{score}} | {{score}} | {{score}} |\n\n3) Trade-Off Analysis\n| Trade-Off | If We Choose A | If We Choose B |\n|-----------|----------------|----------------|\n| {{factor}} | {{impact}} | {{impact}} |\n\n4) Risk Assessment\n| Option | Key Risk | Likelihood | Impact | Mitigation |\n|--------|----------|------------|--------|------------|\n\n5) Mind-Changers\nWhat new information would change the recommendation:\n- If {{x}}, then reconsider {{y}}\n\n6) Recommendation\n**Recommended option**: {{option}}\n**Rationale**: {{why}}\n**Confidence**: {{high_medium_low}}\n\n7) Implementation Considerations\n| Option | First 30 Days | Key Milestone |\n|--------|---------------|---------------|\n\n[CONSTRAINTS]\n- Make criteria explicit and weighted\n- Acknowledge what's uncertain\n- Include \"what would change this\"\n- Recommendation should be defensible\n- Scores are judgments. Show the basis for each. Do not present a weighted total as a measured result.\n- Use only information present in INPUTS. Do not invent facts, names, dates, figures, citations or sources.\n- Tag every analytical claim Certain (stated in INPUTS), Likely (reasoned from INPUTS) or Guessing (gap-filling). If most of the output rests on Guessing, say so in the first line.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. List the options and criteria with their weights as supplied.\n2. Score each option from 1 to 5 on each criterion and state the basis for each score.\n3. Compute each weighted total as the sum of weight times score across all criteria, show the arithmetic, and state the maximum possible total.\n4. Name the trade-offs and the one assumption that would change the ranking.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the Option Evaluator now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Create trade-off matrices for strategic decisions.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{what_you_re_deciding}}",
+        "{{when_you_need_to_decide}}",
+        "{{who_decides}}",
+        "{{option_1}}",
+        "{{option_2}}",
+        "{{option_3}}",
+        "{{option_4_if_applicable}}",
+        "{{criterion_1}}",
+        "{{description}}",
+        "{{weight}}",
+        "{{criterion_2}}",
+        "{{criterion_3}}",
+        "{{if_applicable}}",
+        "{{list}}",
+        "{{what_we_re_deciding}}",
+        "{{why_this_matters}}",
+        "{{can_we_undo_this}}",
+        "{{criterion}}",
+        "{{w}}",
+        "{{n_1_10}}",
+        "{{score}}",
+        "{{factor}}",
+        "{{impact}}",
+        "{{x}}",
+        "{{y}}",
+        "{{option}}",
+        "{{why}}",
+        "{{high_medium_low}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "03",
+        "option-evaluator",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-025",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 04: Planning & Training",
+      "title": "Roadmap Generator",
+      "prompt": "[ROLE]\nYou are my Strategic Roadmap Architect. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nRoadmap for a product, project or initiative. Goals, constraints and capacity come only from INPUTS.\n\nINPUTS\nStrategic Goal:\n- Vision: {{where_we_re_going}}\n- Timeline: {{timeframe}}\n- Constraints: {{budget_resources_dependencies}}\n\nCurrent State:\n- Where we are: {{today}}\n- Key gaps: {{what_s_missing}}\n\nInitiatives to Map:\n1. {{initiative_1}}\n2. {{initiative_2}}\n3. {{initiative_3}}\n\n[TASK]\nDevelop a clear roadmap that sequences initiatives toward strategic goals.\n\n[FORMAT]\n1) Roadmap Overview\n| Phase | Timeframe | Theme | Key Milestone |\n|-------|-----------|-------|---------------|\n| Phase 1 | {{dates}} | {{theme}} | {{milestone}} |\n| Phase 2 | {{dates}} | {{theme}} | {{milestone}} |\n| Phase 3 | {{dates}} | {{theme}} | {{milestone}} |\n\n2) Detailed Phases\n\n### Phase 1: {{name}} ({{dates}})\n**Goal**: {{what_we_achieve}}\n\n| Initiative | Description | Owner | Dependencies | Status |\n|------------|-------------|-------|--------------|--------|\n| {{initiative}} | {{description}} | {{who}} | {{depends_on}} | {{status}} |\n\n**Exit Criteria**: {{what_must_be_true_to_move_to_phase_2}}\n\n{{repeat_for_each_phase}}\n\n3) Dependencies Map\n| Initiative | Depends On | Enables |\n|------------|------------|---------|\n\n4) Resource Requirements\n| Phase | Budget | Headcount | Key Resources |\n|-------|--------|-----------|---------------|\n\n5) Risk Mitigation\n| Risk | Phase | Impact | Mitigation |\n|------|-------|--------|------------|\n\n6) Decision Points\n| Date | Decision | Options | Criteria |\n|------|----------|---------|----------|\n\n[CONSTRAINTS]\n- Each phase needs clear exit criteria\n- Dependencies must be explicit\n- Include decision points for pivots\n- Resource constraints should be visible\n- Mark any timeframe not supplied in INPUTS as an estimate.\n- Use only information present in INPUTS. Do not invent facts, names, dates, figures, citations or sources.\n- Where a required detail is missing from INPUTS, write \"Not provided.\" Never fill it with an invented value.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Read goals, constraints and dependencies.\n2. Group work into phases ordered by dependency and value.\n3. Assign timeframes only where INPUTS gives dates or capacity.\n4. List risks and the decisions needed to proceed.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the Roadmap Generator now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Create strategic roadmaps with milestones and dependencies.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{where_we_re_going}}",
+        "{{timeframe}}",
+        "{{budget_resources_dependencies}}",
+        "{{today}}",
+        "{{what_s_missing}}",
+        "{{initiative_1}}",
+        "{{initiative_2}}",
+        "{{initiative_3}}",
+        "{{dates}}",
+        "{{theme}}",
+        "{{milestone}}",
+        "{{name}}",
+        "{{what_we_achieve}}",
+        "{{initiative}}",
+        "{{description}}",
+        "{{who}}",
+        "{{depends_on}}",
+        "{{status}}",
+        "{{what_must_be_true_to_move_to_phase_2}}",
+        "{{repeat_for_each_phase}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "04",
+        "roadmap-generator",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-026",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 04: Planning & Training",
+      "title": "Discovery Call Agenda",
+      "prompt": "[ROLE]\nYou are my Discovery Call Strategist. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nPreparing a discovery call with a named prospect. Prospect facts come only from INPUTS.\n\nINPUTS\nProspect Information:\n- Name/Title: {{who_you_re_meeting}}\n- Company: {{company_name}}\n- Company size: {{employees_revenue}}\n- Industry: {{sector}}\n- How they came to you: {{inbound_outbound_referral}}\n\nPre-Call Research:\n- Company news: {{relevant_announcements}}\n- Prospect's LinkedIn: {{insights}}\n- Known pain indicators: {{job_postings_reviews_tech_stack}}\n- Talking points for rapport: {{personal_connections}}\n\nMeeting Context:\n- Duration: {{n_15_30_45_60_minutes}}\n- Who's attending (their side): {{names_roles}}\n- Meeting goal: {{qualify_demo_deep_dive_other}}\n- Next step target: {{what_you_want_coming_out}}\n\nYour Solution:\n- What you offer: {{product_service}}\n- Key differentiators: {{what_sets_you_apart}}\n- Typical use cases: {{common_applications}}\n- Red flags (bad fit): {{who_you_shouldn_t_work_with}}\n\nQualification Criteria:\n- Must have: {{non_negotiables_for_a_good_fit}}\n- Nice to have: {{ideal_but_flexible}}\n- Disqualifiers: {{deal_breakers}}\n\nDefinition of done:\n- Complete call structure\n- Questions for each discovery area\n- Qualification checklist\n\n[TASK]\nCreate a structured discovery call agenda that uncovers genuine buyer needs, qualifies opportunities, and positions me as a consultant rather than a seller.\n\n[FORMAT]\n1) Pre-Call Brief\n- 30-second mental prep: {{key_goals_to_keep_in_mind}}\n- Opener strategy: {{how_to_start_strong}}\n- Rapport hooks: {{personal_connections_to_reference}}\n- Red flags to watch for: {{signs_of_bad_fit}}\n\n2) Call Structure\n\n### {{n_00_00_02_00}} Opening & Rapport\n**Objective**: Build connection, set agenda, get permission to ask questions\n\n**Script**:\n```\n\"{{opening_script_thank_them_rapport_set}}\"\n```\n\n**Transition to discovery**:\n```\n\"{{how_to_shift_to_questions}}\"\n```\n\n---\n\n### {{n_02_00_xx_xx}} Discovery Questions\n\n#### Area 1: Current State\n**Objective**: Understand how they work today\n\n**Questions**:\n1. \"{{question_open_ended}}\"\n   - If they say X, follow up with: \"{{follow_up}}\"\n   - If they say Y, follow up with: \"{{follow_up}}\"\n\n2. \"{{question}}\"\n3. \"{{question}}\"\n\n**Listen for**: {{key_insights_to_capture}}\n\n---\n\n#### Area 2: Pain/Challenges\n**Objective**: Uncover problems they need solved\n\n**Questions**:\n1. \"{{question_about_frustrations}}\"\n2. \"{{question_about_impact}}\"\n3. \"{{question_about_failed_attempts}}\"\n\n**Listen for**: {{key_insights}}\n**Probe deeper if**: {{when_to_dig_in}}\n\n---\n\n#### Area 3: Goals/Desired State\n**Objective**: Understand what success looks like\n\n**Questions**:\n1. \"{{question_about_ideal_outcome}}\"\n2. \"{{question_about_priorities}}\"\n3. \"{{question_about_timeline}}\"\n\n**Listen for**: {{key_insights}}\n\n---\n\n#### Area 4: Decision Process (BANT-style)\n**Objective**: Qualify the opportunity\n\n**Budget**:\n```\n\"{{question_tactful_budget_exploration}}\"\n```\n\n**Authority**:\n```\n\"{{question_who_else_is_involved}}\"\n```\n\n**Need**:\n```\n\"{{question_how_important_is_solving_this}}\"\n```\n\n**Timeline**:\n```\n\"{{question_when_do_they_need_a_solution}}\"\n```\n\n---\n\n### {{xx_xx_xx_xx}} Insight Sharing\n**Objective**: Position your expertise, provide value even if they don't buy\n\n**Transition**:\n```\n\"{{how_to_shift_from_questions_to_sharing}}\"\n```\n\n**Key points to share**:\n1. {{insight_relevant_to_their_situation}}\n2. {{insight}}\n3. {{insight}}\n\n**How to connect to your solution**:\n```\n\"{{bridge_statement}}\"\n```\n\n---\n\n### {{xx_xx_end}} Next Steps\n**Objective**: Gain commitment to next action\n\n**Summary**:\n```\n\"{{summarize_what_you_heard_confirm}}\"\n```\n\n**Proposal for next step**:\n```\n\"{{offer_specific_next_step_with_reason_it}}\"\n```\n\n**If hesitation**:\n- Response to \"let me think about it\": \"{{script}}\"\n- Response to \"send me information\": \"{{script}}\"\n- Response to \"I need to talk to...\": \"{{script}}\"\n\n**Calendar confirmation**:\n```\n\"{{get_commitment_locked_in}}\"\n```\n\n---\n\n3) Qualification Scorecard\nComplete during or immediately after call:\n\n| Criteria | Question to Answer | Score (1-5) | Notes |\n|----------|-------------------|-------------|-------|\n| Budget | Can they afford this? | | |\n| Authority | Are we talking to decision-maker? | | |\n| Need | Is the pain significant enough? | | |\n| Timeline | When do they need to decide? | | |\n| Fit | Does our solution actually help? | | |\n| **Total** | | **/25** | |\n\n**Threshold for advancing**: 18+ = Strong, 12-17 = Possible, <12 = Disqualify\n\n---\n\n4) Common Discovery Pitfalls\n| Mistake | Why It Hurts | How to Avoid |\n|---------|--------------|--------------|\n| Pitching too early | Kills trust | Ask about their world first |\n| Yes/No questions | Dead-end answers | Use open-ended \"Tell me about...\" |\n| Not listening | Miss real insights | Pause, take notes, paraphrase |\n| Skipping qualification | Waste time on bad fits | Ask the hard questions |\n\n5) Talk Time Ratio\n- Target: the prospect does most of the talking (a coaching guideline, not a measured benchmark)\n- If you are doing most of the talking, you are not discovering\n\n6) Post-Call Actions\n| Action | Deadline | Notes |\n|--------|----------|-------|\n| Send recap email | {{same_day}} | |\n| CRM update | {{same_day}} | |\n| Internal debrief | {{if_team_sale}} | |\n| Prepare for next step | {{before_next_meeting}} | |\n\n[CONSTRAINTS]\n- Questions > Pitching in discovery\n- Silence is a tool. Let them fill the space\n- Never assume. Always verify\n- Take notes. Paraphrase back to confirm\n- If not qualified, don't force it\n- End with clear, committed next step\n- Discovery doesn't end. Every call reveals more\n- Never present an assumption about the prospect as a fact.\n- Use only information present in INPUTS. Do not invent facts, names, dates, figures, citations or sources.\n- Where a required detail is missing from INPUTS, write \"Not provided.\" Never fill it with an invented value.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Read the prospect context and the call goal.\n2. Build the agenda in time blocks with a purpose for each.\n3. Write questions that uncover pain, impact and decision process.\n4. Prepare for likely objections using supplied facts only.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the Discovery Call Agenda now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Create structured discovery call plans that uncover real buyer needs.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{who_you_re_meeting}}",
+        "{{company_name}}",
+        "{{employees_revenue}}",
+        "{{sector}}",
+        "{{inbound_outbound_referral}}",
+        "{{relevant_announcements}}",
+        "{{insights}}",
+        "{{job_postings_reviews_tech_stack}}",
+        "{{personal_connections}}",
+        "{{n_15_30_45_60_minutes}}",
+        "{{names_roles}}",
+        "{{qualify_demo_deep_dive_other}}",
+        "{{what_you_want_coming_out}}",
+        "{{product_service}}",
+        "{{what_sets_you_apart}}",
+        "{{common_applications}}",
+        "{{who_you_shouldn_t_work_with}}",
+        "{{non_negotiables_for_a_good_fit}}",
+        "{{ideal_but_flexible}}",
+        "{{deal_breakers}}",
+        "{{key_goals_to_keep_in_mind}}",
+        "{{how_to_start_strong}}",
+        "{{personal_connections_to_reference}}",
+        "{{signs_of_bad_fit}}",
+        "{{n_00_00_02_00}}",
+        "{{opening_script_thank_them_rapport_set}}",
+        "{{how_to_shift_to_questions}}",
+        "{{n_02_00_xx_xx}}",
+        "{{question_open_ended}}",
+        "{{follow_up}}",
+        "{{question}}",
+        "{{key_insights_to_capture}}",
+        "{{question_about_frustrations}}",
+        "{{question_about_impact}}",
+        "{{question_about_failed_attempts}}",
+        "{{key_insights}}",
+        "{{when_to_dig_in}}",
+        "{{question_about_ideal_outcome}}",
+        "{{question_about_priorities}}",
+        "{{question_about_timeline}}",
+        "{{question_tactful_budget_exploration}}",
+        "{{question_who_else_is_involved}}",
+        "{{question_how_important_is_solving_this}}",
+        "{{question_when_do_they_need_a_solution}}",
+        "{{xx_xx_xx_xx}}",
+        "{{how_to_shift_from_questions_to_sharing}}",
+        "{{insight_relevant_to_their_situation}}",
+        "{{insight}}",
+        "{{bridge_statement}}",
+        "{{xx_xx_end}}",
+        "{{summarize_what_you_heard_confirm}}",
+        "{{offer_specific_next_step_with_reason_it}}",
+        "{{script}}",
+        "{{get_commitment_locked_in}}",
+        "{{same_day}}",
+        "{{if_team_sale}}",
+        "{{before_next_meeting}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "04",
+        "discovery-call-agenda",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-027",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 04: Planning & Training",
+      "title": "Training Content Creator",
+      "prompt": "[ROLE]\nYou are my Instructional Design Specialist. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nInstructional design for a training module. Source content comes only from INPUTS.\n\nINPUTS\nTraining Topic:\n{{what_skill_knowledge_are_you_teaching}}\n\nSource Material:\n{{paste_or_describe_the_content_to_be}}\n- Policies: {{reference}}\n- SOPs: {{reference}}\n- Expert knowledge: {{key_points}}\n- Existing training: {{what_exists_today}}\n\nAudience:\n- Learners: {{who_will_take_this_training}}\n- Prior knowledge: {{what_they_already_know}}\n- Learning context: {{self_paced_instructor_led_blended}}\n- Time available: {{module_length_target}}\n\nLearning Goals:\n- After this training, learners will be able to:\n  1. {{behavior_1}}\n  2. {{behavior_2}}\n  3. {{behavior_3}}\n\nConstraints:\n- Compliance requirement: {{mandatory_optional}}\n- Passing score: {{percentage}}\n- Accessibility needs: {{any_specific_requirements}}\n- Platform: {{lms_video_document}}\n\nDefinition of done:\n- Complete module structure\n- Assessment with answer key\n- Manager verification checklist\n\n[TASK]\nConvert source material into a complete training module that teaches effectively and verifies learning through assessment.\n\n[FORMAT]\n1) Module Overview\n- Title\n- Duration\n- Target audience\n- Prerequisites\n- Learning objectives (SMART format)\n\n2) Module Outline\n| Section | Duration | Content Type | Key Takeaways |\n\n3) Introduction Script (2 minutes)\n- Hook: Why this matters\n- Overview: What we'll cover\n- Expectations: What learner will be able to do\n\n4) Core Content Sections\nFor each major topic:\n\n### Section Title\n**Learning Objective**: {{what_learner_will_achieve}}\n\n**Content Script/Narration**:\n{{full_script_or_detailed_talking_points}}\n\n**Visual/Slide Notes**:\n- Slide 1: {{description_of_visual}}\n- Slide 2: {{description_of_visual}}\n\n**Key Points to Emphasize**:\n- Point 1\n- Point 2\n\n**Interaction Point**:\n- Reflection question or quick check\n\n**Transition to Next Section**:\n{{how_to_bridge_to_the_next_topic}}\n\n5) Scenarios/Examples\n| Scenario | What Happened | Correct Response | Why |\n\n6) Common Mistakes\n| Mistake | Consequence | How to Avoid |\n\n7) Knowledge Check Assessment\nInstructions: {{passing_criteria}}\n\nQuestion 1: {{question}}\nA) {{option}}\nB) {{option}}\nC) {{option}}\nD) {{option}}\nCorrect Answer: {{letter}}\nExplanation: {{why_this_is_correct}}\nLearning Objective Tested: {{which_lo}}\n\n{{repeat_until_the_question_types_mix_below}}\n\nQuestion Types Mix:\n- Multiple choice: 5\n- True/False: 3\n- Scenario-based: 2\n\n8) Practical Application\n- Hands-on exercise description\n- Observation checklist for evaluator\n- Success criteria\n\n9) Summary Script (1 minute)\n- Recap of key points\n- Call to action\n- Resources for deeper learning\n\n10) Manager Checklist\n| Verification Item | How to Verify | Verified (Y/N) |\n\n11) Additional Resources\n- Job aids\n- Quick reference guides\n- Where to get help\n\n[CONSTRAINTS]\n- Every content section must connect to a learning objective\n- Use concrete examples, not abstract concepts\n- Include checks for understanding every 5-7 minutes\n- Write assessment questions BEFORE content (backward design)\n- Write questions that test application, not just recall\n- Provide explanations for wrong answers too\n- Do not exceed specified duration\n- Flag content requiring SME validation with \"SME REVIEW\"\n- Flag content that needs subject matter expert validation with the label \"SME REVIEW\".\n- Do not add policy, legal or regulatory content that INPUTS does not supply.\n- Use only information present in INPUTS. Do not invent facts, names, dates, figures, citations or sources.\n- Where a required detail is missing from INPUTS, write \"Not provided.\" Never fill it with an invented value.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Define measurable learning objectives from the supplied source content.\n2. Write the assessment questions first, then build the content that prepares learners for them.\n3. Chunk the content to the duration limit in INPUTS.\n4. Check that each question maps to an objective and the question mix matches FORMAT exactly.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the Training Content Creator now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Transform policies, processes, and expertise into structured learning modules with assessments.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{what_skill_knowledge_are_you_teaching}}",
+        "{{paste_or_describe_the_content_to_be}}",
+        "{{reference}}",
+        "{{key_points}}",
+        "{{what_exists_today}}",
+        "{{who_will_take_this_training}}",
+        "{{what_they_already_know}}",
+        "{{self_paced_instructor_led_blended}}",
+        "{{module_length_target}}",
+        "{{behavior_1}}",
+        "{{behavior_2}}",
+        "{{behavior_3}}",
+        "{{mandatory_optional}}",
+        "{{percentage}}",
+        "{{any_specific_requirements}}",
+        "{{lms_video_document}}",
+        "{{what_learner_will_achieve}}",
+        "{{full_script_or_detailed_talking_points}}",
+        "{{description_of_visual}}",
+        "{{how_to_bridge_to_the_next_topic}}",
+        "{{passing_criteria}}",
+        "{{question}}",
+        "{{option}}",
+        "{{letter}}",
+        "{{why_this_is_correct}}",
+        "{{which_lo}}",
+        "{{repeat_until_the_question_types_mix_below}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "04",
+        "training-content-creator",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
+    },
+    {
+      "id": "BUS-028",
+      "domain": "Business",
+      "category": "Business workflow prompts · Phase 04: Planning & Training",
+      "title": "Decision Extractor",
+      "prompt": "[ROLE]\nYou are my Decision Intelligence Analyst. Operate as a skeptical consultant. Name weak or missing inputs before drafting.\n\n[CONTEXT]\nExtracting decisions from supplied notes, threads or transcripts.\n\nINPUTS\nSource Material:\n{{paste_meeting_notes_email_transcript}}\n\nContext:\n- Source type: {{meeting_email_document_call}}\n- Date: {{when}}\n- Participants: {{who_was_involved}}\n\n[TASK]\nExtract all decisions, commitments, and accountability assignments from source material.\n\n[FORMAT]\n1) Decisions Made\n| ID | Decision | Decision Maker | Date | Rationale | Reversible? |\n|----|----------|----------------|------|-----------|-------------|\n| D1 | {{decision}} | {{who}} | {{date}} | {{why}} | {{y_n}} |\n\n2) Commitments/Promises\n| ID | Commitment | Made By | To Whom | Deadline | Status |\n|----|------------|---------|---------|----------|--------|\n| C1 | {{what}} | {{who}} | {{who}} | {{when}} | Pending |\n\n3) Accountability Assignments\n| ID | Task | Owner | Deadline | Dependencies |\n|----|------|-------|----------|--------------|\n| A1 | {{task}} | {{who}} | {{date}} | {{depends_on}} |\n\n4) Implied but Not Explicit\nDecisions that seem assumed but weren't formally made:\n- {{implicit_decision}} - Consider confirming\n\n5) Conflicting Information\n| Conflict | Statement 1 | Statement 2 | Resolution Needed |\n|----------|-------------|-------------|-------------------|\n\n6) Missing Decisions\nItems discussed without clear resolution:\n- [ ] {{topic}} - Needs decision by: {{who}} before {{when}}\n\n[CONSTRAINTS]\n- Distinguish explicit decisions from assumptions\n- Every commitment needs a deadline (add \"TBD\" if missing)\n- Flag anything that contradicts earlier statements\n- If no owner was assigned, note it as \"UNASSIGNED\"\n- A suggestion is not a decision. Record it only if the source shows agreement or authority.\n- Use only information present in INPUTS. Do not invent facts, names, dates, figures, citations or sources.\n- Where a required detail is missing from INPUTS, write \"Not provided.\" Never fill it with an invented value.\n- No em-dashes. Use a period to start a new sentence or a comma to continue one.\n- Write in active voice. Cut any sentence that adds nothing.\n\n[REASONING STRATEGY]\nApply every step below to every section of FORMAT, not only the first.\n1. Scan the source for statements that commit to a choice.\n2. Record each decision with its owner, date and rationale only where the source states them.\n3. List decisions that were discussed but not made as open items.\n4. Quote the source line behind each decision.\n\n[EXAMPLES]\nStructural anchor: reproduce the headers, table columns and section order defined in FORMAT. Add no sections.\n\n[OUTPUT TRIGGER]\nProduce the Decision Extractor now from the inputs above. If a required input is still unfilled, list it under \"Missing inputs\" and stop. No commentary. No preamble. Execute.",
+      "best_for": "Extract decisions, owners, and commitments from any source material.",
+      "operation": "plan",
+      "output": {
+        "aspect_ratio": "Not applicable",
+        "format": "Business workflow prompt"
+      },
+      "variables": [
+        "{{paste_meeting_notes_email_transcript}}",
+        "{{meeting_email_document_call}}",
+        "{{when}}",
+        "{{who_was_involved}}",
+        "{{decision}}",
+        "{{who}}",
+        "{{date}}",
+        "{{why}}",
+        "{{y_n}}",
+        "{{what}}",
+        "{{task}}",
+        "{{depends_on}}",
+        "{{implicit_decision}}",
+        "{{topic}}"
+      ],
+      "acceptance_criteria": [
+        "Use only the supplied materials and inputs. List missing information instead of inventing it.",
+        "Follow the requested output structure, constraints, and source-grounding instructions.",
+        "Review factual accuracy, confidentiality, compliance needs, and audience fit before using the output."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": false,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "business",
+        "business-workflow",
+        "04",
+        "decision-extractor",
+        "review-led"
+      ],
+      "attribution": "CC BY 4.0, as stated in the uploaded source README."
     }
   ]
 }
