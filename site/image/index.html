@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Image prompts prompts from WenceStudio by SmartDesign.">
+    <title>Image prompts Prompt Library. WenceStudio</title>
+    <base href="../">
+    <link rel="icon" type="image/png" href="assets/images/wencestudio-logo.png">
+    <link rel="stylesheet" href="styles.css?v=20261017-library">
+  </head>
+  <body data-domain="image">
+    <a class="skip-link" href="#library">Skip to prompt library</a>
+    <header class="site-header">
+      <div class="brand-lockup">
+        <img class="brand-logo" src="assets/images/wencestudio-logo.png" width="640" height="640" alt="WenceStudio by SmartDesign logo">
+        <p class="eyebrow">WenceStudio by SmartDesign</p>
+      </div>
+      <nav class="library-nav" aria-label="Prompt library categories">
+        <a href="./">All prompts</a>
+        <a aria-current="page" href="image/">Image</a>
+        <a  href="video/">Video</a>
+        <span>Writing, coming soon</span><span>Learning, coming soon</span><span>Business, coming soon</span>
+      </nav>
+      <div class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Image prompts<br><em>for visual work.</em></h1>
+          <p class="lede">Production-oriented generation and editing prompts for commercial images, design systems, campaigns, and learning visuals.</p>
+        </div>
+        <aside class="release-note" aria-label="Library status">
+          <span>Collection</span><strong id="count">Loading</strong><small>Prompt cards with review checks</small>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Use light theme</button>
+        </aside>
+      </div>
+    </header>
+    <main id="library">
+      <section class="controls" aria-label="Filter prompt library">
+        <label><span>Search</span><input id="search" type="search" placeholder="Search this collection..." autocomplete="off"></label>
+        <label><span>Category</span><select id="collection"><option value="">All categories</option></select></label>
+        <label><span>Operation</span><select id="operation"><option value="">All operations</option></select></label>
+        <label><span>Resources</span><select id="media"><option value="">All cards</option><option value="image">With image previews</option><option value="pdf">With PDF guides</option></select></label>
+        <button id="clear" type="button">Clear filters</button>
+      </section>
+      <section class="library-head" aria-live="polite">
+        <p id="result-summary">Loading collection...</p>
+        <p class="review-note">Copy a prompt, replace its bracketed variables, then review the result before approval or publication.</p>
+      </section>
+      <section id="cards" class="cards" aria-label="Prompt results"></section>
+      <div class="more-results"><button id="load-more" type="button" hidden>Show more prompts</button></div>
+      <section id="empty" class="empty" hidden><p>No prompts match those filters.</p><button type="button" id="empty-clear">Show all prompts</button></section>
+    </main>
+    <template id="card-template"><article class="card"><div class="card-meta"><span class="card-id"></span><span class="card-operation"></span></div><h2 class="card-title"></h2><p class="card-collection"></p><p class="card-prompt"></p><div class="card-footer"><span class="card-output"></span><button type="button" class="copy">Copy prompt</button></div></article></template>
+    <p class="toast" id="toast" role="status" aria-live="polite"></p>
+    <script src="app.js?v=20261017-library"></script>
+  </body>
+</html>
