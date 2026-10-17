@@ -14,16 +14,24 @@
     <link rel="apple-touch-icon" href="assets/images/wencestudio-logo.png">
     <link rel="stylesheet" href="styles.css?v=20261002-ui-refresh">
   </head>
-  <body>
+  <body data-domain="all">
     <a class="skip-link" href="#library">Skip to prompt library</a>
     <header class="site-header">
       <div class="brand-lockup">
         <img class="brand-logo" src="assets/images/wencestudio-logo.png" width="640" height="640" alt="WenceStudio by SmartDesign logo">
         <p class="eyebrow">WenceStudio by SmartDesign</p>
       </div>
+      <nav class="library-nav" aria-label="Prompt library categories">
+        <a aria-current="page" href="./">All prompts</a>
+        <a href="image/">Image</a>
+        <a href="video/">Video</a>
+        <span aria-label="Planned category">Writing, coming soon</span>
+        <span aria-label="Planned category">Learning, coming soon</span>
+        <span aria-label="Planned category">Business, coming soon</span>
+      </nav>
       <div class="hero">
         <div class="hero-content">
-          <h1 class="hero-title">Prompt packs<br><em>for real visual work.</em></h1>
+          <h1 class="hero-title">Prompt library<br><em>for work that ships.</em></h1>
           <nav class="hero-links" aria-label="Learning resources">
             <span class="hero-link-item"><a href="https://github.com/Wence412/chatgpt-image-prompt-packs/blob/main/docs/prompt-techniques-playbook.md">Prompt Techniques Playbook</a></span>
             <span class="hero-link-item"><a href="https://github.com/Wence412/chatgpt-image-prompt-packs/blob/main/docs/image-production-briefs.md">Image Production Briefs</a></span>
@@ -31,18 +39,27 @@
             <span class="hero-link-item"><a href="#free-pdfs">Free PDF guides</a></span>
             <span class="hero-link-item"><a href="https://wencestudio-prompt-topixel.beehiiv.com" target="_blank" rel="noopener">Subscribe to Prompt to Pixel</a></span>
           </nav>
-          <p class="lede">Search production-oriented generation and editing prompts. Each capability card includes inputs, output requirements, and a human review gate.</p>
+          <p class="lede">Search reviewed image and video prompts today. New writing, learning, business, research, and code collections will use the same structured, review-led system.</p>
         </div>
         <aside class="release-note" aria-label="Library status">
           <span>Library status</span>
           <strong id="count">Loading</strong>
-          <small>Prompt templates and capability cards</small>
+          <small>Image and video prompts</small>
           <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Use light theme</button>
         </aside>
       </div>
     </header>
 
     <main id="library">
+      <section class="library-directory" aria-labelledby="directory-heading">
+        <p class="eyebrow">Browse by category</p>
+        <h2 id="directory-heading">Choose the work you need to make.</h2>
+        <div class="domain-grid">
+          <a class="domain-card" href="image/"><span>Image</span><strong>Generation and editing</strong><small>Product, people, packaging, illustration, social, and educational visuals.</small></a>
+          <a class="domain-card" href="video/"><span>Video</span><strong>Creation and editing</strong><small>Cinematic upgrades, scene changes, pacing, effects, motion graphics, and loops.</small></a>
+          <div class="domain-card is-planned"><span>Next</span><strong>Writing, learning, business, research, and code</strong><small>Dedicated collections will appear as their reviewed starter sets are published.</small></div>
+        </div>
+      </section>
       <section id="free-pdfs" class="free-pdfs" aria-labelledby="free-pdfs-heading">
         <p class="eyebrow">Free learning resources</p>
         <h2 id="free-pdfs-heading">Take the guides with you.</h2>
