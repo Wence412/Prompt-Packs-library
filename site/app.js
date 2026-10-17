@@ -29,7 +29,11 @@ async function copyPrompt(prompt) {
 function populateFilters() {
   unique(state.prompts.map(prompt => prompt.collection)).forEach(value => elements.collection.add(new Option(value, value)));
   unique(state.prompts.map(prompt => prompt.operation)).forEach(value => elements.operation.add(new Option(value, value)));
-  if (domain === 'video') elements.media.closest('label').hidden = true;
+  if (domain === 'video') {
+    const mediaFilter = elements.media.closest('label');
+    mediaFilter.hidden = true;
+    mediaFilter.style.display = 'none';
+  }
 }
 
 function results() {
