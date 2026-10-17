@@ -1,10 +1,10 @@
 {
   "metadata": {
     "name": "Professional Video Prompts: AI Workflow Guide",
-    "version": "1.0.0",
-    "source": "Professional Video Prompts.pdf",
-    "total_prompts": 20,
-    "description": "Video editing prompt cards for review-led, consent-aware workflows."
+    "version": "1.1.0",
+    "source": "Professional Video Prompts.pdf; AI Video Prompt Packs.md",
+    "total_prompts": 84,
+    "description": "Video editing, generation, production, and workflow prompt cards for review-led, consent-aware workflows."
   },
   "prompts": [
     {
@@ -645,6 +645,2187 @@
         "video",
         "camera-pacing",
         "seamless-loop-creation"
+      ]
+    },
+    {
+      "id": "VID-021",
+      "domain": "Video",
+      "category": "AI Video Generator",
+      "title": "Establishing hero shot",
+      "prompt": "SUBJECT: [SUBJECT AND FIXED DETAILS, e.g. a lone architect in a charcoal coat].\nACTION: [ONE BEAT, e.g. walks toward a glass tower as the doors open].\nSETTING: [LOCATION], [TIME OF DAY], [WEATHER].\nCAMERA: 35mm lens, slow dolly-in at walking pace, eye level, shallow depth of field.\nLIGHTING: low sun from camera left, warm 3200K key against cool shadow fill, soft haze catching the rays.\nCOMPOSITION: subject on the right third, tower filling the left two thirds, leading lines converging on the doors.\nNARRATIVE: the viewer should feel arrival and quiet authority by the last frame.\nPROTECTED: coat color, silhouette and doorway geometry stay identical.\nFORMAT: [9:16 or 16:9], [DURATION] seconds, 24 fps.\nAUDIO: Voiceover in [LANGUAGE], [PACE], [VOICE STYLE], reading: \"[VO LINE]\". Background music: [GENRE AND MOOD], instrumental, ducked under the voice, rising on the final beat.",
+      "best_for": "Pack 1: AI Video Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "9:16 or flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[SUBJECT AND FIXED DETAILS, e.g. a lone architect in a charcoal coat]",
+        "[ONE BEAT, e.g. walks toward a glass tower as the doors open]",
+        "[LOCATION]",
+        "[TIME OF DAY]",
+        "[WEATHER]",
+        "[9:16 or 16:9]",
+        "[DURATION]",
+        "[LANGUAGE]",
+        "[PACE]",
+        "[VOICE STYLE]",
+        "[VO LINE]",
+        "[GENRE AND MOOD]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-video-generator",
+        "establishing-hero-shot"
+      ]
+    },
+    {
+      "id": "VID-022",
+      "domain": "Video",
+      "category": "AI Video Generator",
+      "title": "Character in motion",
+      "prompt": "SUBJECT: [CHARACTER: age range, wardrobe, hair, one distinguishing detail].\nACTION: [ONE BEAT, e.g. turns from a window and meets the lens].\nSETTING: [INTERIOR OR EXTERIOR], [PRACTICAL LIGHT SOURCES VISIBLE IN FRAME].\nCAMERA: 50mm lens at f/1.8 feel, handheld with gentle drift, medium close-up.\nLIGHTING: window light from screen left as key, practical lamp as warm kicker, deep soft shadow on the far cheek.\nCOMPOSITION: eyes on the upper third line, background blurred into two color blocks.\nNARRATIVE: a private decision lands in the character's expression; end on the held look.\nPROTECTED: face shape, wardrobe and hair stay identical across the clip.\nFORMAT: [ASPECT], [DURATION] seconds, 24 fps.\nAUDIO: [PASTE AUDIO RULE LINE WITH YOUR VO LINE AND MUSIC DIRECTION]",
+      "best_for": "Pack 1: AI Video Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[CHARACTER: age range, wardrobe, hair, one distinguishing detail]",
+        "[ONE BEAT, e.g. turns from a window and meets the lens]",
+        "[INTERIOR OR EXTERIOR]",
+        "[PRACTICAL LIGHT SOURCES VISIBLE IN FRAME]",
+        "[ASPECT]",
+        "[DURATION]",
+        "[PASTE AUDIO RULE LINE WITH YOUR VO LINE AND MUSIC DIRECTION]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-video-generator",
+        "character-in-motion"
+      ]
+    },
+    {
+      "id": "VID-023",
+      "domain": "Video",
+      "category": "AI Video Generator",
+      "title": "Black and gold editorial mood",
+      "prompt": "SUBJECT: [OBJECT OR FORM, e.g. a brushed gold ring suspended in black space].\nACTION: slow rotation with light sweeping across the surface.\nSETTING: matte black studio void with a faint reflective floor.\nCAMERA: 100mm macro feel, locked-off frame, rack focus from edge to center.\nLIGHTING: single gold-toned strip light from above right, thin rim light from behind, no fill.\nCOMPOSITION: subject centered low, generous negative space above for headline text.\nNARRATIVE: luxury, restraint and precision. The final frame holds still for two seconds.\nFORMAT: [ASPECT], [DURATION] seconds, 24 fps, cinematic grade with crushed blacks.\nAUDIO: [PASTE AUDIO RULE LINE. Music direction: slow cinematic pulse, low strings, sparse piano.]",
+      "best_for": "Pack 1: AI Video Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[OBJECT OR FORM, e.g. a brushed gold ring suspended in black space]",
+        "[ASPECT]",
+        "[DURATION]",
+        "[PASTE AUDIO RULE LINE. Music direction: slow cinematic pulse, low strings, sparse piano.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-video-generator",
+        "black-and-gold-editorial-mood"
+      ]
+    },
+    {
+      "id": "VID-024",
+      "domain": "Video",
+      "category": "AI Video Generator",
+      "title": "Transition shot between scenes",
+      "prompt": "SUBJECT: [OBJECT SHARED BY BOTH SCENES, e.g. a hand reaching toward a door handle].\nACTION: the move ends on a frame that matches the opening frame of [NEXT SCENE].\nCAMERA: 24mm lens, push-through movement, motion blur on the edges only.\nLIGHTING: same color temperature as [SCENE A], shifting to [SCENE B] over the last second.\nCOMPOSITION: shared object at frame center at the exact cut point.\nNARRATIVE: the viewer reads time or place change without a caption.\nAUDIO: [PASTE AUDIO RULE LINE. Music holds across the cut with no break.]",
+      "best_for": "Pack 1: AI Video Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[OBJECT SHARED BY BOTH SCENES, e.g. a hand reaching toward a door handle]",
+        "[NEXT SCENE]",
+        "[SCENE A]",
+        "[SCENE B]",
+        "[PASTE AUDIO RULE LINE. Music holds across the cut with no break.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-video-generator",
+        "transition-shot-between-scenes"
+      ]
+    },
+    {
+      "id": "VID-025",
+      "domain": "Video",
+      "category": "AI Video Generator",
+      "title": "Shot-list builder (paste into Claude)",
+      "prompt": "Act as a cinematographer and prompt engineer. Take this brief: [BRIEF IN ONE PARAGRAPH]. Return a numbered shot list of [N] shots. For each shot write: shot number, duration in seconds, one action beat, lens, camera movement, lighting, composition, narrative purpose, and one voiceover line of 8 to 14 words. Add one music direction for the whole sequence. Return a table, ordered by timeline. Go beyond the basics. Think before answering (maximum reasoning).",
+      "best_for": "Pack 1: AI Video Generator",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [
+        "[BRIEF IN ONE PARAGRAPH]",
+        "[N]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-video-generator",
+        "shot-list-builder-paste-into-claude"
+      ]
+    },
+    {
+      "id": "VID-026",
+      "domain": "Video",
+      "category": "Reference to Video",
+      "title": "Animate an approved still",
+      "prompt": "REFERENCE: [ATTACHED APPROVED IMAGE] is the first frame. Keep subject, wardrobe, background and framing exactly as shown.\nACTION: [ONE BEAT, e.g. the subject lifts the cup and exhales steam].\nCAMERA: [LENS]mm feel, [MOVEMENT: slow push-in / static / gentle orbit of 15 degrees].\nENVIRONMENT MOTION: [e.g. steam drifting, curtains moving, dust in the light beam].\nPROTECTED: face, hands, logo and text on the object stay identical in every frame.\nENDING: the last frame holds on [END STATE] for 1 second.\nFORMAT: [ASPECT], [DURATION] seconds.\nAUDIO: [PASTE AUDIO RULE LINE]",
+      "best_for": "Pack 2: Reference to Video",
+      "operation": "animate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[ATTACHED APPROVED IMAGE]",
+        "[ONE BEAT, e.g. the subject lifts the cup and exhales steam]",
+        "[LENS]",
+        "[MOVEMENT: slow push-in / static / gentle orbit of 15 degrees]",
+        "[e.g. steam drifting, curtains moving, dust in the light beam]",
+        "[END STATE]",
+        "[ASPECT]",
+        "[DURATION]",
+        "[PASTE AUDIO RULE LINE]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "reference-to-video",
+        "animate-an-approved-still"
+      ]
+    },
+    {
+      "id": "VID-027",
+      "domain": "Video",
+      "category": "Reference to Video",
+      "title": "Character consistency across shots",
+      "prompt": "REFERENCES: image A is the character sheet (face and wardrobe), image B is the location.\nSHOT [N] OF [TOTAL]: the character from image A [ACTION BEAT] in the location from image B.\nCAMERA: [LENS]mm, [FRAMING: medium / close-up / wide], [MOVEMENT].\nLIGHTING: match the light direction and color temperature in image B.\nPROTECTED: same face, same wardrobe, same hair length and color as image A.\nNARRATIVE: this shot advances the story by [ONE SENTENCE].\nAUDIO: [PASTE AUDIO RULE LINE. Keep the music cue and voice identical to shot N-1 for continuity.]",
+      "best_for": "Pack 2: Reference to Video",
+      "operation": "animate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[N]",
+        "[TOTAL]",
+        "[ACTION BEAT]",
+        "[LENS]",
+        "[FRAMING: medium / close-up / wide]",
+        "[MOVEMENT]",
+        "[ONE SENTENCE]",
+        "[PASTE AUDIO RULE LINE. Keep the music cue and voice identical to shot N-1 for continuity.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "reference-to-video",
+        "character-consistency-across-shots"
+      ]
+    },
+    {
+      "id": "VID-028",
+      "domain": "Video",
+      "category": "Reference to Video",
+      "title": "Style reference transfer",
+      "prompt": "REFERENCES: image A is the subject, image B is the style frame.\nTASK: render the subject from image A in the visual language of image B: same color grade, grain, contrast curve and lighting mood. Keep the subject's shape and identity from image A.\nACTION: [ONE BEAT].\nCAMERA: [LENS]mm, [MOVEMENT].\nCOMPOSITION: subject placement from image A, negative space balance from image B.\nAUDIO: [PASTE AUDIO RULE LINE. Music mood matches the style frame: e.g. warm analog for film grain, clean synth for flat graphic.]",
+      "best_for": "Pack 2: Reference to Video",
+      "operation": "animate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[ONE BEAT]",
+        "[LENS]",
+        "[MOVEMENT]",
+        "[PASTE AUDIO RULE LINE. Music mood matches the style frame: e.g. warm analog for film grain, clean synth for flat graphic.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "reference-to-video",
+        "style-reference-transfer"
+      ]
+    },
+    {
+      "id": "VID-029",
+      "domain": "Video",
+      "category": "Reference to Video",
+      "title": "First frame to last frame",
+      "prompt": "REFERENCES: image A is the opening frame, image B is the closing frame.\nTASK: generate the motion that moves naturally from A to B in [DURATION] seconds. Describe the path: [e.g. the camera rises and turns while the subject steps out of frame].\nCAMERA: [LENS]mm, [MOVEMENT].\nPROTECTED: every element present in both A and B keeps its shape and color throughout.\nAUDIO: [PASTE AUDIO RULE LINE. Music builds from the opening mood to the closing mood.]",
+      "best_for": "Pack 2: Reference to Video",
+      "operation": "animate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[DURATION]",
+        "[e.g. the camera rises and turns while the subject steps out of frame]",
+        "[LENS]",
+        "[MOVEMENT]",
+        "[PASTE AUDIO RULE LINE. Music builds from the opening mood to the closing mood.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "reference-to-video",
+        "first-frame-to-last-frame"
+      ]
+    },
+    {
+      "id": "VID-030",
+      "domain": "Video",
+      "category": "Reference to Video",
+      "title": "Reference audit (paste into Claude with your images)",
+      "prompt": "Review the attached reference image(s) for animation readiness. Return a table with these columns: element, risk if animated (identity drift, hand distortion, text warping, logo distortion, geometry), severity 1 to 5, and one fix. Then write the single best image-to-video prompt for the strongest reference, following this anatomy: action beat, camera and lens, environment motion, protected details, ending frame. Flag anything you cannot verify from the image.",
+      "best_for": "Pack 2: Reference to Video",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "reference-to-video",
+        "reference-audit-paste-into-claude-with-your-images"
+      ]
+    },
+    {
+      "id": "VID-031",
+      "domain": "Video",
+      "category": "AI UGC Maker",
+      "title": "Selfie talk-to-camera",
+      "prompt": "SUBJECT: a [AGE RANGE] presenter, [WARDROBE], [HAIR], natural skin texture, holding [PRODUCT] near the lens.\nACTION: speaks directly to camera, one small gesture toward the product at the midpoint.\nSETTING: [REAL-LOOKING ROOM, e.g. bright kitchen with a lived-in counter].\nCAMERA: front-facing phone camera, 26mm equivalent, arm's-length selfie framing, slight natural hand sway.\nLIGHTING: soft window light from screen right, no studio fill, natural skin shine allowed.\nCOMPOSITION: face in the upper half, product in the lower right, background slightly cluttered and real.\nNARRATIVE: the viewer should feel a friend is sharing a find, ending on a relaxed smile.\nPROTECTED: product label and packaging text stay readable and unchanged.\nFORMAT: 9:16, [DURATION] seconds, 30 fps.\nAUDIO: Voiceover in [LANGUAGE], conversational pace, [VOICE STYLE], reading: \"[VO LINE]\". Background music: [e.g. light lo-fi beat], instrumental, low under the voice, ducked while speaking.",
+      "best_for": "Pack 3: AI UGC Maker",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "9:16 or flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[AGE RANGE]",
+        "[WARDROBE]",
+        "[HAIR]",
+        "[PRODUCT]",
+        "[REAL-LOOKING ROOM, e.g. bright kitchen with a lived-in counter]",
+        "[DURATION]",
+        "[LANGUAGE]",
+        "[VOICE STYLE]",
+        "[VO LINE]",
+        "[e.g. light lo-fi beat]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-ugc-maker",
+        "selfie-talk-to-camera"
+      ]
+    },
+    {
+      "id": "VID-032",
+      "domain": "Video",
+      "category": "AI UGC Maker",
+      "title": "Unboxing",
+      "prompt": "SUBJECT: hands only, [SKIN TONE AND NAIL STYLE OPTIONAL], opening a [PRODUCT PACKAGE].\nACTION: lift the lid, pause, lift the product out and turn it toward the lens.\nSETTING: [TABLE OR BED SURFACE], tidy but lived-in.\nCAMERA: top-down phone angle for the first half, tilt to a 45 degree angle for the reveal, 24mm equivalent.\nLIGHTING: daylight from a window behind the camera, soft shadows under the box.\nCOMPOSITION: package centered, hands entering from the bottom of frame.\nNARRATIVE: anticipation, then a clean reveal of the product with the label facing the lens.\nAUDIO: [PASTE AUDIO RULE LINE. Add subtle paper and lid sounds under the music.]",
+      "best_for": "Pack 3: AI UGC Maker",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[SKIN TONE AND NAIL STYLE OPTIONAL]",
+        "[PRODUCT PACKAGE]",
+        "[TABLE OR BED SURFACE]",
+        "[PASTE AUDIO RULE LINE. Add subtle paper and lid sounds under the music.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-ugc-maker",
+        "unboxing"
+      ]
+    },
+    {
+      "id": "VID-033",
+      "domain": "Video",
+      "category": "AI UGC Maker",
+      "title": "Routine walk-through",
+      "prompt": "SUBJECT: a [AGE RANGE] presenter, [WARDROBE], doing [ROUTINE, e.g. a morning desk setup].\nACTION: three quick beats: [BEAT 1], [BEAT 2], [BEAT 3], each held for about 2 seconds.\nCAMERA: handheld phone footage, 24mm equivalent, cuts on movement between beats.\nLIGHTING: morning daylight, warm and directional from one window.\nCOMPOSITION: product visible in every beat, never in the dead center of frame.\nNARRATIVE: the product fits naturally into the routine and the last frame shows the finished setup.\nAUDIO: [PASTE AUDIO RULE LINE. Voiceover reads over the beats like a casual caption read aloud.]",
+      "best_for": "Pack 3: AI UGC Maker",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[AGE RANGE]",
+        "[WARDROBE]",
+        "[ROUTINE, e.g. a morning desk setup]",
+        "[BEAT 1]",
+        "[BEAT 2]",
+        "[BEAT 3]",
+        "[PASTE AUDIO RULE LINE. Voiceover reads over the beats like a casual caption read aloud.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-ugc-maker",
+        "routine-walk-through"
+      ]
+    },
+    {
+      "id": "VID-034",
+      "domain": "Video",
+      "category": "AI UGC Maker",
+      "title": "Car or couch confession format",
+      "prompt": "SUBJECT: a [AGE RANGE] presenter seated in [CAR PARKED / COUCH], speaking to a phone propped at eye level.\nACTION: leans in for the opening line, relaxes into the main point, ends with a direct look at the lens.\nCAMERA: static phone frame, 26mm equivalent, tiny autofocus breathing.\nLIGHTING: ambient daylight through the windshield or window, mixed with one soft lamp.\nNARRATIVE: honest, low-pressure recommendation tone. End on the line, then 1 second of held silence.\nAUDIO: [PASTE AUDIO RULE LINE. Keep music extremely low, almost bed-only.]",
+      "best_for": "Pack 3: AI UGC Maker",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[AGE RANGE]",
+        "[CAR PARKED / COUCH]",
+        "[PASTE AUDIO RULE LINE. Keep music extremely low, almost bed-only.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-ugc-maker",
+        "car-or-couch-confession-format"
+      ]
+    },
+    {
+      "id": "VID-035",
+      "domain": "Video",
+      "category": "AI UGC Maker",
+      "title": "UGC script writer (paste into Claude)",
+      "prompt": "Write a [DURATION]-second UGC script for [PRODUCT AND ONE-LINE DESCRIPTION] aimed at [AUDIENCE]. Use only these verified product facts: [FACT 1], [FACT 2], [FACT 3]. Write in first-person creator voice, 6th-grade reading level, [TONE]. Structure: hook (first 1.7 seconds spoken), one specific moment of use, one benefit tied to a verified fact, soft call to action. Return a two-column table: spoken line, on-screen action. Invent no results, numbers or testimonials. Mark any line that needs substantiation with [VERIFY].",
+      "best_for": "Pack 3: AI UGC Maker",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [
+        "[DURATION]",
+        "[PRODUCT AND ONE-LINE DESCRIPTION]",
+        "[AUDIENCE]",
+        "[FACT 1]",
+        "[FACT 2]",
+        "[FACT 3]",
+        "[TONE]",
+        "[VERIFY]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-ugc-maker",
+        "ugc-script-writer-paste-into-claude"
+      ]
+    },
+    {
+      "id": "VID-036",
+      "domain": "Video",
+      "category": "UGC Avatar Maker",
+      "title": "Avatar bible (paste into Claude)",
+      "prompt": "Create an avatar bible for a fictional UGC presenter who speaks to [AUDIENCE] about [CATEGORY]. Return a table with these fields: age range, build, face shape, skin tone and texture notes, hair, signature wardrobe (3 outfits), one distinguishing detail, speaking pace, vocabulary level, three catchphrase-free mannerisms, preferred locations (3), and a list of 6 protected details that must never change. Make the presenter specific and ordinary, never a lookalike of any real person. Add a one-paragraph image prompt that reproduces the avatar from scratch.",
+      "best_for": "Pack 4: UGC Avatar Maker",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [
+        "[AUDIENCE]",
+        "[CATEGORY]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ugc-avatar-maker",
+        "avatar-bible-paste-into-claude"
+      ]
+    },
+    {
+      "id": "VID-037",
+      "domain": "Video",
+      "category": "UGC Avatar Maker",
+      "title": "Avatar still (the approved first frame)",
+      "prompt": "SUBJECT: [AVATAR BIBLE PARAGRAPH, with fixed details].\nSETTING: [LOCATION FROM THE BIBLE].\nCAMERA: 35mm lens, chest-up framing, eye level, shallow depth of field, slight asymmetry in framing.\nLIGHTING: soft daylight key from screen left, gentle fill from a pale wall, natural skin texture preserved.\nCOMPOSITION: eyes on the upper third, shoulders slightly off-axis, 10 percent headroom.\nNARRATIVE: approachable and credible, mid-thought expression before speaking.\nFORMAT: 9:16 still, high resolution, no text overlays.",
+      "best_for": "Pack 4: UGC Avatar Maker",
+      "operation": "animate",
+      "output": {
+        "aspect_ratio": "9:16 or flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[AVATAR BIBLE PARAGRAPH, with fixed details]",
+        "[LOCATION FROM THE BIBLE]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ugc-avatar-maker",
+        "avatar-still-the-approved-first-frame"
+      ]
+    },
+    {
+      "id": "VID-038",
+      "domain": "Video",
+      "category": "UGC Avatar Maker",
+      "title": "Talking performance",
+      "prompt": "REFERENCE: [APPROVED AVATAR STILL] is the first frame.\nPERFORMANCE: speaks the script below with natural blinks, small head movements, eyebrow emphasis on key words, one hand gesture at the midpoint. Mouth shapes match the audio exactly.\nCAMERA: locked phone frame with 1 to 2 percent handheld drift.\nPROTECTED: face, hair, wardrobe and background stay identical for the full clip.\nNARRATIVE: finish on a relaxed half-smile and a held look.\nAUDIO: Voiceover in [LANGUAGE], [PACE], [VOICE STYLE], reading: \"[VO LINE]\". Background music: [GENRE AND MOOD], instrumental, ducked under the voice.",
+      "best_for": "Pack 4: UGC Avatar Maker",
+      "operation": "animate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[APPROVED AVATAR STILL]",
+        "[LANGUAGE]",
+        "[PACE]",
+        "[VOICE STYLE]",
+        "[VO LINE]",
+        "[GENRE AND MOOD]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ugc-avatar-maker",
+        "talking-performance"
+      ]
+    },
+    {
+      "id": "VID-039",
+      "domain": "Video",
+      "category": "UGC Avatar Maker",
+      "title": "Wardrobe and location variants",
+      "prompt": "REFERENCE: [APPROVED AVATAR STILL].\nTASK: keep the same person and change only the [WARDROBE / LOCATION] to [NEW DETAIL]. Preserve face, hair, skin tone and build exactly.\nLIGHTING: match the new location's light source and color temperature.\nCAMERA AND COMPOSITION: identical to the reference.",
+      "best_for": "Pack 4: UGC Avatar Maker",
+      "operation": "animate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[APPROVED AVATAR STILL]",
+        "[WARDROBE / LOCATION]",
+        "[NEW DETAIL]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ugc-avatar-maker",
+        "wardrobe-and-location-variants"
+      ]
+    },
+    {
+      "id": "VID-040",
+      "domain": "Video",
+      "category": "UGC Avatar Maker",
+      "title": "Avatar-with-product interaction",
+      "prompt": "REFERENCES: image A is the avatar still, image B is the product on a plain background.\nACTION: the avatar picks up the product with the right hand, turns the label toward the lens, and points at one feature with the left index finger.\nPROTECTED: product shape, label text and color stay exact. Fingers stay anatomically correct, five per hand.\nCAMERA: 35mm lens, slow 5 percent push-in.\nAUDIO: [PASTE AUDIO RULE LINE. Voice emphasis lands on the pointing gesture.]",
+      "best_for": "Pack 4: UGC Avatar Maker",
+      "operation": "animate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[PASTE AUDIO RULE LINE. Voice emphasis lands on the pointing gesture.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ugc-avatar-maker",
+        "avatar-with-product-interaction"
+      ]
+    },
+    {
+      "id": "VID-041",
+      "domain": "Video",
+      "category": "UGC Ads Generator",
+      "title": "Hook batch (paste into Claude)",
+      "prompt": "Generate 7 hooks for a UGC ad for [PRODUCT] on [TikTok / Reels / Shorts], one per category in this order: Receipt, Contrarian, Negative Frame, Curiosity Gap, Us-vs-Them, How-To Promise, Pattern Interrupt. Use only these real assets: [VERIFIED NUMBER OR RESULT WITH SOURCE], [REAL OPINION], [REAL MISTAKE OR COMMON ERROR]. Each hook must work as both the spoken line and the on-screen text in the first 1.7 seconds. If a category has no real asset to build on, write NEEDS ASSET and name the one detail required. Return a table: category, spoken hook, on-screen text.",
+      "best_for": "Pack 5: UGC Ads Generator",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [
+        "[PRODUCT]",
+        "[TikTok / Reels / Shorts]",
+        "[VERIFIED NUMBER OR RESULT WITH SOURCE]",
+        "[REAL OPINION]",
+        "[REAL MISTAKE OR COMMON ERROR]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ugc-ads-generator",
+        "hook-batch-paste-into-claude"
+      ]
+    },
+    {
+      "id": "VID-042",
+      "domain": "Video",
+      "category": "UGC Ads Generator",
+      "title": "Direct-response ad, 20 to 30 seconds",
+      "prompt": "SUBJECT: [PRESENTER DESCRIPTION OR AVATAR REFERENCE] with [PRODUCT].\nBEAT 1 (0 to 2 s): hook, spoken to camera: \"[HOOK]\".\nBEAT 2 (2 to 8 s): the problem shown in action: [SHORT SCENE].\nBEAT 3 (8 to 18 s): the product in use, label readable, one verified feature: [FEATURE].\nBEAT 4 (18 to 25 s): offer and call to action: \"[OFFER AND CTA]\".\nCAMERA: phone-native 26mm equivalent, quick cuts on movement, one punch-in on the product.\nLIGHTING: bright natural light, no heavy grade, skin kept natural.\nCOMPOSITION: keep on-screen text and the face clear of the top and bottom interface zones.\nNARRATIVE: the viewer understands the problem, sees the fix, and knows the next step.\nFORMAT: 9:16, [DURATION] seconds.\nAUDIO: Voiceover in [LANGUAGE], brisk and warm, [VOICE STYLE], reading the beats above. Background music: [UPBEAT GENRE], 100 to 120 BPM, instrumental, ducked under the voice, lifting on the call to action.",
+      "best_for": "Pack 5: UGC Ads Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "9:16 or flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[PRESENTER DESCRIPTION OR AVATAR REFERENCE]",
+        "[PRODUCT]",
+        "[HOOK]",
+        "[SHORT SCENE]",
+        "[FEATURE]",
+        "[OFFER AND CTA]",
+        "[DURATION]",
+        "[LANGUAGE]",
+        "[VOICE STYLE]",
+        "[UPBEAT GENRE]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ugc-ads-generator",
+        "direct-response-ad-20-to-30-seconds"
+      ]
+    },
+    {
+      "id": "VID-043",
+      "domain": "Video",
+      "category": "UGC Ads Generator",
+      "title": "Creator-recommendation ad (no fabricated testimonial)",
+      "prompt": "Format: a fictional creator presents the product's verified features in first person without claiming a personal outcome. Allowed phrasing: \"here is what it does\", \"what I noticed about the design\". Disallowed: claimed results, before and after claims, medical or financial outcomes.\nSUBJECT: [AVATAR] holding [PRODUCT].\nACTION: shows [FEATURE 1], then [FEATURE 2], then the packaging.\nCAMERA: handheld 24mm equivalent, close on the product details.\nAUDIO: [PASTE AUDIO RULE LINE]",
+      "best_for": "Pack 5: UGC Ads Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[AVATAR]",
+        "[PRODUCT]",
+        "[FEATURE 1]",
+        "[FEATURE 2]",
+        "[PASTE AUDIO RULE LINE]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ugc-ads-generator",
+        "creator-recommendation-ad-no-fabricated-testimonial"
+      ]
+    },
+    {
+      "id": "VID-044",
+      "domain": "Video",
+      "category": "UGC Ads Generator",
+      "title": "A/B variant matrix (paste into Claude)",
+      "prompt": "Take the ad script below and produce 6 variants that change one variable each: hook category, opening visual, presenter wardrobe, offer framing, call-to-action wording, music mood. Keep every verified product fact unchanged. Return a table with variant name, the one variable changed, the full revised first 3 seconds (spoken line plus visual), and a note on what each variant tests. SCRIPT: [PASTE SCRIPT]",
+      "best_for": "Pack 5: UGC Ads Generator",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [
+        "[PASTE SCRIPT]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ugc-ads-generator",
+        "a-b-variant-matrix-paste-into-claude"
+      ]
+    },
+    {
+      "id": "VID-045",
+      "domain": "Video",
+      "category": "UGC Ads Generator",
+      "title": "Ad compliance check (paste into Claude)",
+      "prompt": "Review this ad script as a compliance reviewer. Flag every claim that needs substantiation, every implied guarantee, every before and after implication, and every line that could read as a fabricated testimonial. For each flag give the line, the risk, and a safer rewrite. Mark anything you cannot verify as UNVERIFIED. SCRIPT: [PASTE SCRIPT]",
+      "best_for": "Pack 5: UGC Ads Generator",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [
+        "[PASTE SCRIPT]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ugc-ads-generator",
+        "ad-compliance-check-paste-into-claude"
+      ]
+    },
+    {
+      "id": "VID-046",
+      "domain": "Video",
+      "category": "TikTok Video Generator",
+      "title": "Three-beat native TikTok",
+      "prompt": "SUBJECT: [PRESENTER OR AVATAR] in [SETTING].\nBEAT 1 (0 to 1.7 s): pattern interrupt. [UNEXPECTED FIRST FRAME OR LINE] with on-screen text: \"[HOOK TEXT]\".\nBEAT 2 (1.7 to 10 s): the payoff, shown in action: [DEMONSTRATION OR STORY MOMENT].\nBEAT 3 (10 to 15 s): the turn and the ask: \"[CLOSING LINE]\".\nCAMERA: handheld vertical, 24mm equivalent, jump cuts every 2 to 3 seconds, one punch-in at the turn.\nLIGHTING: natural light with a visible source, no studio look.\nCOMPOSITION: subject centered in the safe area, captions in the lower middle, clear of the interface.\nNARRATIVE: curiosity in beat 1, satisfaction in beat 2, a clear next action in beat 3.\nFORMAT: 9:16, [DURATION] seconds, 30 fps.\nAUDIO: Voiceover in [LANGUAGE], energetic, [VOICE STYLE], reading: \"[VO LINE]\". Background music: [GENRE], [BPM], instrumental, hard cut on the beat at the turn.",
+      "best_for": "Pack 6: TikTok Video Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "9:16 or flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[PRESENTER OR AVATAR]",
+        "[SETTING]",
+        "[UNEXPECTED FIRST FRAME OR LINE]",
+        "[HOOK TEXT]",
+        "[DEMONSTRATION OR STORY MOMENT]",
+        "[CLOSING LINE]",
+        "[DURATION]",
+        "[LANGUAGE]",
+        "[VOICE STYLE]",
+        "[VO LINE]",
+        "[GENRE]",
+        "[BPM]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "tiktok-video-generator",
+        "three-beat-native-tiktok"
+      ]
+    },
+    {
+      "id": "VID-047",
+      "domain": "Video",
+      "category": "TikTok Video Generator",
+      "title": "POV format",
+      "prompt": "SUBJECT: the camera is the viewer's eyes. Hands and forearms only enter the frame.\nACTION: [POV SITUATION, e.g. opening a drawer and finding the exact tool needed].\nCAMERA: first-person phone view, 20mm equivalent, natural head-turn movement.\nLIGHTING: practical light from the scene only.\nNARRATIVE: the viewer recognizes the situation in under 2 seconds and sees the resolution at the end.\nON-SCREEN TEXT: \"POV: [SITUATION]\" in the first frame.\nAUDIO: [PASTE AUDIO RULE LINE. Voiceover reads as inner monologue, lower and closer to the mic.]",
+      "best_for": "Pack 6: TikTok Video Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[POV SITUATION, e.g. opening a drawer and finding the exact tool needed]",
+        "[SITUATION]",
+        "[PASTE AUDIO RULE LINE. Voiceover reads as inner monologue, lower and closer to the mic.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "tiktok-video-generator",
+        "pov-format"
+      ]
+    },
+    {
+      "id": "VID-048",
+      "domain": "Video",
+      "category": "TikTok Video Generator",
+      "title": "Storytime",
+      "prompt": "SUBJECT: [AVATAR] seated, talking to camera, with simple b-roll cutaways.\nSTRUCTURE: hook line, setup in 2 sentences, the twist, the lesson in one line.\nB-ROLL: [3 CUTAWAY IMAGES OR ACTIONS] placed on the setup, twist and lesson.\nCAMERA: static phone frame for the talking head, 35mm equivalent. B-roll is handheld.\nNARRATIVE: tension builds to the twist, then relaxes into the lesson.\nAUDIO: [PASTE AUDIO RULE LINE. Music thins during the twist, then returns softly.]",
+      "best_for": "Pack 6: TikTok Video Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[AVATAR]",
+        "[3 CUTAWAY IMAGES OR ACTIONS]",
+        "[PASTE AUDIO RULE LINE. Music thins during the twist, then returns softly.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "tiktok-video-generator",
+        "storytime"
+      ]
+    },
+    {
+      "id": "VID-049",
+      "domain": "Video",
+      "category": "TikTok Video Generator",
+      "title": "Caption, keyword and hashtag pack (paste into Claude)",
+      "prompt": "For this TikTok script, write: one caption under 150 characters that opens with the hook, 3 search keywords a viewer would type for this topic, and 5 hashtags. Base every choice on the script text only. Add no performance claims. Mark any trend or sound reference as VERIFY BEFORE USE. SCRIPT: [PASTE SCRIPT]",
+      "best_for": "Pack 6: TikTok Video Generator",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [
+        "[PASTE SCRIPT]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "tiktok-video-generator",
+        "caption-keyword-and-hashtag-pack-paste-into-claude"
+      ]
+    },
+    {
+      "id": "VID-050",
+      "domain": "Video",
+      "category": "YouTube Short Generator",
+      "title": "Faceless educational Short",
+      "prompt": "TOPIC: [TOPIC AND THE ONE THING THE VIEWER LEARNS].\nHOOK (0 to 2 s): \"[HOOK LINE]\" with matching on-screen text.\nBODY: [3 POINTS], each a single visual beat of 3 to 5 seconds with one line of voiceover.\nVISUALS: b-roll and animated graphics in a black, gold and cinematic editorial style.\nCAMERA: [LENS]mm feel, slow push-ins and parallax on stills, one match cut per point.\nLIGHTING: low-key with a warm gold accent source, deep blacks.\nCOMPOSITION: one focal subject per frame, text in the middle third, clear of interface zones.\nNARRATIVE: promise in the hook, proof in the body, a single takeaway line at the end.\nFORMAT: 9:16, [DURATION] seconds.\nAUDIO: Voiceover in [LANGUAGE], measured and confident, [VOICE STYLE], reading the lines above. Background music: [e.g. cinematic ambient pulse], instrumental, low under the voice, swelling on the takeaway.",
+      "best_for": "Pack 7: YouTube Short Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "9:16 or flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[TOPIC AND THE ONE THING THE VIEWER LEARNS]",
+        "[HOOK LINE]",
+        "[3 POINTS]",
+        "[LENS]",
+        "[DURATION]",
+        "[LANGUAGE]",
+        "[VOICE STYLE]",
+        "[e.g. cinematic ambient pulse]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "youtube-short-generator",
+        "faceless-educational-short"
+      ]
+    },
+    {
+      "id": "VID-051",
+      "domain": "Video",
+      "category": "YouTube Short Generator",
+      "title": "Loop-ending Short",
+      "prompt": "SUBJECT: [SUBJECT AND ACTION].\nSTRUCTURE: the final frame is designed to match the first frame, so playback loops without a visible seam. The last spoken line sets up the first spoken line.\nCAMERA: locked or slow orbit that returns to the starting position.\nLIGHTING: constant throughout, no exposure change at the loop point.\nAUDIO: [PASTE AUDIO RULE LINE. Music phrase length matches the clip length so the loop repeats without a musical jump.]",
+      "best_for": "Pack 7: YouTube Short Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[SUBJECT AND ACTION]",
+        "[PASTE AUDIO RULE LINE. Music phrase length matches the clip length so the loop repeats without a musical jump.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "youtube-short-generator",
+        "loop-ending-short"
+      ]
+    },
+    {
+      "id": "VID-052",
+      "domain": "Video",
+      "category": "YouTube Short Generator",
+      "title": "Cut a Short from long-form (paste into Claude)",
+      "prompt": "Take this long-form source and extract 3 Short concepts. For each: a one-line promise, the exact passage to adapt (quoted from my own source), a rewritten 30 to 45 second script with a hook in the first 2 seconds, a visual plan per beat, and a closing line that points to the full piece. Use only claims present in the source. Mark anything that needs a fresh source check as VERIFY. SOURCE: [PASTE YOUR OWN LONG-FORM TEXT OR TRANSCRIPT]",
+      "best_for": "Pack 7: YouTube Short Generator",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [
+        "[PASTE YOUR OWN LONG-FORM TEXT OR TRANSCRIPT]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "youtube-short-generator",
+        "cut-a-short-from-long-form-paste-into-claude"
+      ]
+    },
+    {
+      "id": "VID-053",
+      "domain": "Video",
+      "category": "YouTube Short Generator",
+      "title": "Title, description and tags (paste into Claude)",
+      "prompt": "For this Short script, write 5 title options under 60 characters that put the searchable topic first, one description of 2 sentences with the topic keyword in the first line, and 5 hashtags. Base everything on the script. Flag any promise in a title that the video does not deliver. SCRIPT: [PASTE SCRIPT]",
+      "best_for": "Pack 7: YouTube Short Generator",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [
+        "[PASTE SCRIPT]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "youtube-short-generator",
+        "title-description-and-tags-paste-into-claude"
+      ]
+    },
+    {
+      "id": "VID-054",
+      "domain": "Video",
+      "category": "YouTube Short Generator",
+      "title": "Animated explainer Short",
+      "prompt": "SUBJECT: [CONCEPT TO EXPLAIN] as a clean animated diagram.\nACTION: elements build in sequence, one per voiceover phrase, with a camera move that follows the build.\nSTYLE: flat vector shapes on a black ground, gold linework, white labels, subtle grain.\nCAMERA: virtual camera, 35mm feel, smooth ease-in ease-out moves.\nNARRATIVE: the final frame shows the complete diagram and one summary word.\nAUDIO: [PASTE AUDIO RULE LINE. Add a soft tick sound on each element build, under the music.]",
+      "best_for": "Pack 7: YouTube Short Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[CONCEPT TO EXPLAIN]",
+        "[PASTE AUDIO RULE LINE. Add a soft tick sound on each element build, under the music.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "youtube-short-generator",
+        "animated-explainer-short"
+      ]
+    },
+    {
+      "id": "VID-055",
+      "domain": "Video",
+      "category": "AI Motion Control",
+      "title": "Performance transfer onto a character",
+      "prompt": "REFERENCES: image A is the target character (full body or half body, matching the framing of the motion video). Video B is the motion source.\nTASK: apply the body movement, head turns, hand gestures and timing of video B to the character in image A.\nPROTECTED: the character's face, wardrobe, proportions and background from image A stay identical. Do not carry over the source performer's face or clothing.\nCAMERA: [FOLLOW THE SOURCE CAMERA / LOCKED FRAME].\nLIGHTING: keep the lighting of image A, direction [DIRECTION], temperature [K].\nCHECK: hands keep five fingers, feet stay planted on the ground, limb lengths stay constant.\nAUDIO: [PASTE AUDIO RULE LINE. Voiceover timing follows the gesture accents in video B.]",
+      "best_for": "Pack 8: AI Motion Control",
+      "operation": "animate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[FOLLOW THE SOURCE CAMERA / LOCKED FRAME]",
+        "[DIRECTION]",
+        "[K]",
+        "[PASTE AUDIO RULE LINE. Voiceover timing follows the gesture accents in video B.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-motion-control",
+        "performance-transfer-onto-a-character"
+      ]
+    },
+    {
+      "id": "VID-056",
+      "domain": "Video",
+      "category": "AI Motion Control",
+      "title": "Camera path specification",
+      "prompt": "SUBJECT: [SUBJECT, held still or with minimal action].\nCAMERA PATH: start at [POSITION: low angle, 2 meters away, 24mm]. Over [DURATION] seconds, move [MOVE: dolly in 1 meter / orbit 45 degrees clockwise / crane up 1.5 meters / pan left 20 degrees]. End at [POSITION]. Easing: slow start, steady middle, soft stop.\nSPEED: constant, no shake.\nLIGHTING: single key from [DIRECTION] with a rim light that stays on the subject's edge through the move.\nCOMPOSITION: subject stays on the [LEFT / RIGHT] third from first frame to last.\nNARRATIVE: the move reveals [WHAT BECOMES VISIBLE AT THE END].\nAUDIO: [PASTE AUDIO RULE LINE. Music rises with the camera move and resolves when it stops.]",
+      "best_for": "Pack 8: AI Motion Control",
+      "operation": "animate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[SUBJECT, held still or with minimal action]",
+        "[POSITION: low angle, 2 meters away, 24mm]",
+        "[DURATION]",
+        "[MOVE: dolly in 1 meter / orbit 45 degrees clockwise / crane up 1.5 meters / pan left 20 degrees]",
+        "[POSITION]",
+        "[DIRECTION]",
+        "[LEFT / RIGHT]",
+        "[WHAT BECOMES VISIBLE AT THE END]",
+        "[PASTE AUDIO RULE LINE. Music rises with the camera move and resolves when it stops.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-motion-control",
+        "camera-path-specification"
+      ]
+    },
+    {
+      "id": "VID-057",
+      "domain": "Video",
+      "category": "AI Motion Control",
+      "title": "Product orbit",
+      "prompt": "SUBJECT: [PRODUCT] on a [SURFACE].\nCAMERA PATH: 90 degree orbit at 35mm feel, constant distance, camera height at 15 degrees above the surface.\nLIGHTING: large soft source from above left, thin gold-toned strip light behind the product for edge definition.\nPROTECTED: label text, logo and product proportions stay constant and readable.\nNARRATIVE: finish on the front label facing the lens, held for 1 second.\nAUDIO: [PASTE AUDIO RULE LINE]",
+      "best_for": "Pack 8: AI Motion Control",
+      "operation": "animate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[PRODUCT]",
+        "[SURFACE]",
+        "[PASTE AUDIO RULE LINE]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-motion-control",
+        "product-orbit"
+      ]
+    },
+    {
+      "id": "VID-058",
+      "domain": "Video",
+      "category": "AI Motion Control",
+      "title": "Gesture and expression direction",
+      "prompt": "SUBJECT: [AVATAR OR CHARACTER REFERENCE].\nPERFORMANCE TIMELINE: 0 to 2 s neutral look at lens. 2 to 4 s [GESTURE, e.g. right hand opens palm upward]. 4 to 6 s [EXPRESSION, e.g. raised eyebrows, slight smile]. 6 to 8 s settle and hold.\nPROTECTED: face and wardrobe stay constant. Hand shape stays anatomically correct.\nAUDIO: [PASTE AUDIO RULE LINE. Voice accents land on the 2 s and 4 s gestures.]",
+      "best_for": "Pack 8: AI Motion Control",
+      "operation": "animate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[AVATAR OR CHARACTER REFERENCE]",
+        "[GESTURE, e.g. right hand opens palm upward]",
+        "[EXPRESSION, e.g. raised eyebrows, slight smile]",
+        "[PASTE AUDIO RULE LINE. Voice accents land on the 2 s and 4 s gestures.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-motion-control",
+        "gesture-and-expression-direction"
+      ]
+    },
+    {
+      "id": "VID-059",
+      "domain": "Video",
+      "category": "AI Motion Control",
+      "title": "Motion QA (paste into Claude with frames or a description)",
+      "prompt": "Audit this motion-control result. Check: identity drift, finger count, foot sliding, limb length changes, background warping, lighting shifts between frames, and audio sync. Return a table: issue, timestamp, severity 1 to 5, and the smallest prompt change that would fix it. State plainly what you cannot judge from the material provided.",
+      "best_for": "Pack 8: AI Motion Control",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-motion-control",
+        "motion-qa-paste-into-claude-with-frames-or-a-description"
+      ]
+    },
+    {
+      "id": "VID-060",
+      "domain": "Video",
+      "category": "Instagram Reel Generator",
+      "title": "Editorial brand Reel",
+      "prompt": "SUBJECT: [BRAND OBJECT OR PERSON] in a [LOCATION] styled in black, gold and warm neutral tones.\nSHOT 1 (0 to 2 s): hook visual with text \"[HOOK]\".\nSHOT 2 to 4: [DETAIL SHOTS, 2 to 3 seconds each], each with one clear action.\nSHOT 5: closing hero frame with the brand line \"[BRAND LINE]\".\nCAMERA: 35mm and 85mm lens mix, smooth gimbal moves, shallow depth of field, one slow push-in on the hero frame.\nLIGHTING: soft directional key from the side, warm highlights, controlled shadows, cinematic grade with lifted blacks.\nCOMPOSITION: subject on the third lines, generous negative space, text in the middle third.\nNARRATIVE: aspiration first, craft in the middle, identity at the end.\nFORMAT: 9:16, [DURATION] seconds, 24 fps. Frame 1 doubles as a cover frame readable at grid size.\nAUDIO: Voiceover in [LANGUAGE], calm and low, [VOICE STYLE], reading: \"[VO LINE]\". Background music: [e.g. modern cinematic downtempo], instrumental, ducked under the voice, a clean stop on the closing frame.",
+      "best_for": "Pack 9: Instagram Reel Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "9:16 or flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[BRAND OBJECT OR PERSON]",
+        "[LOCATION]",
+        "[HOOK]",
+        "[DETAIL SHOTS, 2 to 3 seconds each]",
+        "[BRAND LINE]",
+        "[DURATION]",
+        "[LANGUAGE]",
+        "[VOICE STYLE]",
+        "[VO LINE]",
+        "[e.g. modern cinematic downtempo]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "instagram-reel-generator",
+        "editorial-brand-reel"
+      ]
+    },
+    {
+      "id": "VID-061",
+      "domain": "Video",
+      "category": "Instagram Reel Generator",
+      "title": "Tutorial Reel",
+      "prompt": "SUBJECT: [PRESENTER OR HANDS] demonstrating [TASK].\nSTRUCTURE: hook states the finished result, then 3 numbered steps of 3 to 4 seconds each with on-screen step labels, then the result again.\nCAMERA: locked overhead or 45 degree angle, 35mm equivalent, one macro insert per step.\nLIGHTING: bright, even, shadow-soft light.\nCOMPOSITION: working area centered, step labels in the top third, clear of the interface.\nNARRATIVE: the viewer can repeat the task after one watch.\nAUDIO: [PASTE AUDIO RULE LINE. One short voiceover line per step.]",
+      "best_for": "Pack 9: Instagram Reel Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[PRESENTER OR HANDS]",
+        "[TASK]",
+        "[PASTE AUDIO RULE LINE. One short voiceover line per step.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "instagram-reel-generator",
+        "tutorial-reel"
+      ]
+    },
+    {
+      "id": "VID-062",
+      "domain": "Video",
+      "category": "Instagram Reel Generator",
+      "title": "Carousel to Reel (paste into Claude)",
+      "prompt": "Convert this carousel into a Reel script of [DURATION] seconds. Slide 1 becomes the hook, middle slides become one visual beat each, the last slide becomes the closing line and call to action. Return a table: beat, spoken line, on-screen text, visual direction, camera move. Keep every claim identical to the source slides. CAROUSEL TEXT: [PASTE YOUR OWN SLIDE TEXT]",
+      "best_for": "Pack 9: Instagram Reel Generator",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [
+        "[DURATION]",
+        "[PASTE YOUR OWN SLIDE TEXT]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "instagram-reel-generator",
+        "carousel-to-reel-paste-into-claude"
+      ]
+    },
+    {
+      "id": "VID-063",
+      "domain": "Video",
+      "category": "Instagram Reel Generator",
+      "title": "Lifestyle montage",
+      "prompt": "SUBJECT: [LIFESTYLE MOMENTS, e.g. coffee pour, notebook open, evening walk].\nACTION: five 2-second moments with a matching movement direction between cuts.\nCAMERA: 50mm lens, handheld with smooth stabilization, shallow depth of field.\nLIGHTING: golden hour, backlit, warm flare allowed on the edges.\nNARRATIVE: a day told in five frames, ending on a held calm shot.\nAUDIO: [PASTE AUDIO RULE LINE. Voiceover reads one reflective sentence, cuts are on the music beat.]",
+      "best_for": "Pack 9: Instagram Reel Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[LIFESTYLE MOMENTS, e.g. coffee pour, notebook open, evening walk]",
+        "[PASTE AUDIO RULE LINE. Voiceover reads one reflective sentence, cuts are on the music beat.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "instagram-reel-generator",
+        "lifestyle-montage"
+      ]
+    },
+    {
+      "id": "VID-064",
+      "domain": "Video",
+      "category": "Instagram Reel Generator",
+      "title": "Caption and cover pack (paste into Claude)",
+      "prompt": "For this Reel script write: one caption of 2 to 3 lines with the hook as line one, 4 hashtags tied to the topic, alt text of one sentence, and 3 cover text options of 5 words or fewer. Use only facts in the script. SCRIPT: [PASTE SCRIPT]",
+      "best_for": "Pack 9: Instagram Reel Generator",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [
+        "[PASTE SCRIPT]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "instagram-reel-generator",
+        "caption-and-cover-pack-paste-into-claude"
+      ]
+    },
+    {
+      "id": "VID-065",
+      "domain": "Video",
+      "category": "Product Video Generator",
+      "title": "Hero reveal",
+      "prompt": "REFERENCE: [PRODUCT PHOTO ON PLAIN BACKGROUND].\nSUBJECT: [PRODUCT NAME AND MATERIAL, e.g. a matte black bottle with a gold cap].\nACTION: the product rises into frame on a [SURFACE] as light sweeps across it from left to right.\nSETTING: continuous dark studio backdrop with a faint reflective floor.\nCAMERA: 85mm lens, locked frame, slow 4 percent push-in over the clip.\nLIGHTING: large soft overhead source, narrow gold-toned strip light on the right edge, small kicker behind for edge separation.\nCOMPOSITION: product centered low, negative space above for headline text, label facing the lens.\nNARRATIVE: precision and desirability. The last frame holds the label sharp for 1 second.\nPROTECTED: label text, logo, cap color and bottle proportions stay exact.\nFORMAT: [ASPECT], [DURATION] seconds.\nAUDIO: Voiceover in [LANGUAGE], low and assured, [VOICE STYLE], reading: \"[VO LINE]\". Background music: [GENRE], instrumental, ducked under the voice, one soft impact on the label reveal.",
+      "best_for": "Pack 10: Product Video Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[PRODUCT PHOTO ON PLAIN BACKGROUND]",
+        "[PRODUCT NAME AND MATERIAL, e.g. a matte black bottle with a gold cap]",
+        "[SURFACE]",
+        "[ASPECT]",
+        "[DURATION]",
+        "[LANGUAGE]",
+        "[VOICE STYLE]",
+        "[VO LINE]",
+        "[GENRE]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "product-video-generator",
+        "hero-reveal"
+      ]
+    },
+    {
+      "id": "VID-066",
+      "domain": "Video",
+      "category": "Product Video Generator",
+      "title": "In-context lifestyle shot",
+      "prompt": "REFERENCE: [PRODUCT PHOTO].\nSUBJECT: [PRODUCT] in use by [HANDS OR PRESENTER] in [REAL-LIFE SETTING].\nACTION: [ONE USE BEAT, e.g. the cap turns, the lid opens, the product is placed on the desk].\nCAMERA: 50mm lens, handheld with soft stabilization, medium close-up.\nLIGHTING: window light as key, warm practical in the background, natural reflections on the product.\nCOMPOSITION: product in the lower right third, background in soft focus.\nNARRATIVE: the product belongs in the viewer's daily life.\nPROTECTED: product shape, label and color stay exact.\nAUDIO: [PASTE AUDIO RULE LINE]",
+      "best_for": "Pack 10: Product Video Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[PRODUCT PHOTO]",
+        "[PRODUCT]",
+        "[HANDS OR PRESENTER]",
+        "[REAL-LIFE SETTING]",
+        "[ONE USE BEAT, e.g. the cap turns, the lid opens, the product is placed on the desk]",
+        "[PASTE AUDIO RULE LINE]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "product-video-generator",
+        "in-context-lifestyle-shot"
+      ]
+    },
+    {
+      "id": "VID-067",
+      "domain": "Video",
+      "category": "Product Video Generator",
+      "title": "Feature macro sequence",
+      "prompt": "REFERENCE: [PRODUCT PHOTO].\nSEQUENCE: three 2-second macro shots, one per verified feature: [FEATURE 1], [FEATURE 2], [FEATURE 3].\nCAMERA: 100mm macro feel, slow slider move of 10 centimeters per shot, razor-thin focus plane.\nLIGHTING: raking side light to reveal texture, a small bounce card for shadow control.\nOVERLAY: one short label per feature in the lower third, matching the verified wording.\nNARRATIVE: each shot proves one claim visually.\nAUDIO: [PASTE AUDIO RULE LINE. One voiceover phrase per feature.]",
+      "best_for": "Pack 10: Product Video Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[PRODUCT PHOTO]",
+        "[FEATURE 1]",
+        "[FEATURE 2]",
+        "[FEATURE 3]",
+        "[PASTE AUDIO RULE LINE. One voiceover phrase per feature.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "product-video-generator",
+        "feature-macro-sequence"
+      ]
+    },
+    {
+      "id": "VID-068",
+      "domain": "Video",
+      "category": "Product Video Generator",
+      "title": "Ingredient or material burst",
+      "prompt": "REFERENCE: [PRODUCT PHOTO].\nSUBJECT: [PRODUCT] with [VERIFIED INGREDIENTS OR MATERIALS] suspended around it in slow motion.\nACTION: elements drift outward then settle into a clean arrangement around the product.\nCAMERA: 70mm lens, 120 fps slow motion, locked frame.\nLIGHTING: high-key soft light with a gold accent from behind, glossy highlights.\nNARRATIVE: transparency. The viewer sees what the product is made of.\nPROTECTED: product remains stable and sharp while elements move.\nAUDIO: [PASTE AUDIO RULE LINE. Music swells as the arrangement settles.]",
+      "best_for": "Pack 10: Product Video Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[PRODUCT PHOTO]",
+        "[PRODUCT]",
+        "[VERIFIED INGREDIENTS OR MATERIALS]",
+        "[PASTE AUDIO RULE LINE. Music swells as the arrangement settles.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "product-video-generator",
+        "ingredient-or-material-burst"
+      ]
+    },
+    {
+      "id": "VID-069",
+      "domain": "Video",
+      "category": "Product Video Generator",
+      "title": "Marketplace listing cut",
+      "prompt": "Create a 15 second listing video of [PRODUCT]: 3 seconds hero, 3 seconds per verified feature (2 features), 3 seconds of the product in scale next to a familiar object, 3 seconds closing hero with the product name. Square 1:1 and vertical 9:16 versions. Keep all text within the safe area. Voiceover states product name and the two features in plain language. Background music instrumental and low. PROTECTED: label, color and proportions. FACTS: [VERIFIED FEATURES ONLY].",
+      "best_for": "Pack 10: Product Video Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "9:16 or flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[PRODUCT]",
+        "[VERIFIED FEATURES ONLY]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "product-video-generator",
+        "marketplace-listing-cut"
+      ]
+    },
+    {
+      "id": "VID-070",
+      "domain": "Video",
+      "category": "AI ASMR Video Generator",
+      "title": "Tactile product tapping",
+      "prompt": "SUBJECT: hands tapping and stroking [PRODUCT SURFACE, e.g. a matte glass jar, a woven case, a wooden box].\nACTION: slow rhythmic taps, then a long stroke along the edge, then a pause, repeated twice.\nSETTING: soft, dim studio surface in [COLOR], uncluttered.\nCAMERA: 100mm macro feel, locked frame, extremely shallow focus on the fingertips.\nLIGHTING: low-key, warm side light, soft glints on the surface, no harsh highlights.\nCOMPOSITION: hands entering from the lower left, product on the upper right third.\nNARRATIVE: calm, slow, absorbing. Nothing sudden.\nFOLEY: close-mic fingernail taps, fabric brush on the surface, soft room tone.\nAUDIO: Whispered voiceover in [LANGUAGE], 1 short line every 4 to 6 seconds, [VOICE STYLE] at a whisper level, reading: \"[VO LINES]\". Background music: [e.g. soft ambient pad], no melody changes, no percussion, far below the trigger sounds.\nFORMAT: [ASPECT], [DURATION] seconds, 24 fps.",
+      "best_for": "Pack 11: AI ASMR Video Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[PRODUCT SURFACE, e.g. a matte glass jar, a woven case, a wooden box]",
+        "[COLOR]",
+        "[LANGUAGE]",
+        "[VOICE STYLE]",
+        "[VO LINES]",
+        "[e.g. soft ambient pad]",
+        "[ASPECT]",
+        "[DURATION]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-asmr-video-generator",
+        "tactile-product-tapping"
+      ]
+    },
+    {
+      "id": "VID-071",
+      "domain": "Video",
+      "category": "AI ASMR Video Generator",
+      "title": "Satisfying process loop",
+      "prompt": "SUBJECT: [MATERIAL, e.g. pouring gold-toned liquid, folding paper, pressing a stamp].\nACTION: one continuous motion repeated in a loop, with the same start and end pose.\nCAMERA: 70mm lens, top-down or 30 degree angle, locked.\nLIGHTING: soft overhead light, subtle caustics or sheen to highlight texture.\nNARRATIVE: rhythm and resolution. The last frame matches the first.\nFOLEY: [MATERIAL SOUNDS], close and detailed, slightly slowed, steady tempo.\nAUDIO: [PASTE AUDIO RULE LINE with whispered delivery. Music is an ambient bed only.]",
+      "best_for": "Pack 11: AI ASMR Video Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[MATERIAL, e.g. pouring gold-toned liquid, folding paper, pressing a stamp]",
+        "[MATERIAL SOUNDS]",
+        "[PASTE AUDIO RULE LINE with whispered delivery. Music is an ambient bed only.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-asmr-video-generator",
+        "satisfying-process-loop"
+      ]
+    },
+    {
+      "id": "VID-072",
+      "domain": "Video",
+      "category": "AI ASMR Video Generator",
+      "title": "Whisper unboxing",
+      "prompt": "SUBJECT: hands opening [PRODUCT PACKAGING].\nACTION: slow lid lift, tissue paper fold-back, product lift, a gentle turn toward the lens.\nCAMERA: top-down phone-style angle, 35mm equivalent, steady.\nLIGHTING: soft daylight from the left, low contrast.\nFOLEY: lid friction, tissue crinkle, cardboard tap, each recorded close and clean.\nAUDIO: Whispered voiceover names the product and one verified detail: \"[VO LINE]\". Music: soft ambient bed, below the foley.",
+      "best_for": "Pack 11: AI ASMR Video Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[PRODUCT PACKAGING]",
+        "[VO LINE]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-asmr-video-generator",
+        "whisper-unboxing"
+      ]
+    },
+    {
+      "id": "VID-073",
+      "domain": "Video",
+      "category": "AI ASMR Video Generator",
+      "title": "Ambient scene with product",
+      "prompt": "SUBJECT: [PRODUCT] resting in [AMBIENT SCENE, e.g. a window ledge in light rain, a candlelit desk].\nACTION: minimal. Rain drops slide down the glass, a hand adjusts the product once.\nCAMERA: 50mm lens, slow drift of 2 percent, shallow depth of field.\nLIGHTING: dusk blue ambient with one warm practical light.\nNARRATIVE: stillness and comfort, the viewer feels slowed down.\nFOLEY: [RAIN, PAPER, CANDLE CRACKLE] layered softly.\nAUDIO: [PASTE AUDIO RULE LINE with whispered delivery.]",
+      "best_for": "Pack 11: AI ASMR Video Generator",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[PRODUCT]",
+        "[AMBIENT SCENE, e.g. a window ledge in light rain, a candlelit desk]",
+        "[RAIN, PAPER, CANDLE CRACKLE]",
+        "[PASTE AUDIO RULE LINE with whispered delivery.]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-asmr-video-generator",
+        "ambient-scene-with-product"
+      ]
+    },
+    {
+      "id": "VID-074",
+      "domain": "Video",
+      "category": "AI ASMR Video Generator",
+      "title": "Sound design brief (paste into Claude)",
+      "prompt": "Write a sound design brief for a [DURATION] second ASMR video of [SUBJECT]. Return a table with timestamp, visible action, foley sound to record or generate, mic distance (close, medium, far), loudness relative to the voiceover (above, equal, below), and notes. Add the whispered voiceover lines (maximum 12 words each) and a music bed description. Keep dynamics gentle: no sudden peaks.",
+      "best_for": "Pack 11: AI ASMR Video Generator",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [
+        "[DURATION]",
+        "[SUBJECT]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "ai-asmr-video-generator",
+        "sound-design-brief-paste-into-claude"
+      ]
+    },
+    {
+      "id": "VID-075",
+      "domain": "Video",
+      "category": "Problem-Solution UGC Script",
+      "title": "Structure at a glance",
+      "prompt": "| Beat | Seconds (30 s cut) | Job | Spoken pattern |\n| --- | --- | --- | --- |\n| Hook | 0 to 2 | Name the problem in the viewer's words | \"\\[PROBLEM IN ONE SHORT LINE\\]\" |\n| Agitate | 2 to 8 | Show the problem happening | \"\\[SPECIFIC MOMENT THE VIEWER RECOGNIZES\\]\" |\n| Turn | 8 to 12 | Introduce the product as the change | \"\\[PRODUCT\\] changes that part.\" |\n| Solution | 12 to 24 | Show one verified feature solving it on screen | \"\\[VERIFIED FEATURE\\] means \\[PLAIN CONSEQUENCE\\].\" |\n| Call to action | 24 to 30 | One next step | \"\\[CTA\\]\" |",
+      "best_for": "Pack 12: Problem-Solution UGC Script",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[PROBLEM IN ONE SHORT LINE\\]",
+        "[SPECIFIC MOMENT THE VIEWER RECOGNIZES\\]",
+        "[PRODUCT\\]",
+        "[VERIFIED FEATURE\\]",
+        "[PLAIN CONSEQUENCE\\]",
+        "[CTA\\]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "problem-solution-ugc-script",
+        "structure-at-a-glance"
+      ]
+    },
+    {
+      "id": "VID-076",
+      "domain": "Video",
+      "category": "Problem-Solution UGC Script",
+      "title": "Script template, 30 seconds",
+      "prompt": "[0 to 2 s] ON CAMERA: [PRESENTER] with a frustrated half-smile. SPOKEN: \"[PROBLEM HOOK]\". ON-SCREEN TEXT: \"[HOOK TEXT]\".\n[2 to 8 s] B-ROLL: [PROBLEM MOMENT, handheld, real setting]. SPOKEN: \"[AGITATE LINE 1]. [AGITATE LINE 2].\"\n[8 to 12 s] ON CAMERA: presenter lifts [PRODUCT] into frame, label to lens. SPOKEN: \"[TURN LINE]\".\n[12 to 24 s] DEMO: [VERIFIED FEATURE IN ACTION, close-up, 2 shots]. SPOKEN: \"[FEATURE LINE 1]. [FEATURE LINE 2].\"\n[24 to 30 s] ON CAMERA: relaxed, direct look. SPOKEN: \"[CTA]\". ON-SCREEN TEXT: \"[CTA TEXT]\".\nAUDIO: Voiceover in [LANGUAGE], conversational, [VOICE STYLE]. Background music: [GENRE], instrumental, tension-light in beats 1 to 2, brighter from the turn onward, ducked under the voice throughout.\nLENS AND LIGHT: 26mm phone equivalent, natural window light, no studio fill.",
+      "best_for": "Pack 12: Problem-Solution UGC Script",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[0 to 2 s]",
+        "[PRESENTER]",
+        "[PROBLEM HOOK]",
+        "[HOOK TEXT]",
+        "[2 to 8 s]",
+        "[PROBLEM MOMENT, handheld, real setting]",
+        "[AGITATE LINE 1]",
+        "[AGITATE LINE 2]",
+        "[8 to 12 s]",
+        "[PRODUCT]",
+        "[TURN LINE]",
+        "[12 to 24 s]",
+        "[VERIFIED FEATURE IN ACTION, close-up, 2 shots]",
+        "[FEATURE LINE 1]",
+        "[FEATURE LINE 2]",
+        "[24 to 30 s]",
+        "[CTA]",
+        "[CTA TEXT]",
+        "[LANGUAGE]",
+        "[VOICE STYLE]",
+        "[GENRE]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "problem-solution-ugc-script",
+        "script-template-30-seconds"
+      ]
+    },
+    {
+      "id": "VID-077",
+      "domain": "Video",
+      "category": "Problem-Solution UGC Script",
+      "title": "Script template, 15 seconds",
+      "prompt": "[0 to 2 s] SPOKEN: \"[PROBLEM HOOK]\" over the problem moment.\n[2 to 4 s] SPOKEN: \"[PRODUCT] fixes that.\" Cut to product, label to lens.\n[4 to 12 s] SPOKEN: \"[ONE VERIFIED FEATURE AND ITS PLAIN CONSEQUENCE].\" Visual: the feature working in one continuous shot.\n[12 to 15 s] SPOKEN: \"[CTA]\". Visual: product on a clean surface, text lower middle.\nAUDIO: [PASTE AUDIO RULE LINE]",
+      "best_for": "Pack 12: Problem-Solution UGC Script",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[0 to 2 s]",
+        "[PROBLEM HOOK]",
+        "[2 to 4 s]",
+        "[PRODUCT]",
+        "[4 to 12 s]",
+        "[ONE VERIFIED FEATURE AND ITS PLAIN CONSEQUENCE]",
+        "[12 to 15 s]",
+        "[CTA]",
+        "[PASTE AUDIO RULE LINE]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "problem-solution-ugc-script",
+        "script-template-15-seconds"
+      ]
+    },
+    {
+      "id": "VID-078",
+      "domain": "Video",
+      "category": "Problem-Solution UGC Script",
+      "title": "Problem framing variants (paste into Claude)",
+      "prompt": "For [PRODUCT] aimed at [AUDIENCE], write 6 problem hooks in the audience's own phrasing, one for each frame: a daily annoyance, a wasted-time moment, a wasted-money moment, a confusion moment, a comparison frustration, a past mistake. Each hook runs under 12 words. Base every hook on a problem the product verifiably addresses: [VERIFIED USE CASES]. Return a table: frame, hook, the product fact that answers it.",
+      "best_for": "Pack 12: Problem-Solution UGC Script",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [
+        "[PRODUCT]",
+        "[AUDIENCE]",
+        "[VERIFIED USE CASES]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "problem-solution-ugc-script",
+        "problem-framing-variants-paste-into-claude"
+      ]
+    },
+    {
+      "id": "VID-079",
+      "domain": "Video",
+      "category": "Problem-Solution UGC Script",
+      "title": "Objection beat (paste into Claude)",
+      "prompt": "Add one objection-handling beat of 5 to 6 seconds to the script below. Choose the objection a skeptical viewer would raise first: [PRICE / EFFORT / TRUST / FIT]. Answer it using only these verified facts: [FACTS]. Keep the presenter's voice. Return the revised beat with spoken line and visual. SCRIPT: [PASTE SCRIPT]",
+      "best_for": "Pack 12: Problem-Solution UGC Script",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [
+        "[PRICE / EFFORT / TRUST / FIT]",
+        "[FACTS]",
+        "[PASTE SCRIPT]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "problem-solution-ugc-script",
+        "objection-beat-paste-into-claude"
+      ]
+    },
+    {
+      "id": "VID-080",
+      "domain": "Video",
+      "category": "Product Demo UGC Script",
+      "title": "Demo map (fill before scripting)",
+      "prompt": "| Step | Visible action | Verified feature it proves | Spoken line (under 14 words) |\n| --- | --- | --- | --- |\n| 1. First look | \\[PRODUCT IN HAND, LABEL TO LENS\\] | \\[FEATURE OR SPEC\\] | \\[LINE\\] |\n| 2. Setup | \\[WHAT THE VIEWER DOES FIRST\\] | \\[FEATURE\\] | \\[LINE\\] |\n| 3. Core use | \\[MAIN ACTION\\] | \\[FEATURE\\] | \\[LINE\\] |\n| 4. Detail | \\[MACRO OF ONE DETAIL\\] | \\[FEATURE\\] | \\[LINE\\] |\n| 5. Wrap | \\[PRODUCT ON SURFACE OR IN USE\\] | \\[OFFER OR NEXT STEP\\] | \\[LINE\\] |",
+      "best_for": "Pack 13: Product Demo UGC Script",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [
+        "[PRODUCT IN HAND, LABEL TO LENS\\]",
+        "[FEATURE OR SPEC\\]",
+        "[LINE\\]",
+        "[WHAT THE VIEWER DOES FIRST\\]",
+        "[FEATURE\\]",
+        "[MAIN ACTION\\]",
+        "[MACRO OF ONE DETAIL\\]",
+        "[PRODUCT ON SURFACE OR IN USE\\]",
+        "[OFFER OR NEXT STEP\\]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "product-demo-ugc-script",
+        "demo-map-fill-before-scripting"
+      ]
+    },
+    {
+      "id": "VID-081",
+      "domain": "Video",
+      "category": "Product Demo UGC Script",
+      "title": "Hands-on demo script, 30 to 40 seconds",
+      "prompt": "[0 to 3 s] ON CAMERA: [PRESENTER] holds [PRODUCT] up. SPOKEN: \"[HOOK: what the product does, in one line]\".\n[3 to 10 s] DEMO SHOT 1, top-down: [SETUP ACTION]. SPOKEN: \"[SETUP LINE]\".\n[10 to 22 s] DEMO SHOT 2, 45 degree angle: [CORE USE ACTION]. SPOKEN: \"[CORE USE LINE]\". ON-SCREEN LABEL: \"[FEATURE NAME]\".\n[22 to 30 s] DEMO SHOT 3, macro: [DETAIL]. SPOKEN: \"[DETAIL LINE]\".\n[30 to 38 s] ON CAMERA: presenter back to lens. SPOKEN: \"[CTA]\".\nCAMERA: 26mm phone equivalent for talking shots, 50mm equivalent for demo shots, handheld with light stabilization.\nLIGHTING: bright natural light from one side, soft shadows under the product, no heavy grade.\nCOMPOSITION: product always in frame, hands never covering the label for more than 1 second.\nNARRATIVE: the viewer sees it work, then knows exactly how to get it.\nAUDIO: Voiceover in [LANGUAGE], clear and unhurried, [VOICE STYLE]. Background music: [GENRE], instrumental, ducked under the voice, steady through the demo.",
+      "best_for": "Pack 13: Product Demo UGC Script",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[0 to 3 s]",
+        "[PRESENTER]",
+        "[PRODUCT]",
+        "[HOOK: what the product does, in one line]",
+        "[3 to 10 s]",
+        "[SETUP ACTION]",
+        "[SETUP LINE]",
+        "[10 to 22 s]",
+        "[CORE USE ACTION]",
+        "[CORE USE LINE]",
+        "[FEATURE NAME]",
+        "[22 to 30 s]",
+        "[DETAIL]",
+        "[DETAIL LINE]",
+        "[30 to 38 s]",
+        "[CTA]",
+        "[LANGUAGE]",
+        "[VOICE STYLE]",
+        "[GENRE]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "product-demo-ugc-script",
+        "hands-on-demo-script-30-to-40-seconds"
+      ]
+    },
+    {
+      "id": "VID-082",
+      "domain": "Video",
+      "category": "Product Demo UGC Script",
+      "title": "First impressions format",
+      "prompt": "[0 to 2 s] SPOKEN: \"First look at [PRODUCT].\" Visual: package on a table.\n[2 to 12 s] Visual: unboxing and the product's first reveal. SPOKEN: two observations about the design and build that are visible on screen.\n[12 to 25 s] Visual: first use of [FEATURE]. SPOKEN: what the feature does, in the presenter's own words, without a performance claim.\n[25 to 30 s] SPOKEN: \"[CTA]\".\nAUDIO: [PASTE AUDIO RULE LINE]",
+      "best_for": "Pack 13: Product Demo UGC Script",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[0 to 2 s]",
+        "[PRODUCT]",
+        "[2 to 12 s]",
+        "[12 to 25 s]",
+        "[FEATURE]",
+        "[25 to 30 s]",
+        "[CTA]",
+        "[PASTE AUDIO RULE LINE]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "product-demo-ugc-script",
+        "first-impressions-format"
+      ]
+    },
+    {
+      "id": "VID-083",
+      "domain": "Video",
+      "category": "Product Demo UGC Script",
+      "title": "Three-step how-to demo",
+      "prompt": "HOOK (0 to 2 s): \"Three steps to [TASK WITH [PRODUCT]]\".\nSTEP 1 (2 to 10 s): [ACTION], on-screen label \"1\". SPOKEN: \"[LINE]\".\nSTEP 2 (10 to 18 s): [ACTION], label \"2\". SPOKEN: \"[LINE]\".\nSTEP 3 (18 to 26 s): [ACTION], label \"3\". SPOKEN: \"[LINE]\".\nRESULT (26 to 32 s): the finished state in a clean frame. SPOKEN: \"[CTA]\".\nCAMERA: locked overhead at 35mm equivalent, one macro insert per step.\nAUDIO: [PASTE AUDIO RULE LINE]",
+      "best_for": "Pack 13: Product Demo UGC Script",
+      "operation": "generate",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video production prompt"
+      },
+      "variables": [
+        "[TASK WITH [PRODUCT]",
+        "[ACTION]",
+        "[LINE]",
+        "[CTA]",
+        "[PASTE AUDIO RULE LINE]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "product-demo-ugc-script",
+        "three-step-how-to-demo"
+      ]
+    },
+    {
+      "id": "VID-084",
+      "domain": "Video",
+      "category": "Product Demo UGC Script",
+      "title": "Demo script writer (paste into Claude)",
+      "prompt": "Write a [DURATION] second hands-on demo script for [PRODUCT] in first-person creator voice. Use only these verified facts: [FACT LIST WITH SOURCES]. For each feature give a visible action that proves it. Return a table: time, camera shot, visible action, spoken line, on-screen text. Add an audio line: voiceover style plus background music direction. Do not state results, comparisons or numbers outside the fact list. Mark any line needing substantiation with [VERIFY].",
+      "best_for": "Pack 13: Product Demo UGC Script",
+      "operation": "planning",
+      "output": {
+        "aspect_ratio": "Flexible",
+        "format": "Video workflow prompt"
+      },
+      "variables": [
+        "[DURATION]",
+        "[PRODUCT]",
+        "[FACT LIST WITH SOURCES]",
+        "[VERIFY]"
+      ],
+      "acceptance_criteria": [
+        "Use one visible beat where the template calls for a clip or shot.",
+        "Review continuity, hands, lettering, logos, product details, and audio before assembly.",
+        "Confirm consent, rights, substantiation, disclosure, and platform requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "product-demo-ugc-script",
+        "demo-script-writer-paste-into-claude"
       ]
     }
   ]
