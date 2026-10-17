@@ -13,6 +13,7 @@ const unique = values => [...new Set(values)].sort((a, b) => a.localeCompare(b))
 const normalizeLegacy = prompt => ({ ...prompt, domain: 'Image', collection: prompt.category, operation: 'generate', output: { aspect_ratio: 'Flexible', format: 'Prompt template' } });
 const normalizeCard = card => ({ ...card, domain: 'Image', collection: card.pack });
 const normalizeVideo = prompt => ({ ...prompt, collection: prompt.category });
+const normalizeGeneral = prompt => ({ ...prompt, collection: prompt.category });
 const assetUrl = path => /^assets\/(images\/[a-z0-9-]+(?:-preview)?\.webp|pdfs\/[a-z0-9-]+\.pdf)$/.test(path) ? new URL(path, document.baseURI).href : null;
 
 function toast(message) {
@@ -29,7 +30,7 @@ async function copyPrompt(prompt) {
 function populateFilters() {
   unique(state.prompts.map(prompt => prompt.collection)).forEach(value => elements.collection.add(new Option(value, value)));
   unique(state.prompts.map(prompt => prompt.operation)).forEach(value => elements.operation.add(new Option(value, value)));
-  if (domain === 'video') {
+  if (!['all', 'image'].includes(domain)) {
     const mediaFilter = elements.media.closest('label');
     mediaFilter.hidden = true;
     mediaFilter.style.display = 'none';
@@ -89,14 +90,15 @@ function reset() {
 
 async function load() {
   try {
-    const [legacy, capability, video, vph] = await Promise.all([
+    const [legacy, capability, video, vph, general] = await Promise.all([
       fetch(`${RAW_BASE}/prompts.json`).then(response => response.ok ? response.json() : Promise.reject()),
       fetch(`${RAW_BASE}/capability-packs-v2.json`).then(response => response.ok ? response.json() : Promise.reject()),
       fetch(`${RAW_BASE}/site/data/video-prompts.json`).then(response => response.ok ? response.json() : Promise.reject()),
-      fetch(`${RAW_BASE}/vph-import.json`).then(response => response.ok ? response.json() : { prompts: [] })
+      fetch(`${RAW_BASE}/vph-import.json`).then(response => response.ok ? response.json() : { prompts: [] }),
+      fetch(`${RAW_BASE}/site/data/general-prompts.json`).then(response => response.ok ? response.json() : Promise.reject())
     ]);
     const vphPrompts = Array.isArray(vph.prompts) ? vph.prompts.map(prompt => ({ ...prompt, domain: 'Image', collection: prompt.collection || 'Visual Prompts Hub' })) : [];
-    let all = [...legacy.prompts.map(normalizeLegacy), ...capability.packs.map(normalizeCard), ...vphPrompts, ...video.prompts.map(normalizeVideo)];
+    let all = [...legacy.prompts.map(normalizeLegacy), ...capability.packs.map(normalizeCard), ...vphPrompts, ...video.prompts.map(normalizeVideo), ...general.prompts.map(normalizeGeneral)];
     if (domain !== 'all') all = all.filter(prompt => prompt.domain.toLowerCase() === domain);
     state.prompts = all;
     try {
