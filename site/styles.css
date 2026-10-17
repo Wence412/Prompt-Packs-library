@@ -68,6 +68,7 @@ main { padding: 2rem 0 5rem; }
 .domain-card.is-planned { opacity: .72; }
 .controls { display: grid; grid-template-columns: minmax(14rem, 2fr) minmax(10rem, 1fr) minmax(8rem, 1fr) minmax(10rem, 1fr) auto; gap: .85rem; align-items: end; }
 label { display: grid; gap: .5rem; }
+label[hidden] { display: none; }
 input, select, button { min-height: 2.8rem; border: 1px solid var(--line); border-radius: 0; font: inherit; }
 input, select { width: 100%; background: var(--surface); color: var(--paper); padding: .6rem .75rem; }
 input:focus-visible, select:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
