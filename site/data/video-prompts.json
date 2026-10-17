@@ -1,0 +1,651 @@
+{
+  "metadata": {
+    "name": "Professional Video Prompts: AI Workflow Guide",
+    "version": "1.0.0",
+    "source": "Professional Video Prompts.pdf",
+    "total_prompts": 20,
+    "description": "Video editing prompt cards for review-led, consent-aware workflows."
+  },
+  "prompts": [
+    {
+      "id": "VID-001",
+      "domain": "Video",
+      "category": "Enhancement & correction",
+      "title": "Cinematic Upgrade",
+      "prompt": "Edit this video into a cinematic clip. Keep [subject] unchanged. Improve the lighting to look like [lighting style]. Add [camera movement], [colour style], and [visual mood]. Do not change [what must stay the same].",
+      "best_for": "raw footage upgrades and polished social video",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "enhancement-correction",
+        "cinematic-upgrade"
+      ]
+    },
+    {
+      "id": "VID-002",
+      "domain": "Video",
+      "category": "Environment & subject changes",
+      "title": "Background Replacement",
+      "prompt": "Replace the background in this video with [new background]. Keep [subject] exactly as they appear, with the same lighting, movement, and scale. Make the new background match the [mood/time of day] of the original clip.",
+      "best_for": "environment changes without a reshoot",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "environment-subject-changes",
+        "background-replacement"
+      ]
+    },
+    {
+      "id": "VID-003",
+      "domain": "Video",
+      "category": "Environment & subject changes",
+      "title": "Object Removal",
+      "prompt": "Remove [specific object] from this video. Fill the space naturally using the surrounding [background elements]. Do not alter [subject] or the overall composition.",
+      "best_for": "cleaning distracting elements from a shot",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "environment-subject-changes",
+        "object-removal"
+      ]
+    },
+    {
+      "id": "VID-004",
+      "domain": "Video",
+      "category": "Environment & subject changes",
+      "title": "Outfit Change",
+      "prompt": "Change my outfit in this video to [new outfit description]. Keep my face, hair, body shape, and movements identical. The outfit should match the [style/brand/colour palette] of the video.",
+      "best_for": "testing consented wardrobe directions",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "environment-subject-changes",
+        "outfit-change"
+      ]
+    },
+    {
+      "id": "VID-005",
+      "domain": "Video",
+      "category": "Enhancement & correction",
+      "title": "Time of Day Transformation",
+      "prompt": "Transform the time of day in this video from [current lighting] to [desired time]. Adjust the sky, shadows, and colour temperature. Keep all subjects, movements, and objects exactly the same.",
+      "best_for": "shifting a scene’s lighting condition",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "enhancement-correction",
+        "time-of-day-transformation"
+      ]
+    },
+    {
+      "id": "VID-006",
+      "domain": "Video",
+      "category": "Enhancement & correction",
+      "title": "Colour Grade & Mood Change",
+      "prompt": "Apply a [colour grade/visual style] to this video. The mood should feel [desired emotion]. Use [shadow colour], [highlight colour], and [overall palette]. Only change colour and tone. Nothing else.",
+      "best_for": "colour-only mood changes",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "enhancement-correction",
+        "colour-grade-mood-change"
+      ]
+    },
+    {
+      "id": "VID-007",
+      "domain": "Video",
+      "category": "Camera & pacing",
+      "title": "Camera Movement Edit",
+      "prompt": "Add a [camera movement type] to this video as if filmed with a [camera/lens type]. The movement should start [when/how] and feel [slow/fast/smooth]. Do not change the subject, background, or colour.",
+      "best_for": "adding controlled camera motion",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "camera-pacing",
+        "camera-movement-edit"
+      ]
+    },
+    {
+      "id": "VID-008",
+      "domain": "Video",
+      "category": "Camera & pacing",
+      "title": "Pacing & Rhythm Edit",
+      "prompt": "Re-edit the pacing of this video to match the energy of [reference style]. Trim dead space between [actions/sentences]. Keep the key moments at [descriptions]. The final video should feel [punchy/calm/dynamic].",
+      "best_for": "re-cutting talking-head and social content",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "camera-pacing",
+        "pacing-rhythm-edit"
+      ]
+    },
+    {
+      "id": "VID-009",
+      "domain": "Video",
+      "category": "Environment & subject changes",
+      "title": "Weather & Environment Effects",
+      "prompt": "Add [weather effect] to the environment of this video. The effect should look realistic and [subtle/dramatic]. Keep the main subject completely unchanged. Blend the effect naturally with the existing lighting.",
+      "best_for": "atmospheric outdoor edits",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "environment-subject-changes",
+        "weather-environment-effects"
+      ]
+    },
+    {
+      "id": "VID-010",
+      "domain": "Video",
+      "category": "Stylization & effects",
+      "title": "Style Transfer",
+      "prompt": "Re-style this video to look like it was filmed in the aesthetic of [reference style/era/brand]. Apply matching [grain/texture/colour/lighting]. Keep [subject] unchanged. The result should feel [desired feeling], without looking like a filter.",
+      "best_for": "original visual style directions",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "stylization-effects",
+        "style-transfer"
+      ]
+    },
+    {
+      "id": "VID-011",
+      "domain": "Video",
+      "category": "Camera & pacing",
+      "title": "B-Roll Generation & Insertion",
+      "prompt": "Generate and insert B-roll illustrating [concept/action] when the subject says [specific phrase]. The B-roll style must match the [lighting/aesthetic] of the main clip. Transition back smoothly.",
+      "best_for": "narrative support footage and tutorials",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "camera-pacing",
+        "b-roll-generation-insertion"
+      ]
+    },
+    {
+      "id": "VID-012",
+      "domain": "Video",
+      "category": "Stylization & effects",
+      "title": "Glitch & Datamosh Effects",
+      "prompt": "Apply a [type of glitch] effect at [timestamp/action]. Keep the audio perfectly synced. The distortion should feel [subtle/aggressive] and use [specific colour channels]. Keep the subject recognisable.",
+      "best_for": "technology, music, and editorial effects",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "stylization-effects",
+        "glitch-datamosh-effects"
+      ]
+    },
+    {
+      "id": "VID-013",
+      "domain": "Video",
+      "category": "Motion graphics & composition",
+      "title": "Audio-Reactive Visuals",
+      "prompt": "Animate [background element/colour/lighting] to react to the beat of the audio. The reaction should be a [pulse/flash/shift] during the [bass/snare/vocal] hits. Maintain the primary focus on the subject.",
+      "best_for": "music-led videos and performance content",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "motion-graphics-composition",
+        "audio-reactive-visuals"
+      ]
+    },
+    {
+      "id": "VID-014",
+      "domain": "Video",
+      "category": "Motion graphics & composition",
+      "title": "Typography & Motion Graphics",
+      "prompt": "Add 3D kinetic typography displaying [text] behind [subject] but in front of [background element]. The text should animate in by [animation style] and match the [font style] aesthetic.",
+      "best_for": "kinetic type and branded announcements",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "motion-graphics-composition",
+        "typography-motion-graphics"
+      ]
+    },
+    {
+      "id": "VID-015",
+      "domain": "Video",
+      "category": "Stylization & effects",
+      "title": "Stop-Motion Conversion",
+      "prompt": "Convert this video into a stop-motion animation style. Reduce the frame rate to appear like [frames per second]. Add a subtle [texture] overlay. Keep movements legible.",
+      "best_for": "stylized social and product content",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "stylization-effects",
+        "stop-motion-conversion"
+      ]
+    },
+    {
+      "id": "VID-016",
+      "domain": "Video",
+      "category": "Enhancement & correction",
+      "title": "Depth of Field Adjustment",
+      "prompt": "Apply a shallow depth of field, blurring the background. Ensure the subject remains perfectly sharp from [closest point] to [farthest point]. The background bokeh should look like a [lens type] lens.",
+      "best_for": "portrait and product focus refinement",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "enhancement-correction",
+        "depth-of-field-adjustment"
+      ]
+    },
+    {
+      "id": "VID-017",
+      "domain": "Video",
+      "category": "Enhancement & correction",
+      "title": "Macro Zoom & Detail Enhancement",
+      "prompt": "Simulate a macro lens pushing in on [specific detail]. Enhance the micro-contrast and texture of the [material/surface]. Keep the lighting even and avoid pixelation during the digital zoom.",
+      "best_for": "product, food, and material details",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "enhancement-correction",
+        "macro-zoom-detail-enhancement"
+      ]
+    },
+    {
+      "id": "VID-018",
+      "domain": "Video",
+      "category": "Stylization & effects",
+      "title": "Vintage VHS / Camcorder Simulation",
+      "prompt": "Degrade this video to look like it was filmed on a [specific vintage camera format]. Add authentic tape noise, scan lines, and slight colour bleeding. Include a classic [date/time overlay].",
+      "best_for": "retro treatments and nostalgia campaigns",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "stylization-effects",
+        "vintage-vhs-camcorder-simulation"
+      ]
+    },
+    {
+      "id": "VID-019",
+      "domain": "Video",
+      "category": "Motion graphics & composition",
+      "title": "Split Screen & Collage Arrangement",
+      "prompt": "Reformat this clip into a [number]-panel split-screen style. Arrange the focus so [subject A] is in panel 1 and [subject B] is in panel 2. Add a [colour/thickness] border between the panels.",
+      "best_for": "comparisons, interviews, and multi-angle edits",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "16:9 or 9:16",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "motion-graphics-composition",
+        "split-screen-collage-arrangement"
+      ]
+    },
+    {
+      "id": "VID-020",
+      "domain": "Video",
+      "category": "Camera & pacing",
+      "title": "Seamless Loop Creation",
+      "prompt": "Edit this video into a seamless infinite loop. Match the visual positioning and momentum of the final frame exactly with the first frame. Ensure the audio cuts seamlessly without a noticeable jump.",
+      "best_for": "TikTok, Shorts, Reels, and display loops",
+      "operation": "editing",
+      "output": {
+        "aspect_ratio": "9:16 or 1:1",
+        "format": "Video edit prompt"
+      },
+      "variables": [
+        "[subject]",
+        "[style]",
+        "[constraint]"
+      ],
+      "acceptance_criteria": [
+        "The protected subject, scene elements, and constraints are preserved.",
+        "The requested change is visually coherent and does not introduce unintended artifacts.",
+        "Review the result for consent, brand, and rights requirements before publishing."
+      ],
+      "rights_and_safety": {
+        "requires_consent_for_people": true,
+        "no_unlicensed_logos": true
+      },
+      "tags": [
+        "video",
+        "camera-pacing",
+        "seamless-loop-creation"
+      ]
+    }
+  ]
+}
