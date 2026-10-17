@@ -45,6 +45,7 @@ body[data-theme='light']::before { opacity: .08; background-image: radial-gradie
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(11.5rem, 12rem); gap: clamp(2rem, 3vw, 3rem); align-items: start; }
 .hero-title { max-width: 100%; margin: 0 0 clamp(2rem, 3vw, 2.75rem); padding-bottom: .14em; font-family: var(--serif); font-size: clamp(3rem, 7vw, 6.5rem); font-weight: 400; letter-spacing: -.065em; line-height: 1.05; text-wrap: balance; }
 .hero-title em { color: var(--gold-soft); font-style: italic; }
+.hero-title--video em { display: block; }
 .hero-links { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1rem; }
 .hero-link-item { display: flex; align-items: center; min-width: 0; }
 .hero-link-item + .hero-link-item::before { width: 1px; height: 1rem; margin-right: 1rem; background: var(--line); content: ''; flex: 0 0 1px; }
