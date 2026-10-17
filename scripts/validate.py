@@ -138,7 +138,41 @@ def main() -> int:
             error(errors, f"{identifier} must include an output format")
     if video_data.get("metadata", {}).get("total_prompts") != len(video_prompts):
         error(errors, "Video metadata total does not match the prompt list")
-    for path in (ROOT / "site" / "image" / "index.html", ROOT / "site" / "video" / "index.html"):
+    general_data = json.loads((ROOT / "site" / "data" / "general-prompts.json").read_text(encoding="utf-8"))
+    general_prompts = general_data.get("prompts", [])
+    general_ids: set[str] = set()
+    general_domains = {"Writing": ("WRT", "write"), "Learning": ("LRN", "learn"), "Business": ("BUS", "plan")}
+    for index, prompt in enumerate(general_prompts, start=1):
+        missing = required_video_fields - prompt.keys()
+        if missing:
+            error(errors, f"General prompt #{index} is missing: {', '.join(sorted(missing))}")
+            continue
+        identifier = prompt["id"]
+        domain = prompt["domain"]
+        if domain not in general_domains:
+            error(errors, f"{identifier} has an invalid general domain: {domain}")
+            continue
+        prefix, operation = general_domains[domain]
+        if not re.fullmatch(rf"{prefix}-\d{{3}}", identifier):
+            error(errors, f"Invalid {domain.lower()} prompt ID: {identifier}")
+        if identifier in general_ids or identifier in ids or identifier in capability_ids or identifier in video_ids:
+            error(errors, f"Duplicate general prompt ID: {identifier}")
+        general_ids.add(identifier)
+        if prompt["operation"] != operation:
+            error(errors, f"Invalid operation for {identifier}: {prompt['operation']}")
+        if not isinstance(prompt["tags"], list) or len(prompt["tags"]) < 3:
+            error(errors, f"{identifier} must contain at least three tags")
+        if not isinstance(prompt["acceptance_criteria"], list) or not prompt["acceptance_criteria"]:
+            error(errors, f"{identifier} must include acceptance criteria")
+        if not isinstance(prompt["output"], dict) or not prompt["output"].get("format"):
+            error(errors, f"{identifier} must include an output format")
+    if general_data.get("metadata", {}).get("total_prompts") != len(general_prompts):
+        error(errors, "General prompt metadata total does not match the prompt list")
+    for path in (
+        ROOT / "site" / "image" / "index.html", ROOT / "site" / "video" / "index.html",
+        ROOT / "site" / "writing" / "index.html", ROOT / "site" / "learning" / "index.html",
+        ROOT / "site" / "business" / "index.html"
+    ):
         if not path.exists():
             error(errors, f"Missing dedicated collection page: {path.relative_to(ROOT)}")
 
@@ -157,7 +191,7 @@ def main() -> int:
         print("Validation failed:", file=sys.stderr)
         print("\n".join(f"- {item}" for item in errors), file=sys.stderr)
         return 1
-    print(f"Validated {len(prompts)} image prompts, {len(capability_cards)} capability cards, {len(video_prompts)} video prompts, categories, catalogs, and local links.")
+    print(f"Validated {len(prompts)} image prompts, {len(capability_cards)} capability cards, {len(video_prompts)} video prompts, {len(general_prompts)} general prompts, categories, catalogs, and local links.")
     return 0
 
 
