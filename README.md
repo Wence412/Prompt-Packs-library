@@ -1,20 +1,24 @@
-# ✦ WenceStudio Prompt Library
-### 334 Review-Led Prompt Cards for Creative Production, Learning, and Business
+# Prompt Packs Library
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![Prompt cards: 334](https://img.shields.io/badge/Prompt%20cards-334-blue.svg) ![Collections: 5](https://img.shields.io/badge/Collections-5-blueviolet.svg)
+By WenceStudio by SmartDesign
+### 368 Review-Led Prompt Cards for Creative Production, Learning, and Business
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![Prompt cards: 368](https://img.shields.io/badge/Prompt%20cards-368-blue.svg) ![Collections: 5](https://img.shields.io/badge/Collections-5-blueviolet.svg)
 
 > **Move from one-off prompts to reusable production systems.**
 
-This is a production-oriented prompt library for professionals, agencies, and creators who produce commercial-grade work with AI. **334 prompt cards** are available in the browser: 188 image templates, 30 image capability cards, eight Visual Prompts Hub cards, 84 video generation, editing, production, and workflow templates, plus 24 writing, learning, and business templates.
+A structured library of **368 prompt cards** across five collections: **Image, Video, Writing, Learning, and Business**. Each card pairs a task with editable variables and review checks, so output is reviewed before it is approved, published, or handed off.
+
+The library includes **226 Image cards** (188 image templates, 30 image capability cards, and eight Visual Prompts Hub cards), **84 Video cards**, **8 Writing cards**, **8 Learning cards**, and **42 Business cards**.
 
 ## Browse the library
 
-- [All prompt collections](https://wence412.github.io/chatgpt-image-prompt-packs/)
-- [Image prompts](https://wence412.github.io/chatgpt-image-prompt-packs/image/)
-- [Video prompts](https://wence412.github.io/chatgpt-image-prompt-packs/video/)
-- [Writing prompts](https://wence412.github.io/chatgpt-image-prompt-packs/writing/)
-- [Learning prompts](https://wence412.github.io/chatgpt-image-prompt-packs/learning/)
-- [Business prompts](https://wence412.github.io/chatgpt-image-prompt-packs/business/)
+- [All prompt collections](https://wence412.github.io/Prompt-Packs-library/)
+- [Image prompts](https://wence412.github.io/Prompt-Packs-library/image/)
+- [Video prompts](https://wence412.github.io/Prompt-Packs-library/video/)
+- [Writing prompts](https://wence412.github.io/Prompt-Packs-library/writing/)
+- [Learning prompts](https://wence412.github.io/Prompt-Packs-library/learning/)
+- [Business prompts](https://wence412.github.io/Prompt-Packs-library/business/)
 
 Image, Video, Writing, Learning, and Business are published collections. Research and Code will receive dedicated pages when their reviewed starter sets are ready.
 
@@ -24,7 +28,7 @@ The Video collection is derived from the Professional Video Editing Prompts: AI 
 
 ## Writing, Learning, and Business prompts
 
-The Writing, Learning, and Business collections are derived from Writing, Learning and Business Prompt Packs. Each collection contains eight review-led templates, with dedicated browsing pages and data maintained in site/data/general-prompts.json.
+The Writing, Learning, and Business collections are derived from Writing, Learning and Business Prompt Packs. Writing and Learning each contain eight templates; Business contains 42. All three have dedicated browsing pages, with data maintained in site/data/general-prompts.json.
 
 The v1.3 capability packs add **30 prompt cards** for reference-led generation, precise editing, canvas extension, text-led layouts, transparent assets, visual explainers, campaign systems, and GPT Image 2.5 workflows. See [the capability-pack guide](docs/capability-packs.md) and the [GPT Image 2.5 production guide](docs/gpt-image-2.5-production-guide.md).
 
@@ -107,7 +111,7 @@ See [media publishing and provenance guidance](docs/visual-resources.md) for add
 
 ## Visual Prompts Hub collection
 
-The [public browser](https://wence412.github.io/chatgpt-image-prompt-packs/) also includes eight imported VPH prompts. Select **Visual Prompts Hub** in the Collection filter. Expand a card to see APAE fields, variants, engine prompts, and a pinned source link. The combined browser contains 208 entries: 170 legacy templates, 30 capability cards, and eight VPH cards.
+The [public browser](https://wence412.github.io/Prompt-Packs-library/) also includes eight imported VPH prompts. Select **Visual Prompts Hub** in the Collection filter. Expand a card to see APAE fields, variants, engine prompts, and a pinned source link. The Image collection contains 226 cards: 188 image templates, 30 capability cards, and eight VPH cards.
 
 See [integration and refresh instructions](docs/vph-integration.md). Historical engine settings are preserved as unverified metadata, not current API guarantees.
 
@@ -148,7 +152,7 @@ Every prompt uses this pattern:
 ## 📂 Repository Structure
 
 ```
-chatgpt-image-prompt-packs/
+Prompt-Packs-library/
 ├── README.md                          # You are here
 ├── LICENSE                            # MIT License
 ├── CONTRIBUTING.md                    # How to contribute
@@ -277,10 +281,12 @@ GitHub Pages is deployed through the repository's `deploy-pages.yml` workflow, w
 
 | Metric | Value |
 |--------|-------|
-| **Legacy Prompt Templates** | 170 |
+| **Total Prompt Cards** | 368 |
+| **Published Collections** | 5 |
+| **Image Prompt Templates** | 188 |
 | **Capability Cards** | 30 |
 | **Phase 1 (Foundation)** | 75 |
-| **Phase 2 (Production)** | 95 |
+| **Phase 2 (Production)** | 113 |
 | **Categories** | 18 |
 | **Framework** | S.E.E.D. |
 | **Output Formats** | Markdown, JSON, CSV |
@@ -358,8 +364,8 @@ You're free to use, modify, and distribute these prompts. Just give credit where
 
 ## 💬 Support & Feedback
 
-- 🐛 Found a prompt issue? [Open an issue](https://github.com/Wence412/chatgpt-image-prompt-packs/issues)
-- 💡 Have a suggestion? [Start a discussion](https://github.com/Wence412/chatgpt-image-prompt-packs/discussions)
+- 🐛 Found a prompt issue? [Open an issue](https://github.com/Wence412/Prompt-Packs-library/issues)
+- 💡 Have a suggestion? [Start a discussion](https://github.com/Wence412/Prompt-Packs-library/discussions)
 - 🤝 Want to collaborate? [See CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
@@ -380,12 +386,12 @@ You're free to use, modify, and distribute these prompts. Just give credit where
 
 **Transform ChatGPT-Image from a toy into a professional production tool.**
 
-**[Browse 208 Prompt Cards](https://wence412.github.io/chatgpt-image-prompt-packs/)** → **[Get Started](seed-framework.md)** → **[Import Data](prompts.json)**
+**[Browse 368 Prompt Cards](https://wence412.github.io/Prompt-Packs-library/)** → **[Get Started](seed-framework.md)** → **[Import Data](prompts.json)**
 
 ---
 
 Made with 🎨 **WenceStudio by SmartDesign**
 
-*208 prompt cards. Built for real visual work.*
+*368 prompt cards across Image, Video, Writing, Learning, and Business.*
 
 </div>
