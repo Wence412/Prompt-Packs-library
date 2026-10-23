@@ -7,7 +7,7 @@ VPH is available as a separate collection in the existing prompt browser. The or
 - Original prompt text, APAE fields, categories, tags, negative instructions and variants.
 - Engine-specific prompt overrides and the entire original YAML record as structured data.
 - Source commit, file path, SHA-256 checksum and a permalink to each original file.
-- MIT attribution. See [source license](https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/51415307c99761fecf0dc66f7492bbac7b2ae122/LICENSE).
+- License. The source repository uses the WenceStudio Visual Prompts Hub License, Version 1.0, with the same terms as this library. See [source license](https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/efefe6db7db9c2d392531d3763bb62e2b4c660a3/LICENSE). Copies obtained before 23 October 2026 stay under MIT.
 
 The eight concrete prompt files are imported. The four blank/batch/brand/campaign templates are not counted as prompts. No generated image evidence is present, so imported cards remain untested.
 
