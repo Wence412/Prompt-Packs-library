@@ -232,3 +232,7 @@ a { color: var(--gold-soft); }
 .page-footer p { margin: 0; }
 @media (max-width: 900px) { .platform-domain-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .platform-tools { grid-template-columns: 1fr; gap: 2rem; } .collection-grid, .guide-page-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 720px) { .platform-nav { gap: .2rem 1rem; margin-bottom: 2rem; } .section-heading, .platform-tools { display: block; } .section-heading .text-link { margin-top: 1.5rem; } .platform-domain-grid, .collection-grid, .guide-page-grid, .platform-feature-grid { grid-template-columns: 1fr; } .platform-tool-list a { align-items: start; flex-direction: column; } .platform-tool-list strong { text-align: left; } .footer-links { justify-content: start; } .page-footer { align-items: start; flex-direction: column; } }
+
+.guides-newsletter { width: min(1240px, calc(100% - 2rem)); margin: -3rem auto 4rem; color: var(--muted); font-size: .9rem; }
+.guides-newsletter a { color: var(--gold-soft); font-weight: 700; }
+.page-footer .footer-contact { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
