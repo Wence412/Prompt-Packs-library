@@ -261,3 +261,29 @@ a { color: var(--gold-soft); }
 @media (max-width: 720px) { .photo-image { --photo-pos: 70% 52%; } .photo-video { --photo-pos: 62% 50%; } .photo-writing { --photo-pos: 78% 62%; } .photo-learning { --photo-pos: 46% 58%; } .photo-business { --photo-pos: 78% 66%; } }
 @media (prefers-reduced-motion: reduce) { .collection-grid .domain-card.has-photo { transition: none; } .collection-grid .domain-card.has-photo:hover { transform: none; } }
 @media (min-width: 721px) { .collection-grid .photo-business { grid-column: span 2; --photo-pos: 62% 58%; } }
+
+/* Guide cards: decorative photo backgrounds (CSS only, not announced by screen readers) */
+.guide-page-grid .free-pdf-card.has-photo { position: relative; isolation: isolate; overflow: hidden; background: #0a0a0a; }
+.guide-page-grid .free-pdf-card.has-photo::before, .guide-page-grid .free-pdf-card.has-photo::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.guide-page-grid .free-pdf-card.has-photo::before { background-color: #0a0a0a; background-repeat: no-repeat; background-size: cover; background-position: var(--photo-pos, 50% 50%); }
+.guide-page-grid .free-pdf-card.has-photo::after { background: linear-gradient(180deg, rgba(0,0,0,.78) 0%, rgba(0,0,0,.66) 45%, rgba(0,0,0,.62) 70%, rgba(0,0,0,.9) 100%); }
+.guide-page-grid .free-pdf-card.has-photo .eyebrow { color: #e8c97e; }
+.guide-page-grid .free-pdf-card.has-photo h2 { color: #f5f2eb; }
+.guide-page-grid .free-pdf-card.has-photo p:not(.eyebrow) { color: #bdb9af; }
+.guide-page-grid .free-pdf-card.has-photo .resource-button { color: #e8c97e; border-color: #c9a84c; background: rgba(0,0,0,.55); }
+.guide-page-grid .free-pdf-card.has-photo .resource-button:hover { background: #c9a84c; color: #0a0a0a; }
+.guide-page-grid .free-pdf-card.has-photo .resource-download { color: #e8c97e; }
+.guide-page-grid .free-pdf-card.has-photo a:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.gphoto-image-editing { --photo-pos: 68% 60%; }
+.gphoto-image-editing::before { background-image: url("assets/images/guide-image-editing-prompts-glass-plates-ivory-fabric.webp"); }
+.gphoto-presence-universal { --photo-pos: 80% 60%; }
+.gphoto-presence-universal::before { background-image: url("assets/images/guide-presence-universal-prompt-stone-sphere-glass-brass-disc.webp"); }
+.gphoto-presence-visual { --photo-pos: 82% 60%; }
+.gphoto-presence-visual::before { background-image: url("assets/images/guide-presence-by-design-tailoring-mannequin-ivory-black-fabric.webp"); }
+.gphoto-copilot-prompting { --photo-pos: 78% 60%; }
+.gphoto-copilot-prompting::before { background-image: url("assets/images/guide-copilot-prompting-dark-laptop-workspace-brass-pen.webp"); }
+.gphoto-copilot-workflow { --photo-pos: 60% 60%; }
+.gphoto-copilot-workflow::before { background-image: url("assets/images/guide-copilot-workflow-three-document-trays-brass-ribbon.webp"); }
+.gphoto-adhd-planner { --photo-pos: 75% 60%; }
+.gphoto-adhd-planner::before { background-image: url("assets/images/guide-adhd-focus-planner-open-notebook-brass-pebbles.webp"); }
+@media (max-width: 720px) { .gphoto-image-editing { --photo-pos: 72% 60%; } .gphoto-presence-universal { --photo-pos: 84% 60%; } .gphoto-presence-visual { --photo-pos: 86% 60%; } .gphoto-copilot-prompting { --photo-pos: 82% 60%; } .gphoto-copilot-workflow { --photo-pos: 64% 60%; } .gphoto-adhd-planner { --photo-pos: 80% 60%; } }
