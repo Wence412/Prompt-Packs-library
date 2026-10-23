@@ -367,6 +367,8 @@ You're free to use, modify, and distribute these prompts. Just give credit where
 - 🐛 Found a prompt issue? [Open an issue](https://github.com/Wence412/Prompt-Packs-library/issues)
 - 💡 Have a suggestion? [Start a discussion](https://github.com/Wence412/Prompt-Packs-library/discussions)
 - 🤝 Want to collaborate? [See CONTRIBUTING.md](CONTRIBUTING.md)
+- 📬 New guides and prompt systems: [WenceStudio Chronicle on Substack](https://wencestudiochronicle.substack.com) or the [LinkedIn newsletter](https://www.linkedin.com/newsletters/wencestudio-chronicle-7396642749267140609/)
+- ✉️ Work with WenceStudio by SmartDesign: [hello@wencestudio.com](mailto:hello@wencestudio.com)
 
 ---
 
