@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.1 - Unreleased
+
+- Re-pinned the eight Visual Prompts Hub cards to source commit efefe6d, where the source repository now uses the WenceStudio Visual Prompts Hub License, Version 1.0. The card license field reads "WenceStudio Library License 1.0".
+- The new pin also brings in the 22 October 2026 prompt revisions from the source repository: five cards have updated prompt text (editorial character, facade, hero shot, texture, watch).
+- Operation dropdown labels now read Edit (image), Editing (video), Plan (business) and Planning (video).
+
 ## 1.3.0 - Unreleased
 
 - Added 20 L&D workflow prompt cards (LRN-009 to LRN-028) to the Learning collection, grouped in five pillars.

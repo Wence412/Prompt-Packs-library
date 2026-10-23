@@ -1,9 +1,9 @@
 {
   "metadata": {
     "source_repository": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-",
-    "source_revision": "51415307c99761fecf0dc66f7492bbac7b2ae122",
+    "source_revision": "efefe6db7db9c2d392531d3763bb62e2b4c660a3",
     "total_cards": 8,
-    "license": "MIT"
+    "license": "WenceStudio Library License 1.0"
   },
   "prompts": [
     {
@@ -12,11 +12,11 @@
       "collection": "Visual Prompts Hub",
       "category": "portraits",
       "operation": "generate",
-      "prompt": "Editorial portrait of a fictional character with ambiguous gender presentation, sharp angular facial features, and textured dark clothing with no visible branding. Three-quarter turn toward camera, chin slightly lowered, direct eye contact. Dark studio with split lighting, one side of the face lit with a hard key light, the opposite side falling into deep shadow. Rembrandt lighting triangle on the shadow side. Magazine editorial photography. Skin texture visible. Intense, composed expression. Quiet authority. No softening filters.",
+      "prompt": "Editorial portrait of a fictional character with ambiguous gender presentation, sharp angular facial features, and textured dark clothing with no visible branding. Three-quarter turn toward camera, chin slightly lowered, direct eye contact. Dark studio with Rembrandt lighting, one side of the face lit with a hard key light, the opposite side falling into deep shadow. Rembrandt lighting triangle on the shadow side. Magazine editorial photography. Skin texture visible. Intense, composed expression. Quiet authority. No softening filters. Use one hard key light at approximately 45 degrees camera left and above eye level. Rembrandt lighting: a small enclosed triangle of light below the eye on the shadow-side cheek. No split-lighting setup. Preserve visible skin texture.",
       "apae": {
         "appearance": "fictional character, ambiguous gender, sharp angular features, textured dark clothing, no visible branding",
-        "place": "dark studio with split lighting setup, one side lit, one side in deep shadow",
-        "action": "three-quarter turn toward camera, chin slightly lowered, direct eye contact, hands not visible",
+        "place": "dark studio with one hard Rembrandt key light camera left and deep shadow opposite",
+        "action": "three-quarter turn toward camera, chin slightly lowered, direct eye contact, hands not visible; Rembrandt lighting from one hard key light camera left; enclosed light triangle on shadow-side cheek",
         "emotion": "intense, composed, authority, quiet power"
       },
       "tags": [
@@ -54,11 +54,11 @@
       ],
       "engine_overrides": {
         "midjourney": {
-          "prompt": "Editorial portrait fictional character angular features dark textured clothing, dark studio split lighting hard key light deep shadow, three-quarter turn direct eye contact, Rembrandt lighting, magazine photography --ar 4:5 --style raw --v 6\n",
+          "prompt": "Editorial portrait fictional character angular features dark textured clothing, dark studio Rembrandt lighting hard key light deep shadow, three-quarter turn direct eye contact, Rembrandt lighting, magazine photography --ar 4:5 --style raw --v 6 Use one hard key light at approximately 45 degrees camera left and above eye level. Rembrandt lighting: a small enclosed triangle of light below the eye on the shadow-side cheek. No split-lighting setup. Preserve visible skin texture.\n",
           "flags": "--ar 4:5 --style raw --v 6"
         },
         "dalle3": {
-          "prompt": "A magazine editorial portrait of a fictional character with sharp angular features and textured dark clothing. Three-quarter turn, chin slightly lowered, direct eye contact. Dark studio with split lighting. Hard key light on one side, deep shadow on the other. Rembrandt triangle on shadow side. Intense, composed expression. No logos, text, or branding visible.\n"
+          "prompt": "A magazine editorial portrait of a fictional character with sharp angular features and textured dark clothing. Three-quarter turn, chin slightly lowered, direct eye contact. Dark studio with Rembrandt lighting. Hard key light on one side, deep shadow on the other. Rembrandt triangle on shadow side. Intense, composed expression. No logos, text, or branding visible. Use one hard key light at approximately 45 degrees camera left and above eye level. Rembrandt lighting: a small enclosed triangle of light below the eye on the shadow-side cheek. No split-lighting setup. Preserve visible skin texture.\n"
         }
       },
       "negatives": [
@@ -73,7 +73,7 @@
       ],
       "original_record": {
         "title": "Editorial Portrait — Dark Studio — Character Study",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "portraits",
         "engine_primary": "chatgpt_image_2",
         "tags": [
@@ -92,12 +92,12 @@
         ],
         "apae": {
           "appearance": "fictional character, ambiguous gender, sharp angular features, textured dark clothing, no visible branding",
-          "place": "dark studio with split lighting setup, one side lit, one side in deep shadow",
-          "action": "three-quarter turn toward camera, chin slightly lowered, direct eye contact, hands not visible",
+          "place": "dark studio with one hard Rembrandt key light camera left and deep shadow opposite",
+          "action": "three-quarter turn toward camera, chin slightly lowered, direct eye contact, hands not visible; Rembrandt lighting from one hard key light camera left; enclosed light triangle on shadow-side cheek",
           "emotion": "intense, composed, authority, quiet power"
         },
         "chatgpt_image_2": {
-          "prompt": "Editorial portrait of a fictional character with ambiguous gender presentation, sharp angular facial features, and textured dark clothing with no visible branding. Three-quarter turn toward camera, chin slightly lowered, direct eye contact. Dark studio with split lighting, one side of the face lit with a hard key light, the opposite side falling into deep shadow. Rembrandt lighting triangle on the shadow side. Magazine editorial photography. Skin texture visible. Intense, composed expression. Quiet authority. No softening filters.\n",
+          "prompt": "Editorial portrait of a fictional character with ambiguous gender presentation, sharp angular facial features, and textured dark clothing with no visible branding. Three-quarter turn toward camera, chin slightly lowered, direct eye contact. Dark studio with Rembrandt lighting, one side of the face lit with a hard key light, the opposite side falling into deep shadow. Rembrandt lighting triangle on the shadow side. Magazine editorial photography. Skin texture visible. Intense, composed expression. Quiet authority. No softening filters. Use one hard key light at approximately 45 degrees camera left and above eye level. Rembrandt lighting: a small enclosed triangle of light below the eye on the shadow-side cheek. No split-lighting setup. Preserve visible skin texture.\n",
           "style_preset": "editorial",
           "background": "cinematic",
           "ar": "4:5",
@@ -105,11 +105,11 @@
         },
         "engine_overrides": {
           "midjourney": {
-            "prompt": "Editorial portrait fictional character angular features dark textured clothing, dark studio split lighting hard key light deep shadow, three-quarter turn direct eye contact, Rembrandt lighting, magazine photography --ar 4:5 --style raw --v 6\n",
+            "prompt": "Editorial portrait fictional character angular features dark textured clothing, dark studio Rembrandt lighting hard key light deep shadow, three-quarter turn direct eye contact, Rembrandt lighting, magazine photography --ar 4:5 --style raw --v 6 Use one hard key light at approximately 45 degrees camera left and above eye level. Rembrandt lighting: a small enclosed triangle of light below the eye on the shadow-side cheek. No split-lighting setup. Preserve visible skin texture.\n",
             "flags": "--ar 4:5 --style raw --v 6"
           },
           "dalle3": {
-            "prompt": "A magazine editorial portrait of a fictional character with sharp angular features and textured dark clothing. Three-quarter turn, chin slightly lowered, direct eye contact. Dark studio with split lighting. Hard key light on one side, deep shadow on the other. Rembrandt triangle on shadow side. Intense, composed expression. No logos, text, or branding visible.\n"
+            "prompt": "A magazine editorial portrait of a fictional character with sharp angular features and textured dark clothing. Three-quarter turn, chin slightly lowered, direct eye contact. Dark studio with Rembrandt lighting. Hard key light on one side, deep shadow on the other. Rembrandt triangle on shadow side. Intense, composed expression. No logos, text, or branding visible. Use one hard key light at approximately 45 degrees camera left and above eye level. Rembrandt lighting: a small enclosed triangle of light below the eye on the shadow-side cheek. No split-lighting setup. Preserve visible skin texture.\n"
           }
         },
         "negatives": [
@@ -147,19 +147,19 @@
             "background": "environment"
           }
         ],
-        "license": "MIT",
+        "license": "WenceStudio Library License 1.0",
         "created": "2026-05-30",
-        "updated": "2026-05-30"
+        "updated": "2026-10-22"
       },
       "output": {
         "aspect_ratio": "4:5",
         "format": "Prompt template"
       },
       "source": {
-        "url": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/51415307c99761fecf0dc66f7492bbac7b2ae122/editorial_character_dark.yaml",
-        "revision": "51415307c99761fecf0dc66f7492bbac7b2ae122",
+        "url": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/efefe6db7db9c2d392531d3763bb62e2b4c660a3/editorial_character_dark.yaml",
+        "revision": "efefe6db7db9c2d392531d3763bb62e2b4c660a3",
         "file": "editorial_character_dark.yaml",
-        "sha256": "5570b7491cd735ea0aa762e3092f2ed294bdc0d13e2297941f80add153267541"
+        "sha256": "dd15cc113c2f0da5c65502ac2a13aee90696458c6cbbc9a2773bec22049f63be"
       },
       "compatibility_note": "Historical engine labels and settings are preserved for reference, not verified current API parameters. Review before use.",
       "evidence": {
@@ -173,11 +173,11 @@
       "collection": "Visual Prompts Hub",
       "category": "architecture",
       "operation": "generate",
-      "prompt": "Board-formed concrete facade with deep vertical reveals and recessed windows with dark interior glass. Wide shot looking up at three-quarter angle, facade filling the left two-thirds of frame, open sky on the right. Urban streetscape at dusk. Warm amber sky at horizon fading to deep blue at zenith. Wet pavement below reflecting the facade and sky. Architectural photography. Sharp concrete texture visible in the reveals. Long exposure quality. Moody, monumental. No people. No vehicles.",
+      "prompt": "Board-formed concrete facade with deep vertical reveals and recessed windows with dark interior glass. Wide shot looking up at three-quarter angle, facade filling the left two-thirds of frame, open sky on the right. Urban streetscape at dusk. Warm amber sky at horizon fading to deep blue at zenith. Wet pavement below reflecting the facade and sky. Architectural photography. Sharp concrete texture visible in the reveals. Long exposure quality. Moody, monumental. No people. No vehicles. Illuminate the facade only with fading natural dusk light. No architectural uplights, spotlights, illuminated strips, or glowing window interiors. Keep recessed window glass dark.",
       "apae": {
         "appearance": "board-formed concrete facade, deep vertical reveals, recessed windows with dark interior glass, raw material honesty",
         "place": "urban streetscape at dusk, warm amber sky fading to deep blue zenith, wet pavement reflecting facade",
-        "action": "wide shot looking up at three-quarter angle, facade filling left two-thirds of frame, open sky right",
+        "action": "wide shot looking up at three-quarter angle, facade filling left two-thirds of frame, open sky right; Natural dusk illumination only; no artificial uplights or lit interiors",
         "emotion": "monumental, quiet power, permanence, raw beauty"
       },
       "tags": [
@@ -215,11 +215,11 @@
       ],
       "engine_overrides": {
         "midjourney": {
-          "prompt": "Brutalist concrete facade board-formed vertical reveals, urban dusk amber sky wet pavement, three-quarter upward angle, architectural photography monumental quiet power --ar 3:2 --style raw --v 6 --q 2\n",
+          "prompt": "Brutalist concrete facade board-formed vertical reveals, urban dusk amber sky wet pavement, three-quarter upward angle, architectural photography monumental quiet power --ar 3:2 --style raw --v 6 --q 2 Illuminate the facade only with fading natural dusk light. No architectural uplights, spotlights, illuminated strips, or glowing window interiors. Keep recessed window glass dark.\n",
           "flags": "--ar 3:2 --style raw --v 6 --q 2"
         },
         "dalle3": {
-          "prompt": "A brutalist concrete building facade with board-formed texture and deep vertical reveals. Photographed at dusk from a three-quarter upward angle. Warm amber sky transitions to deep blue. Wet pavement reflects the building. Architectural photography. Sharp concrete detail. Monumental and quiet. No people, vehicles, or signs visible.\n"
+          "prompt": "A brutalist concrete building facade with board-formed texture and deep vertical reveals. Photographed at dusk from a three-quarter upward angle. Warm amber sky transitions to deep blue. Wet pavement reflects the building. Architectural photography. Sharp concrete detail. Monumental and quiet. No people, vehicles, or signs visible. Illuminate the facade only with fading natural dusk light. No architectural uplights, spotlights, illuminated strips, or glowing window interiors. Keep recessed window glass dark.\n"
         }
       },
       "negatives": [
@@ -234,7 +234,7 @@
       ],
       "original_record": {
         "title": "Brutalist Concrete Facade — Dusk — Architectural",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "architecture",
         "engine_primary": "chatgpt_image_2",
         "tags": [
@@ -254,11 +254,11 @@
         "apae": {
           "appearance": "board-formed concrete facade, deep vertical reveals, recessed windows with dark interior glass, raw material honesty",
           "place": "urban streetscape at dusk, warm amber sky fading to deep blue zenith, wet pavement reflecting facade",
-          "action": "wide shot looking up at three-quarter angle, facade filling left two-thirds of frame, open sky right",
+          "action": "wide shot looking up at three-quarter angle, facade filling left two-thirds of frame, open sky right; Natural dusk illumination only; no artificial uplights or lit interiors",
           "emotion": "monumental, quiet power, permanence, raw beauty"
         },
         "chatgpt_image_2": {
-          "prompt": "Board-formed concrete facade with deep vertical reveals and recessed windows with dark interior glass. Wide shot looking up at three-quarter angle, facade filling the left two-thirds of frame, open sky on the right. Urban streetscape at dusk. Warm amber sky at horizon fading to deep blue at zenith. Wet pavement below reflecting the facade and sky. Architectural photography. Sharp concrete texture visible in the reveals. Long exposure quality. Moody, monumental. No people. No vehicles.\n",
+          "prompt": "Board-formed concrete facade with deep vertical reveals and recessed windows with dark interior glass. Wide shot looking up at three-quarter angle, facade filling the left two-thirds of frame, open sky on the right. Urban streetscape at dusk. Warm amber sky at horizon fading to deep blue at zenith. Wet pavement below reflecting the facade and sky. Architectural photography. Sharp concrete texture visible in the reveals. Long exposure quality. Moody, monumental. No people. No vehicles. Illuminate the facade only with fading natural dusk light. No architectural uplights, spotlights, illuminated strips, or glowing window interiors. Keep recessed window glass dark.\n",
           "style_preset": "editorial",
           "background": "environment",
           "ar": "3:2",
@@ -266,11 +266,11 @@
         },
         "engine_overrides": {
           "midjourney": {
-            "prompt": "Brutalist concrete facade board-formed vertical reveals, urban dusk amber sky wet pavement, three-quarter upward angle, architectural photography monumental quiet power --ar 3:2 --style raw --v 6 --q 2\n",
+            "prompt": "Brutalist concrete facade board-formed vertical reveals, urban dusk amber sky wet pavement, three-quarter upward angle, architectural photography monumental quiet power --ar 3:2 --style raw --v 6 --q 2 Illuminate the facade only with fading natural dusk light. No architectural uplights, spotlights, illuminated strips, or glowing window interiors. Keep recessed window glass dark.\n",
             "flags": "--ar 3:2 --style raw --v 6 --q 2"
           },
           "dalle3": {
-            "prompt": "A brutalist concrete building facade with board-formed texture and deep vertical reveals. Photographed at dusk from a three-quarter upward angle. Warm amber sky transitions to deep blue. Wet pavement reflects the building. Architectural photography. Sharp concrete detail. Monumental and quiet. No people, vehicles, or signs visible.\n"
+            "prompt": "A brutalist concrete building facade with board-formed texture and deep vertical reveals. Photographed at dusk from a three-quarter upward angle. Warm amber sky transitions to deep blue. Wet pavement reflects the building. Architectural photography. Sharp concrete detail. Monumental and quiet. No people, vehicles, or signs visible. Illuminate the facade only with fading natural dusk light. No architectural uplights, spotlights, illuminated strips, or glowing window interiors. Keep recessed window glass dark.\n"
           }
         },
         "negatives": [
@@ -308,19 +308,19 @@
             "background": "environment"
           }
         ],
-        "license": "MIT",
+        "license": "WenceStudio Library License 1.0",
         "created": "2026-05-30",
-        "updated": "2026-05-30"
+        "updated": "2026-10-22"
       },
       "output": {
         "aspect_ratio": "3:2",
         "format": "Prompt template"
       },
       "source": {
-        "url": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/51415307c99761fecf0dc66f7492bbac7b2ae122/facade_brutalist_dusk.yaml",
-        "revision": "51415307c99761fecf0dc66f7492bbac7b2ae122",
+        "url": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/efefe6db7db9c2d392531d3763bb62e2b4c660a3/facade_brutalist_dusk.yaml",
+        "revision": "efefe6db7db9c2d392531d3763bb62e2b4c660a3",
         "file": "facade_brutalist_dusk.yaml",
-        "sha256": "f94bef44b58c38dd42a65a50fb0dadf2eaae90f00978f6448ccf0c7ac2aecb5c"
+        "sha256": "6bb0866cc5d3000d1b1ec0fc4d5af4b699b73933c2c063723bd123e37cfcb038"
       },
       "compatibility_note": "Historical engine labels and settings are preserved for reference, not verified current API parameters. Review before use.",
       "evidence": {
@@ -334,11 +334,11 @@
       "collection": "Visual Prompts Hub",
       "category": "branding",
       "operation": "generate",
-      "prompt": "Slim matte black wireless earbuds in their open charging case, soft-touch finish, no visible branding. One earbud resting beside the case on a dark obsidian surface. Case angled open at 45 degrees. Composition following rule of thirds. Single beam spotlight from upper right cutting through deep shadow background. Premium tech product photography. Sharp focus on both the case hinge and the earbud driver. Deep blacks. Minimal reflection. Cinematic mood. No clutter.",
+      "prompt": "Slim matte black wireless earbuds in their open charging case, soft-touch finish, no visible branding. One earbud resting beside the case on a dark obsidian surface. Case angled open at 45 degrees. Composition following rule of thirds. Single beam spotlight from upper right cutting through deep shadow background. Premium tech product photography. Sharp focus on both the case hinge and the earbud driver. Deep blacks. Minimal reflection. Cinematic mood. No clutter. Exactly two earbuds in total: one seated in the case and one resting beside it. Show a side three-quarter camera view that makes the hinge angle readable. The lid is raised halfway between fully closed and vertical, forming an approximately 45-degree angle with the horizontal case tray. Do not open the lid vertically or beyond 45 degrees.",
       "apae": {
         "appearance": "slim matte black wireless earbuds in their charging case, soft-touch finish, no visible branding",
         "place": "dark obsidian surface, deep shadow background, single beam spotlight from upper right",
-        "action": "case open at 45 degrees, one earbud resting beside it, angled composition, rule of thirds",
+        "action": "case open at 45 degrees, one earbud resting beside it, angled composition, rule of thirds; One earbud seated, one outside; lid halfway between closed and vertical, 45 degrees to horizontal tray",
         "emotion": "precision, quiet confidence, premium audio, focused"
       },
       "tags": [
@@ -353,7 +353,7 @@
         {
           "id": "v1",
           "label": "White Clean Launch",
-          "change": "White seamless backdrop. Soft overhead diffusion. Clinical, Apple-style clean product shot.",
+          "change": "White seamless backdrop. Soft overhead diffusion. Precise, minimal product shot with generous negative space.",
           "background": "clean"
         },
         {
@@ -377,11 +377,11 @@
       ],
       "engine_overrides": {
         "midjourney": {
-          "prompt": "Matte black wireless earbuds open case obsidian surface, single spotlight upper right, one earbud beside, rule of thirds, premium tech product photography, cinematic deep shadow --ar 16:9 --style raw --v 6 --q 2\n",
+          "prompt": "Matte black wireless earbuds open case obsidian surface, single spotlight upper right, one earbud beside, rule of thirds, premium tech product photography, cinematic deep shadow --ar 16:9 --style raw --v 6 --q 2 Exactly two earbuds in total: one seated in the case and one resting beside it. Show a side three-quarter camera view that makes the hinge angle readable. The lid is raised halfway between fully closed and vertical, forming an approximately 45-degree angle with the horizontal case tray. Do not open the lid vertically or beyond 45 degrees.\n",
           "flags": "--ar 16:9 --style raw --v 6 --q 2"
         },
         "dalle3": {
-          "prompt": "Premium matte black wireless earbuds in an open charging case on a dark obsidian surface. One earbud rests beside the case. Case is open at 45 degrees. Single beam spotlight from upper right. Deep shadows. Cinematic product photography. Sharp detail on hinge and driver. No logos, text, or branding visible.\n"
+          "prompt": "Premium matte black wireless earbuds in an open charging case on a dark obsidian surface. One earbud rests beside the case. Case is open at 45 degrees. Single beam spotlight from upper right. Deep shadows. Cinematic product photography. Sharp detail on hinge and driver. No logos, text, or branding visible. Exactly two earbuds in total: one seated in the case and one resting beside it. Show a side three-quarter camera view that makes the hinge angle readable. The lid is raised halfway between fully closed and vertical, forming an approximately 45-degree angle with the horizontal case tray. Do not open the lid vertically or beyond 45 degrees.\n"
         }
       },
       "negatives": [
@@ -397,7 +397,7 @@
       ],
       "original_record": {
         "title": "Premium Tech Device — Dark Editorial — Brand Hero",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "branding",
         "engine_primary": "chatgpt_image_2",
         "tags": [
@@ -417,11 +417,11 @@
         "apae": {
           "appearance": "slim matte black wireless earbuds in their charging case, soft-touch finish, no visible branding",
           "place": "dark obsidian surface, deep shadow background, single beam spotlight from upper right",
-          "action": "case open at 45 degrees, one earbud resting beside it, angled composition, rule of thirds",
+          "action": "case open at 45 degrees, one earbud resting beside it, angled composition, rule of thirds; One earbud seated, one outside; lid halfway between closed and vertical, 45 degrees to horizontal tray",
           "emotion": "precision, quiet confidence, premium audio, focused"
         },
         "chatgpt_image_2": {
-          "prompt": "Slim matte black wireless earbuds in their open charging case, soft-touch finish, no visible branding. One earbud resting beside the case on a dark obsidian surface. Case angled open at 45 degrees. Composition following rule of thirds. Single beam spotlight from upper right cutting through deep shadow background. Premium tech product photography. Sharp focus on both the case hinge and the earbud driver. Deep blacks. Minimal reflection. Cinematic mood. No clutter.\n",
+          "prompt": "Slim matte black wireless earbuds in their open charging case, soft-touch finish, no visible branding. One earbud resting beside the case on a dark obsidian surface. Case angled open at 45 degrees. Composition following rule of thirds. Single beam spotlight from upper right cutting through deep shadow background. Premium tech product photography. Sharp focus on both the case hinge and the earbud driver. Deep blacks. Minimal reflection. Cinematic mood. No clutter. Exactly two earbuds in total: one seated in the case and one resting beside it. Show a side three-quarter camera view that makes the hinge angle readable. The lid is raised halfway between fully closed and vertical, forming an approximately 45-degree angle with the horizontal case tray. Do not open the lid vertically or beyond 45 degrees.\n",
           "style_preset": "product_photo",
           "background": "cinematic",
           "ar": "16:9",
@@ -429,11 +429,11 @@
         },
         "engine_overrides": {
           "midjourney": {
-            "prompt": "Matte black wireless earbuds open case obsidian surface, single spotlight upper right, one earbud beside, rule of thirds, premium tech product photography, cinematic deep shadow --ar 16:9 --style raw --v 6 --q 2\n",
+            "prompt": "Matte black wireless earbuds open case obsidian surface, single spotlight upper right, one earbud beside, rule of thirds, premium tech product photography, cinematic deep shadow --ar 16:9 --style raw --v 6 --q 2 Exactly two earbuds in total: one seated in the case and one resting beside it. Show a side three-quarter camera view that makes the hinge angle readable. The lid is raised halfway between fully closed and vertical, forming an approximately 45-degree angle with the horizontal case tray. Do not open the lid vertically or beyond 45 degrees.\n",
             "flags": "--ar 16:9 --style raw --v 6 --q 2"
           },
           "dalle3": {
-            "prompt": "Premium matte black wireless earbuds in an open charging case on a dark obsidian surface. One earbud rests beside the case. Case is open at 45 degrees. Single beam spotlight from upper right. Deep shadows. Cinematic product photography. Sharp detail on hinge and driver. No logos, text, or branding visible.\n"
+            "prompt": "Premium matte black wireless earbuds in an open charging case on a dark obsidian surface. One earbud rests beside the case. Case is open at 45 degrees. Single beam spotlight from upper right. Deep shadows. Cinematic product photography. Sharp detail on hinge and driver. No logos, text, or branding visible. Exactly two earbuds in total: one seated in the case and one resting beside it. Show a side three-quarter camera view that makes the hinge angle readable. The lid is raised halfway between fully closed and vertical, forming an approximately 45-degree angle with the horizontal case tray. Do not open the lid vertically or beyond 45 degrees.\n"
           }
         },
         "negatives": [
@@ -451,7 +451,7 @@
           {
             "id": "v1",
             "label": "White Clean Launch",
-            "change": "White seamless backdrop. Soft overhead diffusion. Clinical, Apple-style clean product shot.",
+            "change": "White seamless backdrop. Soft overhead diffusion. Precise, minimal product shot with generous negative space.",
             "background": "clean"
           },
           {
@@ -473,19 +473,19 @@
             "background": "practical_with_props"
           }
         ],
-        "license": "MIT",
+        "license": "WenceStudio Library License 1.0",
         "created": "2026-05-30",
-        "updated": "2026-05-30"
+        "updated": "2026-10-22"
       },
       "output": {
         "aspect_ratio": "16:9",
         "format": "Prompt template"
       },
       "source": {
-        "url": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/51415307c99761fecf0dc66f7492bbac7b2ae122/hero_shot_tech_product.yaml",
-        "revision": "51415307c99761fecf0dc66f7492bbac7b2ae122",
+        "url": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/efefe6db7db9c2d392531d3763bb62e2b4c660a3/hero_shot_tech_product.yaml",
+        "revision": "efefe6db7db9c2d392531d3763bb62e2b4c660a3",
         "file": "hero_shot_tech_product.yaml",
-        "sha256": "53323e0d35853176f03c1f5f6fd03530cb67cd30eb9042dbd4c192e11599bf84"
+        "sha256": "78fd2657f9e7f1d3c09bed7660b95dfefaa45360835f821f64eed3135e7bc874"
       },
       "compatibility_note": "Historical engine labels and settings are preserved for reference, not verified current API parameters. Review before use.",
       "evidence": {
@@ -634,7 +634,7 @@
             "background": "environment"
           }
         ],
-        "license": "MIT",
+        "license": "WenceStudio Library License 1.0",
         "created": "2026-05-30",
         "updated": "2026-05-30"
       },
@@ -643,10 +643,10 @@
         "format": "Prompt template"
       },
       "source": {
-        "url": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/51415307c99761fecf0dc66f7492bbac7b2ae122/jacket_editorial_contrast.yaml",
-        "revision": "51415307c99761fecf0dc66f7492bbac7b2ae122",
+        "url": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/efefe6db7db9c2d392531d3763bb62e2b4c660a3/jacket_editorial_contrast.yaml",
+        "revision": "efefe6db7db9c2d392531d3763bb62e2b4c660a3",
         "file": "jacket_editorial_contrast.yaml",
-        "sha256": "2f83589f0e8a67ada68c3ae1cdc5b354350633e75dedffc2fa77907e62bc4a90"
+        "sha256": "4e1ffb915f2295d0b7b1af97e181ac09f2a6abf4bc40bb402a7d1d57be735629"
       },
       "compatibility_note": "Historical engine labels and settings are preserved for reference, not verified current API parameters. Review before use.",
       "evidence": {
@@ -781,7 +781,7 @@
             "background": "practical_with_props"
           }
         ],
-        "license": "MIT",
+        "license": "WenceStudio Library License 1.0",
         "created": "2026-05-30",
         "updated": "2026-05-30"
       },
@@ -790,10 +790,10 @@
         "format": "Prompt template"
       },
       "source": {
-        "url": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/51415307c99761fecf0dc66f7492bbac7b2ae122/jewelry_gold_editorial.yaml",
-        "revision": "51415307c99761fecf0dc66f7492bbac7b2ae122",
+        "url": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/efefe6db7db9c2d392531d3763bb62e2b4c660a3/jewelry_gold_editorial.yaml",
+        "revision": "efefe6db7db9c2d392531d3763bb62e2b4c660a3",
         "file": "jewelry_gold_editorial.yaml",
-        "sha256": "c8ba1d6da6b965b1cb67635bce89e5ac4d8d9d56d9caab0c61abfb992692ad76"
+        "sha256": "edac3204be1aadcc69e9b0e05a44f3aad30959acd5fab8c2cb0a6d9679cc9d32"
       },
       "compatibility_note": "Historical engine labels and settings are preserved for reference, not verified current API parameters. Review before use.",
       "evidence": {
@@ -932,7 +932,7 @@
             "background": "clean"
           }
         ],
-        "license": "MIT",
+        "license": "WenceStudio Library License 1.0",
         "created": "2026-05-30",
         "updated": "2026-05-30"
       },
@@ -941,10 +941,10 @@
         "format": "Prompt template"
       },
       "source": {
-        "url": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/51415307c99761fecf0dc66f7492bbac7b2ae122/shoe_luxury_minimal.yaml",
-        "revision": "51415307c99761fecf0dc66f7492bbac7b2ae122",
+        "url": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/efefe6db7db9c2d392531d3763bb62e2b4c660a3/shoe_luxury_minimal.yaml",
+        "revision": "efefe6db7db9c2d392531d3763bb62e2b4c660a3",
         "file": "shoe_luxury_minimal.yaml",
-        "sha256": "0f342ef45e97f978344d53070327ec8db970d0a67ae5fdd9f81c4a2a4723de67"
+        "sha256": "8848eaf50f494c53dbc6a40c7ee8ccf15f87692cf91d6af7424c9ca61e38811f"
       },
       "compatibility_note": "Historical engine labels and settings are preserved for reference, not verified current API parameters. Review before use.",
       "evidence": {
@@ -958,11 +958,11 @@
       "collection": "Visual Prompts Hub",
       "category": "abstract",
       "operation": "generate",
-      "prompt": "Layered charcoal paper texture with irregular gold leaf fragments embedded throughout the surface. Matte charcoal base with metallic gold accent. Flat lay close-up perspective. No visible edges or context, pure abstract texture filling the entire frame. Raking side light from the left revealing surface depth, texture relief, and the contrast between matte charcoal and reflective gold leaf. Abstract macro photography. Luxury brand identity feel. Deep shadow in texture valleys.",
+      "prompt": "Layered charcoal paper texture with irregular gold leaf fragments embedded throughout the surface. Matte charcoal base with metallic gold accent. Flat lay close-up perspective. No visible edges or context, pure abstract texture filling the entire frame. Raking side light from the left revealing surface depth, texture relief, and the contrast between matte charcoal and reflective gold leaf. Abstract macro photography. Luxury brand identity feel. Deep shadow in texture valleys. The base is thin handmade charcoal-colored PAPER, not rock. Show torn feathered edges, visible cellulose fibers, shallow curled paper layers, and delicate creases. Gold leaf lies between the thin sheets. No slate, stone, rock slabs, geological cracks, or thick mineral layers.",
       "apae": {
         "appearance": "layered charcoal paper texture with gold leaf fragments embedded, irregular abstract surface, matte base with metallic accent",
         "place": "tight crop on the surface itself, no visible edges or context, pure texture",
-        "action": "flat lay perspective, raking side light from left revealing surface depth and texture relief",
+        "action": "flat lay perspective, raking side light from left revealing surface depth and texture relief; Thin fibrous handmade paper, torn feathered edges and shallow curled sheets; no slate or stone",
         "emotion": "luxury, editorial, brand identity, depth"
       },
       "tags": [
@@ -998,11 +998,11 @@
       ],
       "engine_overrides": {
         "midjourney": {
-          "prompt": "Charcoal paper texture gold leaf fragments embedded, flat lay raking sidelight macro, abstract luxury brand identity surface, matte base metallic accent --ar 1:1 --style raw --v 6\n",
+          "prompt": "Charcoal paper texture gold leaf fragments embedded, flat lay raking sidelight macro, abstract luxury brand identity surface, matte base metallic accent --ar 1:1 --style raw --v 6 The base is thin handmade charcoal-colored PAPER, not rock. Show torn feathered edges, visible cellulose fibers, shallow curled paper layers, and delicate creases. Gold leaf lies between the thin sheets. No slate, stone, rock slabs, geological cracks, or thick mineral layers.\n",
           "flags": "--ar 1:1 --style raw --v 6"
         },
         "dalle3": {
-          "prompt": "Abstract close-up of layered charcoal paper with embedded gold leaf fragments. Matte charcoal base. Reflective gold accents. Flat lay view with raking side light from left revealing surface texture and depth. No frame edges visible. Pure texture, full frame. Luxury brand identity aesthetic. Macro photography quality. No text or logos.\n"
+          "prompt": "Abstract close-up of layered charcoal paper with embedded gold leaf fragments. Matte charcoal base. Reflective gold accents. Flat lay view with raking side light from left revealing surface texture and depth. No frame edges visible. Pure texture, full frame. Luxury brand identity aesthetic. Macro photography quality. No text or logos. The base is thin handmade charcoal-colored PAPER, not rock. Show torn feathered edges, visible cellulose fibers, shallow curled paper layers, and delicate creases. Gold leaf lies between the thin sheets. No slate, stone, rock slabs, geological cracks, or thick mineral layers.\n"
         }
       },
       "negatives": [
@@ -1016,7 +1016,7 @@
       ],
       "original_record": {
         "title": "Charcoal and Gold Texture — Abstract Surface — Brand Identity",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "abstract",
         "engine_primary": "chatgpt_image_2",
         "tags": [
@@ -1037,11 +1037,11 @@
         "apae": {
           "appearance": "layered charcoal paper texture with gold leaf fragments embedded, irregular abstract surface, matte base with metallic accent",
           "place": "tight crop on the surface itself, no visible edges or context, pure texture",
-          "action": "flat lay perspective, raking side light from left revealing surface depth and texture relief",
+          "action": "flat lay perspective, raking side light from left revealing surface depth and texture relief; Thin fibrous handmade paper, torn feathered edges and shallow curled sheets; no slate or stone",
           "emotion": "luxury, editorial, brand identity, depth"
         },
         "chatgpt_image_2": {
-          "prompt": "Layered charcoal paper texture with irregular gold leaf fragments embedded throughout the surface. Matte charcoal base with metallic gold accent. Flat lay close-up perspective. No visible edges or context, pure abstract texture filling the entire frame. Raking side light from the left revealing surface depth, texture relief, and the contrast between matte charcoal and reflective gold leaf. Abstract macro photography. Luxury brand identity feel. Deep shadow in texture valleys.\n",
+          "prompt": "Layered charcoal paper texture with irregular gold leaf fragments embedded throughout the surface. Matte charcoal base with metallic gold accent. Flat lay close-up perspective. No visible edges or context, pure abstract texture filling the entire frame. Raking side light from the left revealing surface depth, texture relief, and the contrast between matte charcoal and reflective gold leaf. Abstract macro photography. Luxury brand identity feel. Deep shadow in texture valleys. The base is thin handmade charcoal-colored PAPER, not rock. Show torn feathered edges, visible cellulose fibers, shallow curled paper layers, and delicate creases. Gold leaf lies between the thin sheets. No slate, stone, rock slabs, geological cracks, or thick mineral layers.\n",
           "style_preset": "editorial",
           "background": "clean",
           "ar": "1:1",
@@ -1049,11 +1049,11 @@
         },
         "engine_overrides": {
           "midjourney": {
-            "prompt": "Charcoal paper texture gold leaf fragments embedded, flat lay raking sidelight macro, abstract luxury brand identity surface, matte base metallic accent --ar 1:1 --style raw --v 6\n",
+            "prompt": "Charcoal paper texture gold leaf fragments embedded, flat lay raking sidelight macro, abstract luxury brand identity surface, matte base metallic accent --ar 1:1 --style raw --v 6 The base is thin handmade charcoal-colored PAPER, not rock. Show torn feathered edges, visible cellulose fibers, shallow curled paper layers, and delicate creases. Gold leaf lies between the thin sheets. No slate, stone, rock slabs, geological cracks, or thick mineral layers.\n",
             "flags": "--ar 1:1 --style raw --v 6"
           },
           "dalle3": {
-            "prompt": "Abstract close-up of layered charcoal paper with embedded gold leaf fragments. Matte charcoal base. Reflective gold accents. Flat lay view with raking side light from left revealing surface texture and depth. No frame edges visible. Pure texture, full frame. Luxury brand identity aesthetic. Macro photography quality. No text or logos.\n"
+            "prompt": "Abstract close-up of layered charcoal paper with embedded gold leaf fragments. Matte charcoal base. Reflective gold accents. Flat lay view with raking side light from left revealing surface texture and depth. No frame edges visible. Pure texture, full frame. Luxury brand identity aesthetic. Macro photography quality. No text or logos. The base is thin handmade charcoal-colored PAPER, not rock. Show torn feathered edges, visible cellulose fibers, shallow curled paper layers, and delicate creases. Gold leaf lies between the thin sheets. No slate, stone, rock slabs, geological cracks, or thick mineral layers.\n"
           }
         },
         "negatives": [
@@ -1087,19 +1087,19 @@
             "change": "White Carrara marble surface with brass powder dusting in crevices. Overhead raking light. Architectural luxury."
           }
         ],
-        "license": "MIT",
+        "license": "WenceStudio Library License 1.0",
         "created": "2026-05-30",
-        "updated": "2026-05-30"
+        "updated": "2026-10-22"
       },
       "output": {
         "aspect_ratio": "1:1",
         "format": "Prompt template"
       },
       "source": {
-        "url": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/51415307c99761fecf0dc66f7492bbac7b2ae122/texture_charcoal_gold.yaml",
-        "revision": "51415307c99761fecf0dc66f7492bbac7b2ae122",
+        "url": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/efefe6db7db9c2d392531d3763bb62e2b4c660a3/texture_charcoal_gold.yaml",
+        "revision": "efefe6db7db9c2d392531d3763bb62e2b4c660a3",
         "file": "texture_charcoal_gold.yaml",
-        "sha256": "9468fbf6f0b9fbd49cf0d3e2b234889b240768cfa592c1a40a5acf5f7db903d5"
+        "sha256": "0cf8dd4cfbe931d96fb4ee658e9695a80f72a85f0d3037a439dec07a29138723"
       },
       "compatibility_note": "Historical engine labels and settings are preserved for reference, not verified current API parameters. Review before use.",
       "evidence": {
@@ -1113,11 +1113,11 @@
       "collection": "Visual Prompts Hub",
       "category": "products",
       "operation": "generate",
-      "prompt": "Titanium smartwatch with matte charcoal case, sapphire glass face, and brushed steel band with deployant clasp. Floating at a 30-degree angle with slight clockwise rotation, band curving naturally downward. Dark concrete studio setting with a single overhead spotlight casting a sharp pool of light, smoke-effect background haze creating depth. Premium product photography. Dramatic shadows. High-contrast lighting. Razor-sharp focus on the watch face. Editorial quality. No reflections on face. Deep black background fading into smoke.",
+      "prompt": "Titanium smartwatch with matte charcoal case, sapphire glass face, and brushed steel band with deployant clasp. Floating at a 30-degree angle with slight clockwise rotation, band curving naturally downward. Dark concrete studio setting with a single overhead spotlight casting a sharp pool of light, smoke-effect background haze creating depth. Premium product photography. Dramatic shadows. High-contrast lighting. Razor-sharp focus on the watch face. Editorial quality. No reflection obscuring the face. Deep black background fading into smoke. The deployant clasp is visibly OPEN beneath the floating watch. The articulated bracelet hangs in an open U-shaped curve under gravity, with separated clasp ends clearly visible. It must not form a closed oval loop. Keep the watch face blank with a controlled, subtle edge highlight rather than a reflection covering the face.",
       "apae": {
         "appearance": "titanium smartwatch, matte charcoal case, sapphire glass face, brushed steel band with deployant clasp",
         "place": "dark concrete studio with a single overhead spotlight, smoke-effect background haze",
-        "action": "floating at 30-degree angle, slight clockwise rotation, band curving naturally downward",
+        "action": "floating at 30-degree angle, slight clockwise rotation, band curving naturally downward; Open deployant clasp with separated ends; bracelet hangs downward in an open U curve",
         "emotion": "premium, precise, futuristic, confident"
       },
       "tags": [
@@ -1155,11 +1155,11 @@
       ],
       "engine_overrides": {
         "midjourney": {
-          "prompt": "Titanium smartwatch matte charcoal case sapphire glass floating at 30-degree angle, dark concrete studio overhead spotlight smoke haze, premium product photography, dramatic shadows high contrast, editorial quality --ar 1:1 --style raw --v 6 --q 2\n",
+          "prompt": "Titanium smartwatch matte charcoal case sapphire glass floating at 30-degree angle, dark concrete studio overhead spotlight smoke haze, premium product photography, dramatic shadows high contrast, editorial quality --ar 1:1 --style raw --v 6 --q 2 The deployant clasp is visibly OPEN beneath the floating watch. The articulated bracelet hangs in an open U-shaped curve under gravity, with separated clasp ends clearly visible. It must not form a closed oval loop. Keep the watch face blank with a controlled, subtle edge highlight rather than a reflection covering the face.\n",
           "flags": "--ar 1:1 --style raw --v 6 --q 2"
         },
         "dalle3": {
-          "prompt": "A premium titanium smartwatch with a matte charcoal case and sapphire glass face, floating at a 30-degree angle inside a dark concrete studio. A single overhead spotlight illuminates the watch face with dramatic precision. Deep shadows. Smoke-effect background. Product photography quality. Sharp focus. No text or logos visible.\n"
+          "prompt": "A premium titanium smartwatch with a matte charcoal case and sapphire glass face, floating at a 30-degree angle inside a dark concrete studio. A single overhead spotlight illuminates the watch face with dramatic precision. Deep shadows. Smoke-effect background. Product photography quality. Sharp focus. No text or logos visible. The deployant clasp is visibly OPEN beneath the floating watch. The articulated bracelet hangs in an open U-shaped curve under gravity, with separated clasp ends clearly visible. It must not form a closed oval loop. Keep the watch face blank with a controlled, subtle edge highlight rather than a reflection covering the face.\n"
         }
       },
       "negatives": [
@@ -1174,7 +1174,7 @@
       ],
       "original_record": {
         "title": "Titanium Smartwatch — Dark Concrete Studio — Premium",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "category": "products",
         "engine_primary": "chatgpt_image_2",
         "tags": [
@@ -1193,11 +1193,11 @@
         "apae": {
           "appearance": "titanium smartwatch, matte charcoal case, sapphire glass face, brushed steel band with deployant clasp",
           "place": "dark concrete studio with a single overhead spotlight, smoke-effect background haze",
-          "action": "floating at 30-degree angle, slight clockwise rotation, band curving naturally downward",
+          "action": "floating at 30-degree angle, slight clockwise rotation, band curving naturally downward; Open deployant clasp with separated ends; bracelet hangs downward in an open U curve",
           "emotion": "premium, precise, futuristic, confident"
         },
         "chatgpt_image_2": {
-          "prompt": "Titanium smartwatch with matte charcoal case, sapphire glass face, and brushed steel band with deployant clasp. Floating at a 30-degree angle with slight clockwise rotation, band curving naturally downward. Dark concrete studio setting with a single overhead spotlight casting a sharp pool of light, smoke-effect background haze creating depth. Premium product photography. Dramatic shadows. High-contrast lighting. Razor-sharp focus on the watch face. Editorial quality. No reflections on face. Deep black background fading into smoke.\n",
+          "prompt": "Titanium smartwatch with matte charcoal case, sapphire glass face, and brushed steel band with deployant clasp. Floating at a 30-degree angle with slight clockwise rotation, band curving naturally downward. Dark concrete studio setting with a single overhead spotlight casting a sharp pool of light, smoke-effect background haze creating depth. Premium product photography. Dramatic shadows. High-contrast lighting. Razor-sharp focus on the watch face. Editorial quality. No reflection obscuring the face. Deep black background fading into smoke. The deployant clasp is visibly OPEN beneath the floating watch. The articulated bracelet hangs in an open U-shaped curve under gravity, with separated clasp ends clearly visible. It must not form a closed oval loop. Keep the watch face blank with a controlled, subtle edge highlight rather than a reflection covering the face.\n",
           "style_preset": "product_photo",
           "background": "cinematic",
           "ar": "1:1",
@@ -1205,11 +1205,11 @@
         },
         "engine_overrides": {
           "midjourney": {
-            "prompt": "Titanium smartwatch matte charcoal case sapphire glass floating at 30-degree angle, dark concrete studio overhead spotlight smoke haze, premium product photography, dramatic shadows high contrast, editorial quality --ar 1:1 --style raw --v 6 --q 2\n",
+            "prompt": "Titanium smartwatch matte charcoal case sapphire glass floating at 30-degree angle, dark concrete studio overhead spotlight smoke haze, premium product photography, dramatic shadows high contrast, editorial quality --ar 1:1 --style raw --v 6 --q 2 The deployant clasp is visibly OPEN beneath the floating watch. The articulated bracelet hangs in an open U-shaped curve under gravity, with separated clasp ends clearly visible. It must not form a closed oval loop. Keep the watch face blank with a controlled, subtle edge highlight rather than a reflection covering the face.\n",
             "flags": "--ar 1:1 --style raw --v 6 --q 2"
           },
           "dalle3": {
-            "prompt": "A premium titanium smartwatch with a matte charcoal case and sapphire glass face, floating at a 30-degree angle inside a dark concrete studio. A single overhead spotlight illuminates the watch face with dramatic precision. Deep shadows. Smoke-effect background. Product photography quality. Sharp focus. No text or logos visible.\n"
+            "prompt": "A premium titanium smartwatch with a matte charcoal case and sapphire glass face, floating at a 30-degree angle inside a dark concrete studio. A single overhead spotlight illuminates the watch face with dramatic precision. Deep shadows. Smoke-effect background. Product photography quality. Sharp focus. No text or logos visible. The deployant clasp is visibly OPEN beneath the floating watch. The articulated bracelet hangs in an open U-shaped curve under gravity, with separated clasp ends clearly visible. It must not form a closed oval loop. Keep the watch face blank with a controlled, subtle edge highlight rather than a reflection covering the face.\n"
           }
         },
         "negatives": [
@@ -1248,19 +1248,19 @@
             "background": "environment"
           }
         ],
-        "license": "MIT",
+        "license": "WenceStudio Library License 1.0",
         "created": "2026-05-30",
-        "updated": "2026-05-30"
+        "updated": "2026-10-22"
       },
       "output": {
         "aspect_ratio": "1:1",
         "format": "Prompt template"
       },
       "source": {
-        "url": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/51415307c99761fecf0dc66f7492bbac7b2ae122/watch_dark_studio_premium.yaml",
-        "revision": "51415307c99761fecf0dc66f7492bbac7b2ae122",
+        "url": "https://github.com/Wence412/Visual-Prompts-Hub-VPH-/blob/efefe6db7db9c2d392531d3763bb62e2b4c660a3/watch_dark_studio_premium.yaml",
+        "revision": "efefe6db7db9c2d392531d3763bb62e2b4c660a3",
         "file": "watch_dark_studio_premium.yaml",
-        "sha256": "e345385ac8548f02dea8bfa9aa17195cd11a59e50e15347d65ad0c3c6d63160a"
+        "sha256": "5230dad5720165e83b755f0eed8263ccfea14b605d9161a5fddfe04ef1dd6627"
       },
       "compatibility_note": "Historical engine labels and settings are preserved for reference, not verified current API parameters. Review before use.",
       "evidence": {

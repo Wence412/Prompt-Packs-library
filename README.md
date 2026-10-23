@@ -111,7 +111,7 @@ See [media publishing and provenance guidance](docs/visual-resources.md) for add
 
 ## Visual Prompts Hub collection
 
-The [public browser](https://wence412.github.io/Prompt-Packs-library/) also includes eight imported VPH prompts. Select **Visual Prompts Hub** in the Collection filter. Expand a card to see APAE fields, variants, engine prompts, and a pinned source link. The Image collection contains 226 cards: 188 image templates, 30 capability cards, and eight VPH cards.
+The [public browser](https://library-prompt-packs.wencestudio.com/library/) also includes eight imported VPH prompts. Select **Visual Prompts Hub** in the Collection filter. Expand a card to see APAE fields, variants, engine prompts, and a pinned source link. The Image collection contains 226 cards: 188 image templates, 30 capability cards, and eight VPH cards.
 
 See [integration and refresh instructions](docs/vph-integration.md). Historical engine settings are preserved as unverified metadata, not current API guarantees.
 

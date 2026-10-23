@@ -44,7 +44,7 @@ def build(source):
     if not cards:
         raise ValueError("No VPH prompt records found")
     return {"metadata": {"source_repository": REPO, "source_revision": revision,
-                         "total_cards": len(cards), "license": "MIT"}, "prompts": cards}
+                         "total_cards": len(cards), "license": "WenceStudio Library License 1.0"}, "prompts": cards}
 
 
 def validate(data):
