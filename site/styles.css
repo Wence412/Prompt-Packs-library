@@ -308,3 +308,16 @@ a { color: var(--gold-soft); }
 @media (max-width: 720px) { .landing-page .platform-domain-grid .domain-card.has-photo { min-height: 15rem; } .landing-page .platform-domain-grid .photo-image { --photo-pos: 70% 50%; } .landing-page .platform-domain-grid .photo-writing { --photo-pos: 68% 55%; } .landing-page .platform-domain-grid .photo-business { --photo-pos: 70% 60%; } }
 @media (prefers-reduced-motion: reduce) { .landing-page .platform-domain-grid .domain-card.has-photo, .landing-page .platform-domain-grid .domain-card.has-photo::before { transition: none; } .landing-page .platform-domain-grid .domain-card.has-photo:hover { transform: none; } .landing-page .platform-domain-grid .domain-card.has-photo:hover::before { transform: none; } }
 @media (min-width: 721px) and (max-width: 900px) { .landing-page .platform-domain-grid .photo-business { grid-column: span 2; --photo-pos: 62% 58%; } }
+
+/* Homepage intro: compact "Inside a prompt card" preview */
+.prompt-card-preview { align-self: start; max-width: 30rem; padding: 1.5rem 1.6rem; background: var(--card); border: 1px solid var(--gold); }
+.prompt-card-preview-label { display: flex; justify-content: space-between; align-items: baseline; margin: 0 0 1rem; color: var(--gold-soft); font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.prompt-card-preview-label span { color: var(--muted); font-weight: 400; letter-spacing: .08em; }
+.prompt-card-preview dl { margin: 0; }
+.prompt-card-preview dl > div { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: 1rem; padding: .75rem 0; border-top: 1px solid var(--line); }
+.prompt-card-preview dt { color: var(--gold-soft); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; line-height: 1.6; }
+.prompt-card-preview dd { margin: 0; color: var(--paper); font-size: .95rem; line-height: 1.5; }
+.prompt-card-preview .text-link { display: inline-block; margin-top: 1rem; }
+@media (max-width: 720px) { .prompt-card-preview { max-width: none; padding: 1.25rem; } .prompt-card-preview dl > div { grid-template-columns: 5.5rem minmax(0, 1fr); gap: .75rem; } }
+.landing-intro > p:not(.eyebrow):not(.prompt-card-preview-label) { align-self: start; }
+.prompt-card-preview .text-link { min-height: 0; padding-bottom: .3rem; }
