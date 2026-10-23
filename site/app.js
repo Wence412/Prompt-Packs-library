@@ -1,4 +1,4 @@
-const RAW_BASE = 'https://raw.githubusercontent.com/Wence412/chatgpt-image-prompt-packs/main';
+const RAW_BASE = 'https://raw.githubusercontent.com/Wence412/Prompt-Packs-library/main';
 const PAGE_SIZE = 24;
 const domain = document.body.dataset.domain || 'all';
 const state = { prompts: [], query: '', collection: '', operation: '', media: '', assets: [], visibleCount: PAGE_SIZE };
@@ -11,6 +11,8 @@ const elements = {
 
 const unique = values => [...new Set(values)].sort((a, b) => a.localeCompare(b));
 const normalizeLegacy = prompt => ({ ...prompt, domain: 'Image', collection: prompt.category, operation: 'generate', output: { aspect_ratio: 'Flexible', format: 'Prompt template' } });
+// Display labels only. Data values stay unchanged so filters and exports keep working.
+const OPERATION_LABELS = { edit: 'Edit (image)', editing: 'Editing (video)', plan: 'Plan (business)', planning: 'Planning (video)' };
 const normalizeCard = card => ({ ...card, domain: 'Image', collection: card.pack });
 const normalizeVideo = prompt => ({ ...prompt, collection: prompt.category });
 const normalizeGeneral = prompt => ({ ...prompt, collection: prompt.category });
@@ -29,7 +31,7 @@ async function copyPrompt(prompt) {
 
 function populateFilters() {
   unique(state.prompts.map(prompt => prompt.collection)).forEach(value => elements.collection.add(new Option(value, value)));
-  unique(state.prompts.map(prompt => prompt.operation)).forEach(value => elements.operation.add(new Option(value, value)));
+  unique(state.prompts.map(prompt => prompt.operation)).forEach(value => elements.operation.add(new Option(OPERATION_LABELS[value] || value, value)));
   if (!['all', 'image'].includes(domain)) {
     const mediaFilter = elements.media.closest('label');
     mediaFilter.hidden = true;
