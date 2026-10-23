@@ -1,15 +1,15 @@
 # Prompt Packs Library
 
 By WenceStudio by SmartDesign
-### 368 Review-Led Prompt Cards for Creative Production, Learning, and Business
+### 388 Review-Led Prompt Cards for Creative Production, Learning, and Business
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![Prompt cards: 368](https://img.shields.io/badge/Prompt%20cards-368-blue.svg) ![Collections: 5](https://img.shields.io/badge/Collections-5-blueviolet.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![Prompt cards: 388](https://img.shields.io/badge/Prompt%20cards-388-blue.svg) ![Collections: 5](https://img.shields.io/badge/Collections-5-blueviolet.svg)
 
 > **Move from one-off prompts to reusable production systems.**
 
-A structured library of **368 prompt cards** across five collections: **Image, Video, Writing, Learning, and Business**. Each card pairs a task with editable variables and review checks, so output is reviewed before it is approved, published, or handed off.
+A structured library of **388 prompt cards** across five collections: **Image, Video, Writing, Learning, and Business**. Each card pairs a task with editable variables and review checks, so output is reviewed before it is approved, published, or handed off.
 
-The library includes **226 Image cards** (188 image templates, 30 image capability cards, and eight Visual Prompts Hub cards), **84 Video cards**, **8 Writing cards**, **8 Learning cards**, and **42 Business cards**.
+The library includes **226 Image cards** (188 image templates, 30 image capability cards, and eight Visual Prompts Hub cards), **84 Video cards**, **8 Writing cards**, **28 Learning cards**, and **42 Business cards**.
 
 ## Browse the library
 
@@ -28,7 +28,7 @@ The Video collection is derived from the Professional Video Editing Prompts: AI 
 
 ## Writing, Learning, and Business prompts
 
-The Writing, Learning, and Business collections are derived from Writing, Learning and Business Prompt Packs. Writing and Learning each contain eight templates; Business contains 42. All three have dedicated browsing pages, with data maintained in site/data/general-prompts.json.
+The Writing, Learning, and Business collections are derived from Writing, Learning and Business Prompt Packs. Writing contains eight templates, Learning contains 28 (eight starter templates plus 20 L&D workflow cards in five pillars), and Business contains 42. All three have dedicated browsing pages, with data maintained in site/data/general-prompts.json.
 
 The v1.3 capability packs add **30 prompt cards** for reference-led generation, precise editing, canvas extension, text-led layouts, transparent assets, visual explainers, campaign systems, and GPT Image 2.5 workflows. See [the capability-pack guide](docs/capability-packs.md) and the [GPT Image 2.5 production guide](docs/gpt-image-2.5-production-guide.md).
 
@@ -281,7 +281,7 @@ GitHub Pages is deployed through the repository's `deploy-pages.yml` workflow, w
 
 | Metric | Value |
 |--------|-------|
-| **Total Prompt Cards** | 368 |
+| **Total Prompt Cards** | 388 |
 | **Published Collections** | 5 |
 | **Image Prompt Templates** | 188 |
 | **Capability Cards** | 30 |
@@ -386,12 +386,12 @@ You're free to use, modify, and distribute these prompts. Just give credit where
 
 **Transform ChatGPT-Image from a toy into a professional production tool.**
 
-**[Browse 368 Prompt Cards](https://wence412.github.io/Prompt-Packs-library/)** → **[Get Started](seed-framework.md)** → **[Import Data](prompts.json)**
+**[Browse 388 Prompt Cards](https://wence412.github.io/Prompt-Packs-library/)** → **[Get Started](seed-framework.md)** → **[Import Data](prompts.json)**
 
 ---
 
 Made with 🎨 **WenceStudio by SmartDesign**
 
-*368 prompt cards across Image, Video, Writing, Learning, and Business.*
+*388 prompt cards across Image, Video, Writing, Learning, and Business.*
 
 </div>

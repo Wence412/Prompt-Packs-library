@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0 - Unreleased
+
+- Added 20 L&D workflow prompt cards (LRN-009 to LRN-028) to the Learning collection, grouped in five pillars.
+- Learning now holds 28 cards. Library total is 388 cards across five collections.
+
 ## 1.2.0 - Unreleased
 
 - Added 14 capability prompt cards across seven modern generation and editing workflows.
