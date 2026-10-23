@@ -35,7 +35,7 @@ Keep README.md aligned with that structure.
 | `schema/prompt-card-v2.schema.json` | Contract for new generation and editing prompt cards. |
 | `docs/model-capabilities.md` | Model-agnostic capability guidance for prompt authors. |
 | `CHANGELOG.md` | Version history (currently just `1.0.0`). |
-| `CONTRIBUTING.md`, `README.md`, `LICENSE` | Contribution guide, project pitch/usage docs, MIT license. |
+| `CONTRIBUTING.md`, `README.md`, `LICENSE` | Contribution guide, project pitch/usage docs, WenceStudio Library License (proprietary, free to use, not to redistribute). |
 
 ## Data model
 
@@ -98,5 +98,6 @@ Quality bar before considering a prompt done (from `CONTRIBUTING.md`):
   a one-off `python3 -c "..."` or `jq` invocation is the idiomatic way in this
   repo (see examples in this file's history) — there's no test runner to wire
   it into.
-- License is MIT; contributions are accepted under the same license per
-  `CONTRIBUTING.md`.
+- License is the WenceStudio Library License (see `LICENSE`); contributions grant the
+  owner a right to publish them per `CONTRIBUTING.md`. Records in `vph-import.json`
+  keep the license recorded in their source repository.
