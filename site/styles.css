@@ -287,3 +287,24 @@ a { color: var(--gold-soft); }
 .gphoto-adhd-planner { --photo-pos: 75% 60%; }
 .gphoto-adhd-planner::before { background-image: url("assets/images/guide-adhd-focus-planner-open-notebook-brass-pebbles.webp"); }
 @media (max-width: 720px) { .gphoto-image-editing { --photo-pos: 72% 60%; } .gphoto-presence-universal { --photo-pos: 84% 60%; } .gphoto-presence-visual { --photo-pos: 86% 60%; } .gphoto-copilot-prompting { --photo-pos: 82% 60%; } .gphoto-copilot-workflow { --photo-pos: 64% 60%; } .gphoto-adhd-planner { --photo-pos: 80% 60%; } }
+
+/* Homepage collection cards: decorative photo backgrounds (CSS only, not announced by screen readers).
+   Reuses the .photo-* image and position variables defined for the Collections page. */
+.landing-page .platform-domain-grid .domain-card.has-photo { position: relative; isolation: isolate; overflow: hidden; border-color: transparent; background: #0a0a0a; color: #f5f2eb; }
+.landing-page .platform-domain-grid .domain-card.has-photo::before, .landing-page .platform-domain-grid .domain-card.has-photo::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.landing-page .platform-domain-grid .domain-card.has-photo::before { background-color: #0a0a0a; background-repeat: no-repeat; background-size: cover; background-position: var(--photo-pos, 50% 50%); transition: transform .5s ease; }
+.landing-page .platform-domain-grid .domain-card.has-photo::after { background: linear-gradient(180deg, rgba(0,0,0,.82) 0%, rgba(0,0,0,.4) 22%, rgba(0,0,0,.05) 42%, rgba(0,0,0,.35) 60%, rgba(0,0,0,.86) 80%, rgba(0,0,0,.94) 100%); }
+.landing-page .platform-domain-grid .domain-card.has-photo:hover { background: #0a0a0a; }
+.landing-page .platform-domain-grid .domain-card.has-photo:hover::before { transform: scale(1.05); }
+.landing-page .platform-domain-grid .domain-card.has-photo span { color: #e8c97e; }
+.landing-page .platform-domain-grid .domain-card.has-photo strong { color: #f5f2eb; }
+.landing-page .platform-domain-grid .domain-card.has-photo small { color: #c4c0b6; }
+.landing-page .platform-domain-grid .domain-card.has-photo:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.landing-page .platform-domain-grid .photo-image { --photo-pos: 66% 50%; }
+.landing-page .platform-domain-grid .photo-video { --photo-pos: 62% 50%; }
+.landing-page .platform-domain-grid .photo-writing { --photo-pos: 60% 55%; }
+.landing-page .platform-domain-grid .photo-learning { --photo-pos: 52% 55%; }
+.landing-page .platform-domain-grid .photo-business { --photo-pos: 72% 55%; }
+@media (max-width: 720px) { .landing-page .platform-domain-grid .domain-card.has-photo { min-height: 15rem; } .landing-page .platform-domain-grid .photo-image { --photo-pos: 70% 50%; } .landing-page .platform-domain-grid .photo-writing { --photo-pos: 68% 55%; } .landing-page .platform-domain-grid .photo-business { --photo-pos: 70% 60%; } }
+@media (prefers-reduced-motion: reduce) { .landing-page .platform-domain-grid .domain-card.has-photo, .landing-page .platform-domain-grid .domain-card.has-photo::before { transition: none; } .landing-page .platform-domain-grid .domain-card.has-photo:hover { transform: none; } .landing-page .platform-domain-grid .domain-card.has-photo:hover::before { transform: none; } }
+@media (min-width: 721px) and (max-width: 900px) { .landing-page .platform-domain-grid .photo-business { grid-column: span 2; --photo-pos: 62% 58%; } }
