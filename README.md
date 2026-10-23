@@ -3,7 +3,7 @@
 By WenceStudio by SmartDesign
 ### 388 Review-Led Prompt Cards for Creative Production, Learning, and Business
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![Prompt cards: 388](https://img.shields.io/badge/Prompt%20cards-388-blue.svg) ![Collections: 5](https://img.shields.io/badge/Collections-5-blueviolet.svg)
+![License: WenceStudio Library License](https://img.shields.io/badge/License-All%20rights%20reserved-lightgrey.svg) ![Prompt cards: 388](https://img.shields.io/badge/Prompt%20cards-388-blue.svg) ![Collections: 5](https://img.shields.io/badge/Collections-5-blueviolet.svg)
 
 > **Move from one-off prompts to reusable production systems.**
 
@@ -154,7 +154,7 @@ Every prompt uses this pattern:
 ```
 Prompt-Packs-library/
 ├── README.md                          # You are here
-├── LICENSE                            # MIT License
+├── LICENSE                            # WenceStudio Library License
 ├── CONTRIBUTING.md                    # How to contribute
 ├── CHANGELOG.md                       # Version history
 ├── prompts.json                        # Canonical structured source
@@ -290,7 +290,7 @@ GitHub Pages is deployed through the repository's `deploy-pages.yml` workflow, w
 | **Categories** | 18 |
 | **Framework** | S.E.E.D. |
 | **Output Formats** | Markdown, JSON, CSV |
-| **License** | MIT |
+| **License** | WenceStudio Library License (free to use, not to redistribute) |
 | **Updated** | 2026 |
 
 ---
@@ -344,9 +344,11 @@ GitHub Pages is deployed through the repository's `deploy-pages.yml` workflow, w
 
 ## 📜 License
 
-**MIT License** © 2026 **WenceStudio by SmartDesign**
+**WenceStudio Library License** © 2026 **WenceStudio by SmartDesign**. All rights reserved.
 
-You're free to use, modify, and distribute these prompts. Just give credit where it's due. ✨
+The library is free to use. Copy and use the prompts, guides, and planner in your own work, including client work. Do not republish, resell, mirror, or bulk-collect the library, and credit WenceStudio by SmartDesign when you share up to 10 cards. Read the [full license](LICENSE). For anything beyond it, write to [hello@wencestudio.com](mailto:hello@wencestudio.com).
+
+Copies obtained before 23 October 2026 were released under the MIT License. That earlier grant is not revoked.
 
 ---
 

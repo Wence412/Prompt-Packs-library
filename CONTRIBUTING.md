@@ -314,7 +314,7 @@ A: We review PRs weekly. Major additions take 3-7 days; small fixes are quicker.
 A: Not in the prompt data, but we welcome you to mention them in PR descriptions. Featured contributors may be highlighted.
 
 **Q: What license do my contributions use?**
-A: All contributions are MIT licensed under WenceStudio by SmartDesign. By submitting, you agree to this.
+A: By submitting, you grant WenceStudio by SmartDesign a perpetual, worldwide, royalty-free right to use, modify, publish, and distribute your contribution as part of the library under the [WenceStudio Library License](LICENSE), and you confirm you have the right to do so.
 
 ---
 
