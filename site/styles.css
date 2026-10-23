@@ -236,3 +236,27 @@ a { color: var(--gold-soft); }
 .guides-newsletter { width: min(1240px, calc(100% - 2rem)); margin: -3rem auto 4rem; color: var(--muted); font-size: .9rem; }
 .guides-newsletter a { color: var(--gold-soft); font-weight: 700; }
 .page-footer .footer-contact { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
+
+/* Collection cards: decorative photo backgrounds (CSS only, not announced by screen readers) */
+.collection-grid .domain-card.has-photo { position: relative; isolation: isolate; overflow: hidden; background: #0a0a0a; color: #f5f2eb; }
+.collection-grid .domain-card.has-photo::before, .collection-grid .domain-card.has-photo::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.collection-grid .domain-card.has-photo::before { background-color: #0a0a0a; background-repeat: no-repeat; background-size: cover; background-position: var(--photo-pos, 50% 50%); }
+.collection-grid .domain-card.has-photo::after { background: linear-gradient(180deg, rgba(0,0,0,.62) 0%, rgba(0,0,0,.12) 38%, rgba(0,0,0,.5) 66%, rgba(0,0,0,.9) 100%); }
+.collection-grid .domain-card.has-photo:hover { background: #0a0a0a; }
+.collection-grid .domain-card.has-photo span { color: #e8c97e; }
+.collection-grid .domain-card.has-photo strong { color: #f5f2eb; }
+.collection-grid .domain-card.has-photo small { color: #a9a69d; }
+.collection-grid .domain-card.has-photo:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.photo-image { --photo-pos: 62% 52%; }
+.photo-image::before { background-image: url("assets/images/collection-image-glass-prism-gold-light.webp"); }
+.photo-video { --photo-pos: 58% 50%; }
+.photo-video::before { background-image: url("assets/images/collection-video-film-strip-reel.webp"); }
+.photo-writing { --photo-pos: 72% 62%; }
+.photo-writing::before { background-image: url("assets/images/collection-writing-fountain-pen-manuscript.webp"); }
+.photo-learning { --photo-pos: 52% 58%; }
+.photo-learning::before { background-image: url("assets/images/collection-learning-open-book-lit-steps.webp"); }
+.photo-business { --photo-pos: 70% 68%; }
+.photo-business::before { background-image: url("assets/images/collection-business-blocks-brass-pathway.webp"); }
+@media (max-width: 900px) { .photo-image { --photo-pos: 66% 52%; } .photo-writing { --photo-pos: 74% 62%; } .photo-business { --photo-pos: 72% 66%; } }
+@media (max-width: 720px) { .photo-image { --photo-pos: 70% 52%; } .photo-video { --photo-pos: 62% 50%; } .photo-writing { --photo-pos: 78% 62%; } .photo-learning { --photo-pos: 46% 58%; } .photo-business { --photo-pos: 78% 66%; } }
+@media (prefers-reduced-motion: reduce) { .collection-grid .domain-card.has-photo { transition: none; } .collection-grid .domain-card.has-photo:hover { transform: none; } }
