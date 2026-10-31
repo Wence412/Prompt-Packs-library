@@ -392,6 +392,8 @@ a { color: var(--gold-soft); }
 /* Collections and guides: one footer rule, one gap, aligned with the content above */
 #collections, #guides { padding-bottom: 0; }
 #collections > .platform-section:last-child { padding-bottom: 0; border-bottom: 0; }
+#library { padding-bottom: 0; }
+#library + .page-footer { margin-top: clamp(2.5rem, 5vw, 4rem); }
 #collections + .page-footer, #guides + .page-footer { width: min(1208px, calc(100% - 4rem)); margin-top: clamp(2.5rem, 5vw, 4rem); }
 .page-footer a { transition: color .15s ease; }
 @media (hover: hover) and (pointer: fine) { .page-footer a:hover { color: var(--paper); } }

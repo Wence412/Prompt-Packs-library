@@ -2,6 +2,7 @@
 
 ## 1.3.1 - Unreleased
 
+- Library page: added the same footer as the guides page (Browse collections, Newsletter, LinkedIn newsletter, License, Work with us, studio name). It lines up with the prompt cards and sits 64px under the Show more button.
 - Site: the collections, guides and license pages now apply the theme chosen on the landing or library page. A small script at the top of the body reads the saved choice before first paint, so light mode no longer flips back to dark on those pages. Those pages still have no toggle of their own.
 - Collections and library pages: added the same scroll devices as the landing and guides pages. Collections: hero stagger and cards that rise as they enter view. Library: hero stagger and the page progress hairline only, so filtering and the prompt list stay instant. Cards reveal slightly earlier on every page. Reduced-motion override, and content stays visible without JavaScript.
 - Landing and guides pages: added scroll devices from scroll-craft in plain CSS and JS (`site/scroll.js`). The hero planes move at different rates and the hero copy recedes as you scroll, collection cards, steps and tool rows rise in with a short stagger, guide cards rise as they enter view, and a hairline progress bar tracks the page. "How the platform works" is now a rail: the heading holds while the three steps pass. Removed the redundant eyebrows above the Collections and Resources headings. Transform and opacity only, with a reduced-motion override. Content stays visible without JavaScript or if the script fails to load.
