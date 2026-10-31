@@ -376,6 +376,12 @@ a { color: var(--gold-soft); }
 
 .landing-nav-cta:active, .landing-primary:active, .landing-secondary:active { transform: scale(.97); }
 
+/* Landing spacing: one rule and one gap per boundary. */
+.landing-intro { padding-bottom: 0; border-bottom: 0; }
+.landing-page main { padding-bottom: 0; }
+.landing-page .platform-tools { padding-bottom: 0; border-bottom: 0; }
+.landing-footer { margin-top: clamp(2.5rem, 5vw, 4rem); }
+
 @media (prefers-reduced-motion: reduce) {
   .hero-stagger > * { animation: none; }
   .reveal, .landing-intro.reveal > * { opacity: 1; transform: none; transition: none; }
