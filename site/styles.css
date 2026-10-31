@@ -321,4 +321,33 @@ a { color: var(--gold-soft); }
 @media (max-width: 720px) { .prompt-card-preview { max-width: none; padding: 1.25rem; } .prompt-card-preview dl > div { grid-template-columns: 5.5rem minmax(0, 1fr); gap: .75rem; } }
 .landing-intro > p:not(.eyebrow):not(.prompt-card-preview-label) { align-self: start; }
 .prompt-card-preview .text-link { min-height: 0; padding-bottom: .3rem; }
-.license-text { max-width: 46rem; margin: 0 auto; padding: clamp(1.5rem, 4vw, 3rem) 0 4rem; color: var(--muted); font: inherit; font-size: .95rem; line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; }
+
+/* License page */
+.license-page { width: min(880px, calc(100% - 2rem)); margin: 0 auto; padding: clamp(2rem, 5vw, 3.5rem) 0 1rem; }
+.license-crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: 0 0 2rem; color: var(--muted); font-size: .78rem; }
+.license-crumbs a { color: var(--muted); text-decoration: none; }
+.license-crumbs a:hover { color: var(--gold-soft); }
+.license-crumbs [aria-current] { color: var(--paper); }
+.license-title { display: flex; align-items: center; gap: 1rem; }
+.license-icon { display: inline-flex; flex: none; align-items: center; justify-content: center; width: 3.4rem; height: 3.4rem; border: 1px solid var(--line); color: var(--gold-soft); background: color-mix(in srgb, var(--gold) 8%, transparent); }
+.license-title h1 { margin: 0; font-family: var(--serif); font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 400; letter-spacing: -.03em; line-height: 1; }
+.license-meta { margin: 1rem 0 0; color: var(--muted); font-size: .82rem; line-height: 1.6; }
+.license-card { margin: 2rem 0; padding: 1.4rem 1.6rem; border: 1px solid var(--line); background: color-mix(in srgb, var(--paper) 3%, transparent); }
+.license-card .eyebrow { margin-bottom: .75rem; }
+.license-short { border-left: 2px solid var(--gold); }
+.license-short p:last-child { margin: 0; color: var(--paper); font-size: 1.02rem; line-height: 1.65; }
+.license-scope { margin: 0 0 2rem; color: var(--muted); font-size: .95rem; line-height: 1.7; }
+.license-toc ol { display: grid; grid-template-columns: 1fr 1fr; gap: .55rem 2rem; margin: 0; padding: 0; list-style: none; }
+.license-toc a { display: flex; gap: .65rem; align-items: baseline; color: var(--muted); font-size: .9rem; text-decoration: none; }
+.license-toc a span { color: var(--gold-soft); font-size: .7rem; font-variant-numeric: tabular-nums; letter-spacing: .06em; opacity: .75; }
+.license-toc a:hover { color: var(--paper); }
+.license-section { display: grid; grid-template-columns: 2.6rem minmax(0, 1fr); gap: .9rem; padding: 1.6rem 0; border-top: 1px solid var(--line); scroll-margin-top: 1rem; }
+.license-num { align-self: start; margin-top: .2rem; padding: .25rem 0; border: 1px solid var(--line); color: var(--gold-soft); font-size: .68rem; font-variant-numeric: tabular-nums; letter-spacing: .08em; text-align: center; }
+.license-section h2 { margin: 0 0 .7rem; font-size: 1.2rem; font-weight: 600; letter-spacing: 0; }
+.license-section p { margin: 0 0 .8rem; color: var(--muted); font-size: .95rem; line-height: 1.75; }
+.license-list { margin: 0 0 .8rem; padding-left: 1.4rem; color: var(--muted); font-size: .95rem; line-height: 1.75; }
+.license-list li { margin: 0 0 .45rem; padding-left: .3rem; }
+.license-list li::marker { color: var(--gold-soft); }
+@media (max-width: 720px) { .license-toc ol { grid-template-columns: 1fr; } .license-section { grid-template-columns: 1fr; gap: .5rem; } .license-num { width: 2.4rem; } .license-title { gap: .75rem; } .license-icon { width: 2.8rem; height: 2.8rem; } }
+.license-header { padding-bottom: 0; border-bottom: 0; }
+.license-header .platform-nav { margin-bottom: 0; }
