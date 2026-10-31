@@ -3,6 +3,7 @@
 ## 1.3.1 - Unreleased
 
 - Landing page: removed the stacked padding and duplicate rule under the intro principles strip, and the stacked padding, rule and margins above the footer, so each boundary has one rule and one gap.
+- Site: removed the double rule and stacked gap above the footer on the collections and guides pages (144px down to 64px), and aligned the footer with the content above it. Footer links now ease their colour on hover, with a reduced-motion override.
 - Landing page: resized the hero headline so it sits on two lines without an orphaned word, moved the "Review" art label out from under the status card, rebuilt the intro section grid so the left column and the prompt card preview fill the row, and added a staggered hero entrance and intro reveal with a reduced-motion override and a no-JavaScript fallback.
 - Site: redesigned the License page with a breadcrumb, an In short card, an On this page index and numbered sections, still rendered from LICENSE. The collections footer now groups the License link with the other links.
 - Site: added a License page at /license/ that shows the full LICENSE text on the site. The footer and homepage license links now open it. `scripts/build_license_page.py` renders the page from LICENSE, and `scripts/validate.py` fails if the page is out of date.
