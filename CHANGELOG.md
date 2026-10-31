@@ -2,6 +2,7 @@
 
 ## 1.3.1 - Unreleased
 
+- Landing and guides pages: added scroll devices from scroll-craft in plain CSS and JS (`site/scroll.js`). The hero planes move at different rates and the hero copy recedes as you scroll, collection cards, steps and tool rows rise in with a short stagger, guide cards rise as they enter view, and a hairline progress bar tracks the page. "How the platform works" is now a rail: the heading holds while the three steps pass. Removed the redundant eyebrows above the Collections and Resources headings. Transform and opacity only, with a reduced-motion override. Content stays visible without JavaScript or if the script fails to load.
 - Landing page: removed the stacked padding and duplicate rule under the intro principles strip, and the stacked padding, rule and margins above the footer, so each boundary has one rule and one gap.
 - Site: removed the double rule and stacked gap above the footer on the collections and guides pages (144px down to 64px), and aligned the footer with the content above it. Footer links now ease their colour on hover, with a reduced-motion override.
 - Landing page: resized the hero headline so it sits on two lines without an orphaned word, moved the "Review" art label out from under the status card, rebuilt the intro section grid so the left column and the prompt card preview fill the row, and added a staggered hero entrance and intro reveal with a reduced-motion override and a no-JavaScript fallback.
