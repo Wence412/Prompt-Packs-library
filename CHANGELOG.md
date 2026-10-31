@@ -2,6 +2,7 @@
 
 ## 1.3.1 - Unreleased
 
+- Site: added a License page at /license/ that shows the full LICENSE text on the site. The footer and homepage license links now open it. `scripts/build_license_page.py` renders the page from LICENSE, and `scripts/validate.py` fails if the page is out of date.
 - License: added a short plain-English summary at the top, a sentence in section 8 that AI output can be wrong or incomplete, and section 9 (Changes to this license). The license version line is unchanged.
 - Re-pinned the eight Visual Prompts Hub cards to source commit efefe6d, where the source repository now uses the WenceStudio Visual Prompts Hub License, Version 1.0. The card license field reads "WenceStudio Library License 1.0".
 - The new pin also brings in the 22 October 2026 prompt revisions from the source repository: five cards have updated prompt text (editorial character, facade, hero shot, texture, watch).
