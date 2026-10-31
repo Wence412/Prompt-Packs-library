@@ -2,6 +2,7 @@
 
 ## 1.3.1 - Unreleased
 
+- Landing page: resized the hero headline so it sits on two lines without an orphaned word, moved the "Review" art label out from under the status card, rebuilt the intro section grid so the left column and the prompt card preview fill the row, and added a staggered hero entrance and intro reveal with a reduced-motion override and a no-JavaScript fallback.
 - Site: redesigned the License page with a breadcrumb, an In short card, an On this page index and numbered sections, still rendered from LICENSE. The collections footer now groups the License link with the other links.
 - Site: added a License page at /license/ that shows the full LICENSE text on the site. The footer and homepage license links now open it. `scripts/build_license_page.py` renders the page from LICENSE, and `scripts/validate.py` fails if the page is out of date.
 - License: added a short plain-English summary at the top, a sentence in section 8 that AI output can be wrong or incomplete, and section 9 (Changes to this license). The license version line is unchanged.
