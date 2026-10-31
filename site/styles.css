@@ -321,3 +321,4 @@ a { color: var(--gold-soft); }
 @media (max-width: 720px) { .prompt-card-preview { max-width: none; padding: 1.25rem; } .prompt-card-preview dl > div { grid-template-columns: 5.5rem minmax(0, 1fr); gap: .75rem; } }
 .landing-intro > p:not(.eyebrow):not(.prompt-card-preview-label) { align-self: start; }
 .prompt-card-preview .text-link { min-height: 0; padding-bottom: .3rem; }
+.license-text { max-width: 46rem; margin: 0 auto; padding: clamp(1.5rem, 4vw, 3rem) 0 4rem; color: var(--muted); font: inherit; font-size: .95rem; line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; }

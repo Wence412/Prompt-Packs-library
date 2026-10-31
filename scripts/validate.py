@@ -34,6 +34,14 @@ def check_local_links(errors: list[str]) -> None:
                 error(errors, f"Broken local link in {document.relative_to(ROOT)}: {destination}")
 
 
+def check_license_page(errors: list[str]) -> None:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from build_license_page import OUT, render
+
+    if not OUT.exists() or OUT.read_text(encoding="utf-8") != render():
+        error(errors, "site/license/index.html is out of date. Run python3 scripts/build_license_page.py")
+
+
 def main() -> int:
     errors: list[str] = []
     data = json.loads((ROOT / "prompts.json").read_text(encoding="utf-8"))
@@ -187,6 +195,7 @@ def main() -> int:
                 error(errors, f"{catalog.name} does not contain {identifier}")
 
     check_local_links(errors)
+    check_license_page(errors)
     if errors:
         print("Validation failed:", file=sys.stderr)
         print("\n".join(f"- {item}" for item in errors), file=sys.stderr)
